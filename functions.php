@@ -382,6 +382,50 @@ function add_finished_label_css() {
 add_action('wp_head', 'add_finished_label_css');
 
 
+// ==========================================================================
+// xmlサイトマップ除外
+// ==========================================================================
+//著者アーカイブ
+add_filter('wp_sitemaps_add_provider', function ( $provider, $name ) {
+    if ( 'users' === $name ) {
+        return false;
+    }
+    return $provider;
+},  10, 2);
+//タグ・カスタムタクソノミー
+add_filter('wp_sitemaps_taxonomies', function ( $taxonomies ) {
+	unset( $taxonomies['category'] ); 
+	unset( $taxonomies['post_tag'] ); 
+	unset( $taxonomies['column_tag'] ); 
+	unset( $taxonomies['column_pickup'] ); 
+	unset( $taxonomies['tachinoki_column_cat'] ); 
+	unset( $taxonomies['saimu_column_cat'] ); 
+	unset( $taxonomies['akewatashi_column_cat'] ); 
+	unset( $taxonomies['isharyo_column_cat'] ); 
+	return $taxonomies;
+});
+// URLの末尾（スラッグ）が「thanks」の固定ページをすべてサイトマップから除外
+add_filter('wp_sitemaps_posts_query_args', function ($args, $post_type) {
+    if ($post_type === 'page') {
+        global $wpdb;
+        
+        // スラッグが「thanks」の固定ページIDをデータベースからすべて取得
+        $thanks_ids = $wpdb->get_col(
+            "SELECT ID FROM $wpdb->posts WHERE post_name = 'thanks' AND post_type = 'page'"
+        );
+        
+        if (!empty($thanks_ids)) {
+            $args['post__not_in'] = isset($args['post__not_in']) ? $args['post__not_in'] : array();
+            // 既存の除外リストに結合
+            $args['post__not_in'] = array_merge($args['post__not_in'], array_map('intval', $thanks_ids));
+        }
+    }
+    return $args;
+}, 10, 2);
+
+
+
+
 // function maintenance_mode() {
 //   if (!current_user_can('edit_themes') || !is_user_logged_in()) {
 //       wp_die('メンテナンス中です。公開までしばらくお待ち下さい。');

@@ -142,7 +142,7 @@
                 <span class="small">専用サイトはこちら</span>
               </div>
             </span>
-            <div class="fig" style="background-image:url(/assets/images/common/bnr_divorce_ph.jpg);"></div>
+            <div class="fig" style="background-image:url(/assets_prev/images/common/bnr_divorce_ph.jpg);"></div>
           </a>
         </div>
 
@@ -208,7 +208,7 @@
                 <?php if (get_field('mainimg')) : ?>
                   <figure><img src="<?php the_field('mainimg'); ?>" alt=""></figure>
                 <?php else : ?>
-                  <figure><img src="/assets/images/column/logo.png" alt=""></figure>
+                  <figure><img src="/assets_prev/images/column/logo.png" alt=""></figure>
                 <?php endif; ?>
               </a></li>
             <?php endforeach;

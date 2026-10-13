@@ -106,9 +106,9 @@ get_header();
                 </li>
                 <li class="unit">
                   <a href="/service/kojin/isharyo/" class="btn_detail">
-                    <figure><img src="/assets/images/common/service_icon_1_2.svg" alt="不倫慰謝料/離婚問題理"></figure>
+                    <figure><img src="/assets/images/common/service_icon_1_2.svg" alt="不倫慰謝料/離婚問題"></figure>
                     <p>悩みをご自身だけで抱えないでください</p>
-                    <h3>不倫慰謝料/離婚問題理</h3>
+                    <h3>不倫慰謝料/離婚問題</h3>
                     <p class="detail">詳しく見る</p>
                   </a>
                 </li>
