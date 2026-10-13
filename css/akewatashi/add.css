@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (max-width:768px) {
+  #lawyer figure {
+    margin: 2rem -2rem 0;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .mainVisual {
+    background-position: right bottom;
+  }
+}

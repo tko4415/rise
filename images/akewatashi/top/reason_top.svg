@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="104" viewBox="0 0 375 104">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_45163" data-name="長方形 45163" width="375" height="104" transform="translate(0 8181)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="reason_top" transform="translate(0 -8181)" clip-path="url(#clip-path)">
+    <g id="楕円形_501" data-name="楕円形 501" transform="translate(-163 8181)" fill="none" stroke="#d9ab4f" stroke-width="2">
+      <circle cx="353" cy="353" r="353" stroke="none"/>
+      <circle cx="353" cy="353" r="352" fill="none"/>
+    </g>
+    <g id="楕円形_502" data-name="楕円形 502" transform="translate(-175 8190)" fill="none" stroke="#d9ab4f" stroke-width="1">
+      <circle cx="353" cy="353" r="353" stroke="none"/>
+      <circle cx="353" cy="353" r="352.5" fill="none"/>
+    </g>
+  </g>
+</svg>

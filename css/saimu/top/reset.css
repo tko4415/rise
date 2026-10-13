@@ -1,0 +1,317 @@
+/*
+Theme Name: I'LL
+Description: Used to style the TinyMCE editor.
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset stylesheet
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Forms
+ * 5.0 - Navigations
+ *   5.1 - Anchor
+ *   5.2 - Pagination
+ *   5.3 - Button
+ * 6.0 - Clearfix
+ * 7.0 - mopiko
+ */
+
+/*----------------------------------------------------------*/
+/* 1.0 - Reset Stylesheet
+/*----------------------------------------------------------*/
+* {
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body {
+	margin:0;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+	text-decoration: none;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #e2e5e8;
+}
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+
+img {
+	width: 100%;
+  border: none;
+	vertical-align: bottom;
+}
+
+:focus {
+  outline: 0px;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------*/
+/* 2.0 - Typography
+/*----------------------------------------------------------*/
+body {
+  line-height: 1.8;
+  font-size: 16px;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+	color: #1a1a1a;
+}
+
+blockquote {
+  display: block;
+  margin-bottom: 40px;
+  padding: 16px;
+  border: solid 2px #e2e5e8;
+  quotes: "\201C""\2018";
+  font-size: 16px;
+  font-size: 1.6rem;
+  background-color: #f4f6fa;
+}
+
+blockquote:before {
+  line-height: 0.1;
+  content: open-quote;
+  vertical-align: -32px;
+  font-size: 60px;
+  font-size: 6.0rem;
+  color: #e2e5e8;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/* http://fontawesome.ioe */
+.fa {
+  margin: 0 4px;
+  color: #9b8d77;
+}
+
+/*----------------------------------------------------------*/
+/* 3.0 - Elements
+/*----------------------------------------------------------*/
+table {
+  width: 100%;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+table caption {
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+table th {
+  padding: 8px;
+  border: solid 1px #e2e5e8;
+  vertical-align: middle;
+}
+
+table td {
+  padding: 8px 16px;
+  border: solid 1px #e2e5e8;
+}
+
+
+/*----------------------------------------------------------*/
+/* 6.0 - Clearfix
+/*----------------------------------------------------------*/
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+
+
+/*----------------------------------------------------------*/
+/* 7.0 - origin
+/*----------------------------------------------------------*/
+figure img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+a,
+a:before,
+a:after {
+  transition: .4s;
+}

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+@media print, screen and (min-width: 768px) {
+  ._sp:not(._pc) {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  ._pc:not(._sp) {
+    display: none !important;
+  }
+}
+html {
+  font-size: 10px;
+  color: #292929;
+}
+
+.page-child {
+  /*--------------------------------------
+  Tables（SPベース）
+  --------------------------------------*/
+}
+.page-child main {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.page-child main .inner {
+  width: 1050px;
+  padding: 0 25px;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .page-child main .inner {
+    max-width: 100%;
+    padding: 0 min(6.4102564103vw, 48.0769230769px);
+  }
+}
+.page-child footer {
+  margin-top: 76px;
+}
+@media screen and (max-width: 767px) {
+  .page-child footer {
+    margin-top: 46px;
+  }
+}
+.page-child table,
+.page-child .cost_tbl {
+  font-size: 15px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.page-child table caption,
+.page-child .cost_tbl caption {
+  padding: 15px 15px 15px 0;
+  text-align: left;
+  font-weight: bold;
+  opacity: 0.75;
+}
+.page-child table th,
+.page-child .cost_tbl th {
+  font-weight: bold;
+  color: rgba(41, 41, 41, 0.9);
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(41, 41, 41, 0.1);
+  padding: 10px 10px;
+  border-top: 1px solid rgba(41, 41, 41, 0.2);
+  width: 260px;
+  white-space: nowrap;
+}
+.page-child table th + th,
+.page-child table td + td,
+.page-child .cost_tbl th + th,
+.page-child .cost_tbl td + td {
+  border-left: 1px solid #ccc;
+}
+.page-child table td,
+.page-child .cost_tbl td {
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding: 13px 15px;
+  line-height: 1.5;
+}
+.page-child table td:not(:last-child),
+.page-child .cost_tbl td:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.page-child table th.cel_white,
+.page-child table td.cel_white,
+.page-child .cost_tbl th.cel_white,
+.page-child .cost_tbl td.cel_white {
+  border-top: 1px solid #ccc;
+  background: #fff;
+  color: #222;
+}
+.page-child table th.cel_blue,
+.page-child .cost_tbl th.cel_blue {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  color: #222;
+}
+.page-child table td.cel_blue,
+.page-child .cost_tbl td.cel_blue {
+  background: #f8f8f8;
+  color: #222;
+}
+.page-child table td.cel_red,
+.page-child .cost_tbl td.cel_red {
+  background: rgba(157, 42, 42, 0.05);
+}
+@media screen and (max-width: 767px) {
+  .page-child table,
+  .page-child .cost_tbl {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .page-child table th,
+  .page-child .cost_tbl th {
+    width: auto;
+    text-align: left;
+  }
+}
+.page-child .t-page-h2, .page-child .t-page-h3 {
+  font-weight: 900;
+}
+.page-child .price-detail .inner {
+  padding-top: 27px;
+  padding-bottom: 76px;
+}
+.page-child .price-detail.hojin .inner {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .page-child .price-detail .inner {
+    padding-bottom: 35px;
+  }
+}
+.page-child .price-table + .price-table {
+  margin-top: 27px;
+}
+.page-child .price-table .note {
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .page-child .price-table + .price-table {
+    margin-top: 37px;
+  }
+}/*# sourceMappingURL=t_child-common.css.map */

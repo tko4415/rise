@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="30" viewBox="0 0 37 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_45664" data-name="長方形 45664" width="37" height="30" transform="translate(556 4221)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="contact_mini_balloon" transform="translate(-556 -4221)" clip-path="url(#clip-path)">
+    <path id="contact_mini_balloon-2" data-name="contact_mini_balloon" d="M457.09,453.187c-3.525,5.76-11.658,14.58-42.714,23.323,9-6.9,15.209-14.336,18.551-27.584Z" transform="matrix(0.985, -0.174, 0.174, 0.985, 64.373, 3853.506)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

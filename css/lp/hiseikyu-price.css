@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+
+body.lp-isyaryo {
+  background: #fff;
+}
+
+.lp-hiseikyu-price {
+  color: #292929;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.lp-hiseikyu-price__inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.lp-hiseikyu-price__intro {
+  background: #f1f1f1;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.lp-hiseikyu-price__intro .lp-hiseikyu-price__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lp-hiseikyu-price__intro h2 {
+  margin: 0;
+  padding: 1.2em 0;
+  color: #9d2a31;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.lp-hiseikyu-price__types {
+  padding: 0;
+  background: #fff;
+}
+
+.lp-hiseikyu-price__lead {
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.lp-hiseikyu-price__tbl {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 20px;
+}
+
+.lp-hiseikyu-price__tbl caption {
+  caption-side: top;
+  text-align: left;
+  padding: 15px 15px 15px 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #292929;
+}
+
+.lp-hiseikyu-price__tbl th,
+.lp-hiseikyu-price__tbl td {
+  border-top: 1px solid #ccc;
+  padding: 14px 15px;
+  font-size: 15px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+.lp-hiseikyu-price__tbl th {
+  width: 260px;
+  background: #eee;
+  border-top-color: rgba(41, 41, 41, 0.2);
+  font-weight: 700;
+  text-align: center;
+  color: rgba(41, 41, 41, 0.9);
+}
+
+.lp-hiseikyu-price__tbl td {
+  background: #fff;
+  font-weight: 350;
+}
+
+.lp-hiseikyu-price__note {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 23.33px;
+}
+
+.lp-hiseikyu-price__types .lp-hiseikyu-price__note {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.lp-hiseikyu-price__fees {
+  padding: 60px 0 40px;
+}
+
+.lp-hiseikyu-price__fees h3 {
+  margin: 0 0 23px;
+  color: #9d2a31;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 33.6px;
+}
+
+.lp-hiseikyu-price__fees h4 {
+  margin: 0 0 23px;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 25.6px;
+}
+
+.lp-hiseikyu-price__consult {
+  padding: 20px 0 60px;
+}
+
+.lp-hiseikyu-price__consult-frame {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 44px 32px;
+  background: #242b46;
+  border-radius: 8px;
+}
+
+.lp-hiseikyu-price__consult-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 60px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.lp-hiseikyu-price__consult-txt {
+  max-width: 393px;
+}
+
+.lp-hiseikyu-price__consult-txt h3 {
+  margin: 0 0 10px;
+  color: #242b46;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36.4px;
+}
+
+.lp-hiseikyu-price__consult-txt p {
+  margin: 0;
+  color: #242b46;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 28px;
+}
+
+.lp-hiseikyu-price__consult figure {
+  margin: 0;
+  flex: 0 0 332px;
+}
+
+.lp-hiseikyu-price__consult img {
+  display: block;
+  width: 332px;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .lp-hiseikyu-price__consult-frame {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lp-hiseikyu-price__inner {
+    padding: 0 min(6.4102564103vw, 48.0769230769px);
+  }
+
+  .lp-hiseikyu-price__intro {
+    margin-bottom: 0;
+  }
+
+  .lp-hiseikyu-price__intro .lp-hiseikyu-price__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lp-hiseikyu-price__intro h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.2;
+    padding: 1.375em 0;
+  }
+
+  .lp-hiseikyu-price__types {
+    padding: 25px 0 0;
+  }
+
+  .lp-hiseikyu-price__lead {
+    font-size: 14.9px;
+  }
+
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl,
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl tbody,
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl tr,
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl th,
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl td {
+    display: block;
+    width: 100%;
+  }
+
+  .lp-hiseikyu-price__tbl th,
+  .lp-hiseikyu-price__tbl td {
+    text-align: left;
+    padding: 11px 10px 10px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .lp-hiseikyu-price__types .lp-hiseikyu-price__tbl th {
+    width: 100%;
+  }
+
+  .lp-hiseikyu-price__fees .lp-hiseikyu-price__tbl th {
+    width: 28%;
+    min-width: 62px;
+    max-width: 110px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .lp-hiseikyu-price__tbl td {
+    font-weight: 400;
+  }
+
+  .lp-hiseikyu-price__fees {
+    padding: 50px 0 30px;
+  }
+
+  .lp-hiseikyu-price__fees h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .lp-hiseikyu-price__consult {
+    padding: 10px 0 0;
+  }
+
+  .lp-hiseikyu-price__consult-frame {
+    margin: 0;
+    padding: 24px 16px;
+  }
+
+  .lp-hiseikyu-price__consult-card {
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+
+  .lp-hiseikyu-price__consult-txt {
+    max-width: none;
+  }
+
+  .lp-hiseikyu-price__consult-txt h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .lp-hiseikyu-price__consult-txt p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .lp-hiseikyu-price__consult figure {
+    flex: none;
+    width: 100%;
+  }
+
+  .lp-hiseikyu-price__consult img {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}

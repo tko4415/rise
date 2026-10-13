@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+@media print, screen and (min-width: 768px) {
+  ._sp:not(._pc) {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  ._pc:not(._sp) {
+    display: none !important;
+  }
+}
+.t-flow_inner {
+  max-width: 1200px;
+  padding: 0 88px;
+  margin: 100px auto 80px;
+}
+.t-flow_inner.first {
+  margin: 67px auto;
+}
+.t-flow_inner.last {
+  margin-bottom: 0;
+}
+.t-flow_block {
+  margin-top: 30px;
+}
+.t-flow_h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.t-flow_point {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.875;
+  margin-top: 1em;
+}
+.t-flow_point + .t-page_txt {
+  margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .t-flow_inner {
+    width: auto;
+    padding: 0 30px;
+    margin: auto;
+  }
+  .t-flow_inner.first {
+    margin: 30px auto;
+  }
+  .t-flow_block {
+    margin-top: 37px;
+  }
+  .t-flow_h3 {
+    text-align: center;
+  }
+}
+
+main.akewatashi-flow #title .t_inner_inner {
+  padding-right: 110px;
+  padding-left: 50px;
+}
+main.akewatashi-flow #title .t_inner {
+  min-width: calc(50% + 70px);
+}
+
+main.isharyo-flow #title .t_inner_inner {
+  padding-right: 20px;
+  padding-left: 0;
+}
+main.isharyo-flow #title .t_inner {
+  min-width: calc(50% - 160px);
+}
+
+@media screen and (max-width: 767px) {
+  main.akewatashi-flow #title .t_inner_inner {
+    padding: 0;
+  }
+  main.saimu-flow #title .t_inner_inner {
+    padding: 0;
+  }
+}/*# sourceMappingURL=t_flow.css.map */

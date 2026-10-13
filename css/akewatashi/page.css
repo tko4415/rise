@@ -1,0 +1,3581 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+html {
+  font-size: 3.75vw;
+  font-size: 2.6666666667vw;
+  min-width: 320px;
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "Noto Sans JP", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  ._sp:not(._pc) {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  ._pc:not(._sp) {
+    display: none !important;
+  }
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+
+main {
+  position: relative;
+  color: #242B46;
+  font-weight: 400;
+  overflow: hidden;
+  /* add */
+  padding-top: 0;
+}
+main img {
+  width: unset;
+  width: 100%;
+}
+main strong {
+  font-weight: inherit;
+}
+main .inner {
+  margin: auto 1.2rem;
+}
+@media print, screen and (min-width: 768px) {
+  main .inner {
+    margin: auto;
+    width: 104rem;
+    padding: 0 2rem;
+  }
+}
+main ._ib {
+  display: inline-block;
+  font-size: inherit;
+}
+main ._nw {
+  white-space: nowrap;
+}
+
+.scrollin.scregular {
+  transition: opacity 0.8s ease-in-out, transform 0.9s ease-in-out;
+}
+.scrollin.scregular:not(.on) {
+  transform: translateY(-1rem);
+  opacity: 0;
+}
+
+.scrollin.sclist > * {
+  opacity: 0;
+}
+.scrollin.sclist.on > * {
+  opacity: 1;
+  transform: translateY(1rem);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+.scrollin.sclist.on > *:nth-child(1) {
+  transition-delay: 0s;
+}
+.scrollin.sclist.on > *:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.scrollin.sclist.on > *:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.scrollin.sclist.on > *:nth-child(4) {
+  transition-delay: 0.5s;
+}
+.scrollin.sclist.on > *:nth-child(5) {
+  transition-delay: 0.7s;
+}
+.scrollin.sclist.on > *:nth-child(6) {
+  transition-delay: 0.9s;
+}
+.scrollin.sclist.on > *:nth-child(7) {
+  transition-delay: 1.1s;
+}
+.scrollin.sclist.on > *:nth-child(8) {
+  transition-delay: 1.3s;
+}
+.scrollin.sclist.on > *:nth-child(9) {
+  transition-delay: 1.5s;
+}
+.scrollin.sclist.on > *:nth-child(10) {
+  transition-delay: 1.7s;
+}
+.scrollin.sclist.on > *:nth-child(11) {
+  transition-delay: 1.8s;
+}
+.scrollin.sclist.on > *:nth-child(12) {
+  transition-delay: 1.9s;
+}
+
+.mainVisual {
+  height: auto;
+  background: url(../../images/akewatashi/top/mv.jpg) center bottom / cover;
+  aspect-ratio: 375/555;
+  padding-top: 18.4rem;
+  position: relative;
+  z-index: 1;
+  /* top: 62px; */
+}
+.mainVisual .balloon {
+  color: #242B46;
+  font-size: 1.6rem;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: bold;
+  margin-left: 1.5rem;
+  line-height: 1.25;
+  text-shadow: 0 0 0.6rem #fff;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.2em;
+}
+.mainVisual .lead {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  margin-top: min(2.6666666667vw, 20px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.mainVisual .lead .line {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 4.2rem;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.4rem 1rem 0.6rem 1.5rem;
+  letter-spacing: -0.04em;
+}
+.mainVisual .lead .line .small {
+  font-size: 3.3rem;
+}
+.mainVisual .jisseki {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4285714286;
+  margin-left: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+.mainVisual .feature {
+  margin-top: 1.2rem;
+  position: static;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mainVisual .feature li {
+  /* background: #D9AA4F; */
+  background: #B28F4A;
+  width: 11.6rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+.mainVisual .feature li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.97);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.mainVisual .feature li .small {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  height: 2em;
+  display: grid;
+  place-items: center;
+}
+.mainVisual .feature li.consultation .case {
+  margin-top: 0.5rem;
+}
+.mainVisual .feature li.consultation .case .num {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0em;
+}
+.mainVisual .feature li.consultation .case .ja {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.mainVisual .feature li.resolution .case {
+  margin-top: -0.5rem;
+  line-height: 1;
+}
+.mainVisual .feature li.resolution .case .num {
+  display: block;
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.8rem;
+  letter-spacing: 0em;
+  font-weight: bold;
+}
+.mainVisual .feature li.resolution .case .ja {
+  display: block;
+  margin-top: 0.2em;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.mainVisual .feature li.free {
+  justify-content: center;
+  padding-top: 0;
+  font-family: "Noto Serif JP", serif;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+}
+@media print, screen and (min-width: 768px) {
+  .mainVisual {
+    min-width: 104rem;
+    height: auto;
+    background: #242B46 url(../../images/akewatashi/top/mv_pc2.jpg) left center / cover no-repeat;
+    aspect-ratio: unset;
+    /* padding-top: 21.6rem; */
+    padding-top: 33.4rem;
+    text-align: left;
+    height: 94.2rem;
+    /* height: 78.85rem; */
+    /* top: 115px; */
+  }
+  .mainVisual .mvinner {
+    width: 116rem;
+    max-width: 116rem;
+    padding: 0 2rem 0;
+    margin: auto;
+    position: relative;
+  }
+  .mainVisual .balloon {
+    font-size: 2.8rem;
+    margin-left: 0;
+    line-height: 1.25;
+  }
+  .mainVisual .lead {
+    margin-top: min(2.6666666667vw, 20px);
+    gap: 1.4rem;
+  }
+  .mainVisual .lead .line {
+    font-size: 6.5rem;
+    padding: 0.6rem 1rem 1.2rem 1.5rem;
+    letter-spacing: -0.04em;
+  }
+  .mainVisual .lead .line .small {
+    font-size: 5.1rem;
+  }
+  .mainVisual .jisseki {
+    font-size: 2.6rem;
+    line-height: 1.4285714286;
+    margin-left: 0;
+    color: #fff;
+    margin-top: 1rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  }
+  .mainVisual .feature {
+    position: absolute;
+    width: unset;
+    top: 32rem;
+    left: unset;
+    right: 1rem;
+    gap: 2rem;
+  }
+  .mainVisual .feature li {
+    width: 16rem;
+    padding-top: 1.8rem;
+  }
+  .mainVisual .feature li .small {
+    font-size: 1.8rem;
+    line-height: 1.1764705882;
+  }
+  .mainVisual .feature li.consultation .case {
+    margin-top: 1rem;
+  }
+  .mainVisual .feature li.consultation .case .num {
+    font-size: 3.8em;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+  }
+  .mainVisual .feature li.consultation .case .ja {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  .mainVisual .feature li.resolution .case {
+    text-align: center;
+    margin-top: -0.9rem;
+    line-height: 1.1;
+  }
+  .mainVisual .feature li.resolution .case .num {
+    font-size: 6rem;
+    letter-spacing: -0.04em;
+  }
+  .mainVisual .feature li.resolution .case .ja {
+    font-size: 2.2rem;
+  }
+  .mainVisual .feature li.free {
+    padding-top: 0.2em;
+    font-size: 3.6rem;
+    line-height: 1.2222222222;
+  }
+}
+@media screen  and (max-width: 769px) {
+  .mainVisual {
+    /* height: auto; */
+    /* background: url(../../images/akewatashi/top/mv.jpg) center bottom / cover; */
+    /* aspect-ratio: 375/555; */
+    aspect-ratio: 390 / 577;
+    /* padding-top: 18.4rem; */
+    /* position: relative; */
+    /* z-index: 1; */
+    padding: 10px 0;
+  }
+  .mainVisual .balloon {
+    /* color: #242B46; */
+    /* font-size: 1.6rem; */
+    /* font-family: "Zen Kaku Gothic Antique", sans-serif; */
+    /* font-weight: bold; */
+    /* margin-left: 1.5rem; */
+    /* line-height: 1.25; */
+    /* text-shadow: 0 0 0.6rem #fff; */
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.2em;
+  }
+  .mainVisual .lead {
+    /* font-family: "Zen Kaku Gothic Antique", sans-serif; */
+    /* margin-top: min(2.6666666667vw, 20px); */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
+    /* gap: 1.4rem; */
+    margin-top: calc(210 / 390 * 100vw);
+  }
+  .mainVisual .lead .line {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 4.2rem;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0.4rem 1rem 0.6rem 1.5rem;
+    letter-spacing: -0.04em;
+  }
+  .mainVisual .lead .line .small {
+    font-size: 3.3rem;
+  }
+  .mainVisual .jisseki {
+    /* font-weight: 600; */
+    /* font-size: 1.4rem; */
+    /* line-height: 1.4285714286; */
+    /* margin-left: 1.5rem; */
+    width: fit-content;
+    margin-right: 1.5rem;
+    margin-left: auto;
+    /* color: #fff; */
+    /* margin-top: 1rem; */
+  }
+  /* .mainVisual .feature {
+    margin-top: 1.2rem;
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .mainVisual .feature li {
+    background: #D9AA4F;
+    width: 11.6rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  .mainVisual .feature li .small {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    height: 2em;
+    display: grid;
+    place-items: center;
+  }
+  .mainVisual .feature li.consultation .case {
+    margin-top: 0.5rem;
+  }
+  .mainVisual .feature li.consultation .case .num {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Noto Serif JP", serif;
+    letter-spacing: 0em;
+  }
+  .mainVisual .feature li.consultation .case .ja {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mainVisual .feature li.resolution .case {
+    margin-top: -0.5rem;
+    line-height: 1;
+  }
+  .mainVisual .feature li.resolution .case .num {
+    display: block;
+    font-family: "Noto Serif JP", serif;
+    font-size: 3.8rem;
+    letter-spacing: 0em;
+    font-weight: bold;
+  }
+  .mainVisual .feature li.resolution .case .ja {
+    display: block;
+    margin-top: 0.2em;
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .mainVisual .feature li.free {
+    justify-content: center;
+    padding-top: 0;
+    font-family: "Noto Serif JP", serif;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+  } */
+}
+
+section.consultation {
+  background: #242B46;
+  padding: 3rem 0 4rem;
+  text-align: center;
+  position: relative;
+}
+section.consultation hgroup {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+section.consultation hgroup .nationwide {
+  width: 22.6rem;
+  height: 2.6rem;
+  line-height: 1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 2rem;
+  display: grid;
+  place-content: center;
+  margin: auto;
+}
+section.consultation hgroup h2 {
+  color: #D9AA4F;
+  font-size: 4rem;
+  margin: auto -1em;
+  font-weight: bold;
+}
+section.consultation hgroup .sameday {
+  margin-top: 0.3em;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 1.4rem;
+  background: url(../../images/akewatashi/top/fukidashi.svg) center bottom/auto 1.3rem no-repeat;
+}
+section.consultation hgroup .sameday strong {
+  color: #D9AA4F;
+}
+section.consultation hgroup .casual {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+section.consultation .btns ul {
+  display: flex;
+  gap: 1.5rem 0.8rem;
+  flex-wrap: wrap;
+}
+section.consultation .btns ul li {
+  width: calc(50% - 0.4rem);
+  height: 6.4rem;
+  border-radius: 0.4rem;
+  background: #A8A58F;
+  color: #fff;
+}
+section.consultation .btns ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 10%;
+  padding-left: 5%;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: left;
+  gap: 1rem;
+  background: url(../../images/akewatashi/top/arrow_line_right.svg) calc(100% - 1rem) center/0.7rem auto no-repeat;
+}
+section.consultation .btns ul li a .icon {
+  width: 3.1rem;
+}
+section.consultation .btns ul li.line {
+  background: #06C755;
+}
+section.consultation .btns ul li.line a .icon {
+  width: 2.7rem;
+}
+section.consultation .btns ul li.tel {
+  width: 100%;
+  height: 8rem;
+  background: #A50133;
+}
+section.consultation .btns ul li.tel a {
+  font-size: 2.2rem;
+  gap: 2rem;
+}
+section.consultation .btns ul li.tel a .small {
+  font-size: 1.4rem;
+  display: inline-block;
+  font-weight: normal;
+}
+section.consultation .btns ul li.tel a .num {
+  font-size: 2.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  position: relative;
+  bottom: 0.05em;
+}
+section.consultation .btns ul li.tel a .icon {
+  width: 2.7rem;
+}
+section.consultation .btns ul li.tel a .txt {
+  line-height: 1;
+}
+@media print, screen and (min-width: 768px) {
+  section.consultation {
+    padding: 4rem 0 8vrem;
+  }
+  section.consultation .arrow {
+    height: 15rem;
+    display: flex;
+    position: relative;
+    top: calc(-4rem - 0px);
+    margin-bottom: -2rem;
+    background: #EFE8DB;
+  }
+  section.consultation .arrow.gray {
+    background: #EDEDED;
+  }
+  section.consultation .arrow.white {
+    background: #fff;
+  }
+  section.consultation .arrow::before, section.consultation .arrow::after {
+    position: relative;
+    bottom: -1px;
+  }
+  section.consultation hgroup.lower {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  section.consultation hgroup.lower h2 {
+    color: #FFDC4B;
+    font-size: 2.6rem;
+    font-family: "Shippori Mincho";
+    margin: auto -1em;
+    font-weight: bold;
+  }
+  section.consultation hgroup.lower .casual {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+  }
+  section.consultation hgroup.top {
+    padding-top: 2rem;
+  }
+  section.consultation hgroup.top .nationwide {
+    width: 38rem;
+    height: 4.3rem;
+    font-size: 2.8rem;
+    border-radius: 3rem;
+  }
+  section.consultation hgroup.top h2 {
+    margin-top: 0.5rem;
+    font-size: 6.45rem;
+  }
+  section.consultation hgroup.top .line_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto 0rem;
+  }
+  section.consultation hgroup.top .sameday {
+    margin: unset;
+    font-size: 2.1rem;
+    background: none;
+    padding-bottom: 0;
+  }
+  section.consultation hgroup.top .casual {
+    margin-top: unset;
+    margin-bottom: unset;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  section.consultation .btns ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  section.consultation .btns ul li {
+    width: 23.4rem;
+    height: unset;
+    border-radius: 0.4rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+  section.consultation .btns ul li:hover {
+    opacity: 0.7;
+  }
+  section.consultation .btns ul li a {
+    justify-content: flex-start;
+    padding-right: 10%;
+    padding-left: 1.6rem;
+    font-size: 1.8rem;
+    gap: 1rem;
+    line-height: 1.5;
+    background: url(../../images/akewatashi/top/arrow_line_right.svg) calc(100% - 1.4rem) center/0.9rem auto no-repeat;
+  }
+  section.consultation .btns ul li a .icon {
+    width: 3.3rem;
+  }
+  section.consultation .btns ul li.line a .icon {
+    width: 3.5rem;
+  }
+  section.consultation .btns ul li.tel {
+    width: 50.6rem;
+    height: 8rem;
+    background: #A50133;
+    box-shadow: 0 0.6rem 0 #6A122C;
+    padding: 0;
+  }
+  section.consultation .btns ul li.tel a {
+    font-size: 2.2rem;
+    gap: 1.2rem;
+    background: none;
+    white-space: nowrap;
+    padding-right: 0;
+  }
+  section.consultation .btns ul li.tel a .free {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  section.consultation .btns ul li.tel a .small {
+    font-size: 1.4rem;
+  }
+  section.consultation .btns ul li.tel a .num {
+    font-size: 4.4rem;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  section.consultation .btns ul li.tel a .icon {
+    width: 3rem;
+    flex-shrink: 0;
+  }
+  section.consultation .btns ul li.tel a .txt {
+    line-height: 1;
+  }
+}
+
+#navi {
+  background: #fff;
+  padding: 4rem 0 5rem;
+}
+#navi .achievement {
+  text-align: center;
+}
+#navi .achievement .gold .heading {
+  background: #D9AA4F;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+  border-radius: 2rem;
+  display: inline-block;
+  font-weight: bold;
+}
+#navi .achievement .gold .cases {
+  position: relative;
+  background: url(../../images/akewatashi/top/icon_laurel.svg) left top/contain no-repeat;
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: #D9AA4F;
+  padding-bottom: 0.8rem;
+}
+#navi .achievement .gold .cases .num {
+  font-size: 6.7rem;
+  font-weight: 900;
+}
+#navi .achievement .gold .cases::after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../../images/akewatashi/top/icon_laurel.svg) left top/contain no-repeat;
+  transform: scaleX(-1);
+}
+#navi .achievement .pro {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.1em;
+}
+#navi .achievement .pro strong {
+  font-size: 900;
+  font-size: 3.2rem;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  margin: 0.8rem auto;
+}
+#navi .achievement .pro strong::after {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  background: #D9AA4F;
+  opacity: 0.5;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+}
+#navi .innernav {
+  margin-top: 2rem;
+}
+#navi .innernav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+#navi .innernav ul li {
+  width: calc(50% - 0.4rem);
+}
+#navi .innernav ul li a {
+  width: 100%;
+  height: 5.6rem;
+  background: #DEE3EA;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+#navi .innernav ul li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  text-align: center;
+  width: 5rem;
+  background: url(../../images/akewatashi/top/arrow_down_navy.svg) center center/contain no-repeat;
+  margin-top: 0.6rem;
+}
+@media print, screen and (min-width: 768px) {
+  #navi {
+    padding: 6rem 0 6 rem;
+  }
+  #navi .achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  #navi .achievement .gold .heading {
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+    padding: 0.2rem 2rem 0;
+    border-radius: 2rem;
+  }
+  #navi .achievement .gold .cases {
+    margin-top: 1.5rem;
+    padding-top: 3rem;
+    width: 37rem;
+    background: url(../../images/akewatashi/top/icon_laurel.svg) left top/contain no-repeat;
+    font-size: 3.4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  #navi .achievement .gold .cases .num {
+    font-size: 7.3rem;
+    font-weight: 900;
+  }
+  #navi .achievement .gold .cases::after {
+    width: 50%;
+    height: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../../images/akewatashi/top/icon_laurel.svg) left top/contain no-repeat;
+    transform: scaleX(-1);
+  }
+  #navi .achievement .pro {
+    margin-top: 6rem;
+    font-size: 2.1rem;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+  #navi .achievement .pro strong {
+    font-size: 3.8rem;
+    margin: 0.8rem auto;
+    margin-right: 1rem;
+  }
+  #navi .achievement .pro strong::after {
+    height: 1.2rem;
+    bottom: 1px;
+  }
+  #navi .innernav {
+    margin-top: 7rem;
+  }
+  #navi .innernav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+  #navi .innernav ul li {
+    width: 20%;
+  }
+  #navi .innernav ul li a {
+    height: 6.3rem;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+  #navi .innernav ul li a::after {
+    height: 0.7rem;
+    width: 5rem;
+    background: url(../../images/akewatashi/top/arrow_down_navy.svg) center center/contain no-repeat;
+    margin-top: 1rem;
+    transition: 0.3s;
+  }
+  #navi .innernav ul li a:hover {
+    background: #242B46;
+    color: #fff;
+  }
+  #navi .innernav ul li a:hover::after {
+    filter: saturate(0) brightness(1000%);
+  }
+}
+
+#problem {
+  position: relative;
+  z-index: 3;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+  /* background: #242B46 url(../../images/akewatashi/top/problem_top.png) center top/100% 2.9rem no-repeat; */
+  background: #242B46;
+}
+#problem::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2.8rem;
+  /* background: url(../../images/akewatashi/top/problem_bottom.png) center bottom/100% 2.8rem no-repeat; */
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+#problem .inner {
+  margin: auto 2rem;
+}
+#problem .inner h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #fff;
+}
+#problem .inner h2 strong {
+  font-size: 2.6rem;
+  color: #D9AA4F;
+}
+#problem .inner ul {
+  margin-top: 2rem;
+  padding: 0.1rem 1.8rem 2rem;
+  background: #fff;
+  border-radius: 0.4rem;
+}
+#problem .inner ul li {
+  background: url(../../images/akewatashi/top/icon_check.svg) left calc(50% + 0.4em) no-repeat;
+  background-size: 2rem auto;
+  padding-left: 2.8rem;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  letter-spacing: -0.02em;
+}
+#problem .inner ul li strong {
+  font-weight: 900;
+}
+#problem figure {
+  position: absolute;
+  width: 16rem;
+  z-index: 10;
+  bottom: 2rem;
+  right: -1.5rem;
+}
+#problem figure img {
+  width: 100%;
+}
+@media print, screen and (min-width: 768px) {
+  #problem {
+    position: relative;
+    z-index: 3;
+    padding: 6rem 0 18.5rem;
+    /* background: #242B46 url(../../images/akewatashi/top/problem_top_pc.png) center top/100% 11.6rem no-repeat; */
+    background: #242B46;
+  }
+  /* #problem::after {
+    display: block;
+    width: 100%;
+    height: 5.9rem;
+    background: #fff url(../../images/akewatashi/top/problem_bottom_pc.png) center bottom/100% 5.9rem no-repeat;
+    bottom: 0;
+    left: 0;
+  } */
+  #problem .inner {
+    margin: auto;
+  }
+  #problem .inner h2 {
+    font-size: 3.5rem;
+  }
+  #problem .inner h2 strong {
+    font-size: 4.3rem;
+  }
+  #problem .inner ul {
+    margin-top: 4rem;
+    padding: 4rem 10rem 8rem;
+  }
+  #problem .inner ul li {
+    background: url(../../images/akewatashi/top/icon_check.svg) left calc(50% + 0.1em) no-repeat;
+    background-size: 3.8rem auto;
+    padding-left: 6.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0;
+    border-bottom: 2px dotted #A7A7A7;
+  }
+  #problem .inner ul li strong {
+    font-size: 2.4rem;
+  }
+  #problem figure {
+    width: 35rem;
+    bottom: 8rem;
+    right: calc(50% - 54rem);
+  }
+  #problem figure img {
+    width: 100%;
+  }
+}
+
+#merit {
+  background: #DEE3EA;
+  position: relative;
+  z-index: 5;
+  padding-bottom: 5rem;
+}
+#merit::before {
+  content: "";
+  display: grid;
+  width: 100rem;
+  height: 18rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+#merit .inner {
+  position: relative;
+  z-index: 2;
+  padding-top: 1rem;
+  text-align: center;
+}
+#merit .heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+#merit .heading .small {
+  font-size: 1.6rem;
+}
+#merit .heading .ga {
+  font-size: 2.2rem;
+}
+#merit .heading strong {
+  display: inline-block;
+  background: #242B46;
+  color: #D9AA4F;
+  font-size: 2.8rem;
+  line-height: 4.4rem;
+  padding: 0 1rem;
+  margin-right: 0.5rem;
+}
+#merit .heading_2 {
+  margin-top: 7rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  background: #242B46;
+  padding: 0 3rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  position: relative;
+  border-radius: 8rem;
+}
+#merit .heading_2 strong {
+  font-size: 2.8rem;
+  display: inline-block;
+  position: relative;
+  top: -0.1em;
+  margin-left: 1rem;
+}
+#merit .heading_2::after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.1rem;
+  background: #242B46;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 1px));
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+#merit .list {
+  margin-top: 2rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+  border-radius: 0.4rem;
+  text-align: left;
+}
+#merit .list .unit hgroup {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dotted #242B46;
+  margin-bottom: 1rem;
+}
+#merit .list .unit hgroup .circle {
+  text-align: center;
+  width: 6.2rem;
+  aspect-ratio: 1/1;
+  background: #242B46;
+  line-height: 1;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+}
+#merit .list .unit hgroup .circle .num {
+  font-size: 2.6rem;
+  font-family: "Shippori Mincho";
+}
+#merit .list .unit hgroup .h_unit {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.2727272727;
+}
+#merit .list .unit .body {
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+@media screen and (min-width: 768px) {
+  #merit {
+    padding-bottom: 10rem;
+  }
+  #merit::before {
+    width: 200rem;
+    height: 30rem;
+  }
+  #merit .inner {
+    padding-top: 1.5rem;
+  }
+  #merit .heading {
+    font-size: 4rem;
+    line-height: 1.8;
+  }
+  #merit .heading .small {
+    font-size: 2.8rem;
+  }
+  #merit .heading .ga {
+    font-size: 4rem;
+  }
+  #merit .heading strong {
+    font-size: 4rem;
+    line-height: 7.4rem;
+    padding: 0 2rem;
+    margin-right: 1rem;
+  }
+  #merit .heading_2 {
+    margin-top: 10rem;
+    height: 5.6rem;
+    background: #242B46;
+    padding: 0 3rem;
+    width: 58rem;
+    font-size: 1.8rem;
+  }
+  #merit .heading_2 strong {
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+    top: -0.1em;
+    margin-left: 1rem;
+  }
+  #merit .heading_2::after {
+    width: 2.4rem;
+    height: 1.6rem;
+  }
+  #merit .list {
+    margin-top: 3rem;
+    gap: 4rem;
+    padding: 7rem 3rem;
+  }
+  #merit .list .unit {
+    display: flex;
+  }
+  #merit .list .unit hgroup {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 32rem;
+    gap: 1.2rem;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  #merit .list .unit hgroup .circle {
+    width: 7.6rem;
+    font-size: 1.1rem;
+    gap: 0rem;
+  }
+  #merit .list .unit hgroup .circle .num {
+    font-size: 3.2rem;
+  }
+  #merit .list .unit hgroup .h_unit {
+    font-size: 2.2rem;
+    line-height: 1.3636363636;
+  }
+  #merit .list .unit .body {
+    border-left: 1px dotted #242B46;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.7333333333;
+    padding-bottom: 0.3em;
+  }
+}
+
+#service {
+  background: #242B46;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+#service hgroup {
+  text-align: center;
+  color: #fff;
+}
+#service hgroup .onestop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #D9AA4F;
+  padding: 0 3rem;
+  height: 6.8rem;
+  font-size: 1.6rem;
+  line-height: 1.375;
+  border: 1px solid #D9AA4F;
+  border-bottom: none;
+  position: relative;
+}
+#service hgroup .onestop::after {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: calc(-1rem + 1px);
+  background: url(../../images/akewatashi/top/service_fukidashi.svg) center top no-repeat;
+}
+#service hgroup .heading {
+  margin-top: 2rem;
+  font-size: 2.8rem;
+  line-height: 1.3571428571;
+  font-weight: 700;
+}
+#service hgroup .lead {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+#service .list {
+  margin-top: 3rem;
+}
+#service .list .unit {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  width: 100%;
+}
+#service .list .unit + .unit {
+  margin-top: 4rem;
+}
+#service .list .unit + .unit:before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 1.6rem;
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  background: #D9AA4F;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform: translateX(-50%);
+}
+#service .list .unit .left {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 13rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#service .list .unit .left .step {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 5.6rem;
+  padding-right: 1.5rem;
+  height: 8.8rem;
+  border-right: 1px dotted #242B46;
+}
+#service .list .unit .left .step .num {
+  display: block;
+  font-size: 2.4rem;
+}
+#service .list .unit .left .ilst {
+  width: 7.4rem;
+  padding: 1rem;
+}
+#service .list .unit .body .h_unit {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+#service .list .unit .body .contents {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+#service .list .unit .body .contents li {
+  padding-left: 1.2em;
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+}
+#service .list .unit .body .contents li::before {
+  content: "・";
+  text-align: center;
+  width: 1.2em;
+  margin-left: -1.2em;
+}
+#service .legal {
+  margin: 3rem 2.5rem auto;
+  color: #fff;
+}
+#service .legal .frame {
+  border: 1px solid #fff;
+  padding: 0.5em;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+#service .legal .body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 0.3em;
+}
+@media screen and (min-width: 750px) {
+  #service {
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+    text-align: center;
+  }
+  #service hgroup .onestop {
+    padding: 0 3rem;
+    height: 10.5rem;
+    font-size: 2.6rem;
+    line-height: 1.3846153846;
+  }
+  #service hgroup .onestop::after {
+    height: 1.6rem;
+    bottom: calc(-1.6rem + 1px);
+    background: url(../../images/akewatashi/top/service_fukidashi_pc.svg) center top no-repeat;
+  }
+  #service hgroup .heading {
+    margin-top: 3rem;
+    font-size: 4.5rem;
+    line-height: 1.3555555556;
+  }
+  #service hgroup .lead {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.4444444444;
+  }
+  #service .list {
+    margin-top: 4rem;
+  }
+  #service .list .unit {
+    position: relative;
+    padding: 3rem 4rem;
+  }
+  #service .list .unit + .unit {
+    margin-top: 7.4rem;
+  }
+  #service .list .unit + .unit:before {
+    width: 3.9rem;
+    height: 2.6rem;
+    top: -5rem;
+  }
+  #service .list .unit .left {
+    width: 27.6rem;
+  }
+  #service .list .unit .left .step {
+    font-size: 2.8rem;
+    width: 12rem;
+    padding-right: 3.7rem;
+    height: 14.2 rem;
+  }
+  #service .list .unit .left .step .num {
+    font-size: 4.6rem;
+  }
+  #service .list .unit .left .ilst {
+    width: 15.6rem;
+    padding: 4rem;
+  }
+  #service .list .unit .body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #service .list .unit .body .h_unit {
+    width: 32rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  #service .list .unit .body .contents {
+    margin-top: 0;
+    gap: 0.2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #service .list .unit .body .contents li {
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+  #service .list .unit .body .contents li::before {
+    width: 1.2em;
+    margin-left: -1.2em;
+  }
+  #service .legal {
+    display: inline-block;
+    margin: 6rem auto auto;
+  }
+  #service .legal .frame {
+    padding: 0.5em;
+    font-size: 2.8rem;
+  }
+  #service .legal .body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 1.2em;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  #lawyer {
+    padding-top: 4rem;
+    text-align: center;
+  }
+  #lawyer .txt {
+    position: relative;
+    z-index: 2;
+  }
+  #lawyer .balloon {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #lawyer .balloon::before, #lawyer .balloon::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2rem;
+    background: #242B46;
+    transform: rotate(-20deg);
+    margin: auto 1rem;
+  }
+  #lawyer .balloon::after {
+    transform: rotate(20deg);
+  }
+  #lawyer .main {
+    margin-top: 1.2rem;
+    background: #D9AA4F;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  #lawyer .main .line_2 {
+    display: block;
+    font-size: 2.6rem;
+    margin-top: 0.8rem;
+  }
+  #lawyer figure {
+    margin: -5rem -2rem 0;
+  }
+}
+@media screen and (min-width: 750px) {
+  #lawyer {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  #lawyer .inner {
+    display: flex;
+    background: #242B46;
+    padding: 6rem 5rem;
+    border-radius: 0.8rem;
+    justify-content: space-between;
+  }
+  #lawyer .txt {
+    position: relative;
+    z-index: 2;
+  }
+  #lawyer .balloon {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 7rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 4rem;
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+  }
+  #lawyer .balloon::after {
+    content: "";
+    display: block;
+    width: 2.1rem;
+    height: 1.4rem;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(calc(100% - 1px));
+  }
+  #lawyer .main {
+    margin-top: 2.5rem;
+    color: #D9AA4F;
+    font-size: 3.4rem;
+  }
+  #lawyer .main .line_1 {
+    display: block;
+    font-weight: 600;
+    border-bottom: 1px solid #D9AA4F;
+    line-height: 1.6;
+  }
+  #lawyer .main .line_2 {
+    margin-top: 1rem;
+    display: block;
+    font-size: 4.7rem;
+    font-weight: 700;
+    border-bottom: 1px solid #D9AA4F;
+    line-height: 1.6;
+  }
+  #lawyer figure {
+    width: 35rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+}
+
+#case {
+  background: #EDEDED;
+  padding: 7rem 0 4rem;
+}
+#case .section_hg {
+  text-align: center;
+}
+#case .section_hg p {
+  display: inline-block;
+  background: #242B46;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  padding: 0 3rem 0.2rem;
+  border-radius: 5rem;
+  color: #fff;
+}
+#case .section_hg .heading {
+  margin-top: 1rem;
+  font-size: 2.6rem;
+  line-height: 1.3846153846;
+  font-weight: 600;
+}
+#case .block {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 1.8rem;
+  padding: 2rem 2rem 3rem;
+}
+#case .block + .block {
+  margin-top: 4rem;
+}
+#case .block .block_hg {
+  text-align: left;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #242B46;
+  color: #000;
+}
+#case .block .block_hg .h_block {
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.8rem;
+  background: #242B46;
+  font-size: 1.6rem;
+  line-height: 1rem;
+  padding: 0 2rem 0.2rem;
+  border-radius: 5rem;
+  color: #fff;
+}
+#case .block .block_hg .h_block .case {
+  font-size: 1.2rem;
+}
+#case .block .block_hg .h_block .num {
+  font-size: 2rem;
+  display: inline-block;
+  margin: auto 0.5rem;
+}
+#case .block .block_hg .h_block2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+#case .block .main {
+  margin-top: 1.5rem;
+  color: #000;
+}
+#case .block .main .main_uppper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+#case .block .main .main_uppper figure {
+  width: 10rem;
+}
+#case .block .main .main_uppper .txt {
+  line-height: 1.5;
+}
+#case .block .main .main_uppper .txt .pref {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+#case .block .main .main_uppper .txt .month {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#case .block .main .body {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  display: none;
+  color: #1D1D1D;
+}
+#case .block .main .toggle {
+  margin-top: 2rem;
+  cursor: pointer;
+  height: 4.6rem;
+  background: #242B46;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  content: "閉じる";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+#case .block .main .toggle::before {
+  content: "詳しく見る";
+  display: inline-block;
+}
+#case .block .main .toggle::after {
+  content: "＋";
+  display: inline-block;
+}
+#case .block .main .toggle.active::before {
+  content: "閉じる";
+}
+#case .block .main .toggle.active::after {
+  transform: rotate(45deg);
+}
+@media only screen and (min-width: 768px) {
+  #case {
+    padding: 8rem 0 7rem;
+  }
+  #case .section_hg p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    padding: 0 3rem 0.2rem;
+  }
+  #case .section_hg .heading {
+    margin-top: 1.5rem;
+    font-size: 3.2rem;
+  }
+  #case .block {
+    margin-top: 3rem;
+    padding: 5.6rem 2rem 6rem;
+    text-align: center;
+  }
+  #case .block + .block {
+    margin-top: 7rem;
+  }
+  #case .block .block_hg {
+    padding-bottom: 0rem;
+    border-bottom: none;
+  }
+  #case .block .block_hg .h_block {
+    height: 4.2rem;
+    font-size: 2.4rem;
+    padding: 0 5rem 0.2rem;
+  }
+  #case .block .block_hg .h_block .case {
+    font-size: 1.8rem;
+  }
+  #case .block .block_hg .h_block .num {
+    font-size: 2.8rem;
+    display: inline-block;
+    margin: auto 0.5rem;
+  }
+  #case .block .block_hg .h_block2 {
+    margin-top: 3rem;
+    font-size: 2.6rem;
+  }
+  #case .block .main {
+    margin: 3rem auto auto;
+    display: flex;
+    justify-content: space-between;
+    width: 74rem;
+  }
+  #case .block .main .main_uppper {
+    width: 18rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: auto;
+  }
+  #case .block .main .main_uppper figure {
+    width: auto;
+  }
+  #case .block .main .main_uppper figure img {
+    width: 14rem;
+  }
+  #case .block .main .main_uppper .txt {
+    display: inline-block;
+    text-align: left;
+  }
+  #case .block .main .main_uppper .txt .pref {
+    font-size: 1.8rem;
+  }
+  #case .block .main .main_uppper .txt .month {
+    font-size: 1.6rem;
+  }
+  #case .block .main .body {
+    width: 50rem;
+    display: block;
+    text-align: left;
+  }
+  #case .block .main .toggle {
+    display: none;
+  }
+}
+
+#reason {
+  background: url(../../images/akewatashi/top/reason_top.svg) center 3rem/100% auto no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+#reason h2 {
+  text-align: center;
+}
+#reason h2 .small {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+#reason h2 strong {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  bottom: -0.2em;
+  margin-left: 0.5rem;
+  background: #242B46;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 0.5rem;
+}
+#reason h2 strong .num {
+  font-size: 4.3rem;
+}
+#reason nav ul {
+  margin-top: 2.5rem;
+}
+#reason nav ul li {
+  margin-top: 0.8rem;
+}
+#reason nav ul li a {
+  height: 6rem;
+  background: #242B46 url(../../images/akewatashi/top/arrow_down_white.svg) calc(100% - 2rem) center no-repeat;
+  background-size: 1.4rem auto;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  color: #fff;
+  gap: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+#reason nav ul li a strong {
+  font-size: 120%;
+}
+#reason nav ul li a .num {
+  display: grid;
+  place-content: center;
+  background: #D9AA4F;
+  width: 4.4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+#reason .contents {
+  margin-top: 5rem;
+}
+#reason .contents ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#reason .contents ul li {
+  background: #242B46;
+  padding: 2.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+#reason .contents ul li .block_inner {
+  border-radius: 0.4rem;
+  background: #fff;
+  position: relative;
+  padding: 3rem 1.2rem 1.2rem;
+}
+#reason .contents ul li .block_inner .number {
+  display: grid;
+  place-content: center;
+  background: #D9AA4F;
+  width: 4.9rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#reason .contents ul li .block_inner .main h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 600;
+}
+#reason .contents ul li .block_inner .main h3 strong {
+  color: #A50133;
+}
+#reason .contents ul li .block_inner .main .body {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+#reason .contents ul li .block_inner figure {
+  margin-top: 1.2rem;
+  position: relative;
+}
+#reason .contents ul li .block_inner figure.yen0 {
+  margin: auto 1.5rem;
+}
+#reason .contents ul li .block_inner figure figcaption {
+  position: absolute;
+  top: -0.5rem;
+  left: -2rem;
+  width: 11rem;
+  aspect-ratio: 1/1;
+  background: #D9AA4F;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+}
+#reason .contents ul li .block_inner figure figcaption strong {
+  display: block;
+  font-size: 3.6rem;
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1;
+}
+#reason .contents ul li .block_inner figure figcaption strong.small {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+#reason .contents ul li .block_inner figure figcaption strong .num {
+  font-size: 5.5rem;
+}
+#reason .contents ul li .block_inner figure figcaption strong .over {
+  font-size: 1rem;
+  line-height: 1.1;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 0.1em;
+}
+#reason .contents ul li .block_inner figure figcaption .cases {
+  font-size: 1.6rem;
+}
+#reason .contents ul li .block_inner figure figcaption .cases .num {
+  font-size: 2.4rem;
+}
+@media only screen and (min-width: 768px) {
+  #reason {
+    background: url(../../images/akewatashi/top/reason_top_pc.svg) center 6rem no-repeat;
+    padding-top: 25rem;
+    padding-bottom: 9rem;
+  }
+  #reason h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 0.7;
+  }
+  #reason h2 .line_1 {
+    font-size: 3.2rem;
+    display: block;
+  }
+  #reason h2 .line_2 {
+    font-size: 4rem;
+  }
+  #reason h2 strong {
+    line-height: 1.2;
+    vertical-align: baseline;
+    position: relative;
+    bottom: 0em;
+    margin-left: 0.5rem;
+    background: #242B46;
+    font-size: 5rem;
+    padding: 0 2.5rem;
+  }
+  #reason h2 strong .num {
+    font-size: 8rem;
+  }
+  #reason nav ul {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem 3rem;
+  }
+  #reason nav ul li {
+    margin-top: auto;
+    width: 48.5rem;
+  }
+  #reason nav ul li a {
+    height: 11.6rem;
+    background: #242B46;
+    background-size: 1.4rem auto;
+    border-radius: 0.8rem;
+    padding-left: 2.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    gap: 2.5rem;
+    line-height: 1.3;
+    position: relative;
+    transition: 0.3s;
+  }
+  #reason nav ul li a strong {
+    font-size: 3rem;
+  }
+  #reason nav ul li a .num {
+    width: 7.6rem;
+    font-size: 3.4rem;
+  }
+  #reason nav ul li a::before {
+    transition: 0.3s;
+    content: "";
+    background: url(../../images/akewatashi/top/arrow_down_navy.svg) center center no-repeat;
+    background-size: 100% auto;
+    width: 1.4rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    filter: invert(100%) grayscale(100%) brightness(200%);
+  }
+  #reason nav ul li a:hover {
+    background: #DEE3EA;
+    color: #242B46;
+  }
+  #reason nav ul li a:hover::before {
+    filter: none;
+  }
+  #reason .contents {
+    margin-top: 6rem;
+  }
+  #reason .contents ul {
+    gap: 3rem;
+  }
+  #reason .contents ul li {
+    padding: 4.4rem 3.2rem;
+    border-radius: 0.8rem;
+  }
+  #reason .contents ul li .block_inner {
+    border-radius: 0.8rem;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #reason .contents ul li .block_inner .number {
+    margin-top: 0;
+    width: 8rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 3.4rem;
+    position: relative;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    transform: none;
+  }
+  #reason .contents ul li .block_inner .main {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 44.3rem;
+    padding: 2rem 3rem 0 2rem;
+  }
+  #reason .contents ul li .block_inner .main h3 {
+    font-size: 2.6rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+  #reason .contents ul li .block_inner .main h3 strong {
+    color: #A50133;
+  }
+  #reason .contents ul li .block_inner .main .body {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+  #reason .contents ul li .block_inner figure {
+    margin-top: 1.2rem;
+    position: static;
+    width: 33.2rem;
+    margin: 0;
+  }
+  #reason .contents ul li .block_inner figure.yen0 {
+    margin: auto;
+  }
+  #reason .contents ul li .block_inner figure figcaption {
+    position: absolute;
+    top: -6rem;
+    right: -2.5rem;
+    left: unset;
+    width: 13rem;
+    font-size: 1.6rem;
+  }
+  #reason .contents ul li .block_inner figure figcaption strong {
+    font-size: 4rem;
+  }
+  #reason .contents ul li .block_inner figure figcaption strong.small {
+    font-size: 2.8rem;
+  }
+  #reason .contents ul li .block_inner figure figcaption strong .num {
+    font-size: 6.6rem;
+  }
+  #reason .contents ul li .block_inner figure figcaption strong .over {
+    font-size: 1.2rem;
+    bottom: 0.1em;
+  }
+  #reason .contents ul li .block_inner figure figcaption .cases {
+    font-size: 1.6rem;
+  }
+  #reason .contents ul li .block_inner figure figcaption .cases .num {
+    font-size: 3rem;
+  }
+}
+
+#price {
+  background: #EDEDED;
+  padding: 8rem 0 4rem;
+}
+#price .inner {
+  background: #fff;
+  padding: 0 2.5rem 3rem;
+}
+#price .inner .heading {
+  background: #242B46;
+  color: #fff;
+  width: 20rem;
+  height: 7rem;
+  font-size: 2.2rem;
+  display: block;
+  margin: auto auto -1rem;
+  text-align: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  padding-top: 1.5rem;
+  transform: translateY(-2rem);
+}
+#price .inner .list .unit {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #242B46;
+}
+#price .inner .list .unit + .unit {
+  margin-top: 3rem;
+}
+#price .inner .list .unit .h_unit {
+  width: 12rem;
+  height: 3.4rem;
+  background: #242B46;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+          clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+#price .inner .list .unit p {
+  width: 16.6rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 0.7;
+  white-space: nowrap;
+}
+#price .inner .list .unit p .num {
+  font-size: 4.8rem;
+}
+#price .inner .list .unit p .yen {
+  font-size: 2.8rem;
+}
+#price .inner .list .unit p .tax {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+#price .inner .list .unit p.gold {
+  color: #D9AA4F;
+}
+#price .inner .list .unit p.gold .num {
+  font-size: 12rem;
+  font-family: "Shippori Mincho";
+}
+#price .inner .list .unit p.gold .yen {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+#price .inner .note {
+  margin-top: 1rem;
+}
+#price .inner .note li {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+  line-height: 1.3333333333;
+}
+@media only screen and (min-width: 768px) {
+  #price {
+    padding: 8rem 0 8rem;
+  }
+  #price .inner {
+    padding: 3rem 10rem 4rem;
+  }
+  #price .inner .heading {
+    width: 66rem;
+    height: 5.4rem;
+    font-size: 2.4rem;
+    margin: auto auto 5rem;
+    -webkit-clip-path: none;
+            clip-path: none;
+    padding-top: 0rem;
+    transform: none;
+    display: grid;
+    place-content: center;
+    border-radius: 3rem;
+  }
+  #price .inner .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #price .inner .list .unit {
+    width: 100%;
+    padding-bottom: 4.5rem;
+    gap: 1rem;
+  }
+  #price .inner .list .unit + .unit {
+    padding-bottom: 0;
+    padding-top: 3rem;
+    width: 50%;
+    margin-top: 0;
+    border-bottom: none;
+  }
+  #price .inner .list .unit + .unit + .unit {
+    border-left: 1px solid #242B46;
+  }
+  #price .inner .list .unit p {
+    width: auto;
+    text-align: center;
+  }
+  #price .inner .list .unit p .num {
+    font-size: 5rem;
+  }
+  #price .inner .list .unit p .yen {
+    font-size: 2.4rem;
+  }
+  #price .inner .list .unit p .tax {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  #price .inner .list .unit p.gold .num {
+    font-size: 18rem;
+  }
+  #price .inner .note {
+    margin-top: 5rem;
+  }
+  #price .inner .note li {
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+    text-indent: -1.4rem;
+    line-height: 1.5714285714;
+  }
+}
+
+#qa {
+  background: #EDEDED;
+  padding: 6rem 0 4rem;
+}
+#qa h2 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+#qa h2 .ja {
+  font-weight: bold;
+  display: block;
+}
+#qa h2 .en {
+  line-height: 1;
+  font-family: "Shippori Mincho";
+  font-weight: 800;
+}
+#qa h2 .en .q, #qa h2 .en .a {
+  font-size: 4.8rem;
+  color: #242B46;
+}
+#qa h2 .en .a {
+  color: #D9AA4F;
+}
+#qa .list {
+  margin-top: 3rem;
+}
+#qa .list .block {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(36, 43, 70, 0.5);
+}
+#qa .list .block .qa_inner {
+  display: flex;
+  padding-right: 4rem;
+  flex-wrap: nowrap;
+}
+#qa .list .block .qa_inner .qa {
+  font-size: 3.2rem;
+  width: 3.5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: "Shippori Mincho";
+  font-weight: bold;
+  position: relative;
+  bottom: 0.1em;
+}
+#qa .list .block .qa_inner .qa.a {
+  color: #D9AA4F;
+}
+#qa .list .block .qa_inner .main {
+  font-size: 1.5rem;
+  line-height: 1.5333333333;
+  font-weight: 300;
+  color: #000;
+}
+#qa .list .block .question {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+#qa .list .block .question .qa_inner {
+  align-items: center;
+}
+#qa .list .block .question .main {
+  font-weight: 600;
+  color: #242B46;
+}
+#qa .list .block .question::before, #qa .list .block .question::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #90949A;
+  width: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: 37%;
+}
+#qa .list .block .question::after {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+#qa .list .block .question.active::after {
+  transform: rotate(0deg);
+}
+#qa .list .block .answer {
+  display: none;
+  padding-bottom: 1.5rem;
+}
+@media print, screen and (min-width: 768px) {
+  #qa {
+    padding: 8rem 0 8rem;
+  }
+  #qa .inner {
+    width: 80rem;
+  }
+  #qa h2 {
+    font-size: 4.2rem;
+  }
+  #qa h2 .ja {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+  #qa h2 .en .q, #qa h2 .en .a {
+    font-size: 8.4rem;
+  }
+  #qa .list {
+    margin-top: 6rem;
+  }
+  #qa .list .block {
+    margin-top: 4rem;
+  }
+  #qa .list .block .qa_inner {
+    padding-right: 4.5rem;
+  }
+  #qa .list .block .qa_inner .qa {
+    bottom: 0em;
+  }
+  #qa .list .block .qa_inner .main {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  #qa .list .block .question {
+    padding-bottom: 2rem;
+  }
+  #qa .list .block .question .qa_inner {
+    align-items: center;
+  }
+  #qa .list .block .question .main {
+    font-size: 20px;
+  }
+  #qa .list .block .question::before, #qa .list .block .question::after {
+    height: 3px;
+    width: 1.6rem;
+    position: absolute;
+    right: 0;
+    top: 27%;
+  }
+  #qa .list .block .answer {
+    padding-bottom: 2rem;
+  }
+}
+/* 
+.contact {
+  background-color: #fff;
+}
+.contact .heading {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background-color: #242B46;
+  font-size: 1.6rem;
+  line-height: 1.375;
+}
+.contact .heading:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: #242B46 transparent transparent transparent;
+}
+.contact .roma {
+  display: inline-block;
+  font-family: "Shippori Mincho";
+  color: #DEB713;
+  font-weight: 500;
+}
+.contact .emphasis {
+  font-family: "Shippori Mincho";
+}
+.contact .itemTitle, .contact .post {
+  font-size: 1.6rem;
+  color: #1D1D1D;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.contact .badge {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.contact .badge.require {
+  background-color: #A50133;
+}
+.contact .badge.free {
+  background-color: #1B7ABF;
+}
+.contact .itemData {
+  display: flex;
+  flex-direction: column;
+}
+.contact .input {
+  width: 100%;
+  display: inline-block;
+  background-color: #F5F5F5;
+  color: #242B46;
+}
+.contact .input::-moz-placeholder {
+  opacity: 0.5;
+}
+.contact .input::placeholder {
+  opacity: 0.5;
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+}
+.contact .radioGroup {
+  display: flex;
+  overflow: hidden;
+}
+.contact .radioWrap {
+  width: 50%;
+}
+.contact input[type=radio] {
+  display: none;
+}
+.contact .label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: NotoSansJp_700, sans-serif;
+  background-color: #fff;
+}
+.contact input[type=radio]:checked + label {
+  background: #242B46;
+  color: #ffffff;
+}
+.contact .textarea {
+  width: 100%;
+  resize: none;
+  background-color: #F5F5F5;
+}
+.contact .textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+.contact .textarea::placeholder {
+  opacity: 0.5;
+}
+.contact .btn {
+  width: 100%;
+  font-family: NotoSansJp_700, sans-serif;
+}
+.contact .formError {
+  opacity: 1 !important;
+  position: unset !important;
+  top: unset !important;
+  left: unset !important;
+  right: unset !important;
+  margin-top: auto !important;
+  font-size: 14px;
+  order: 2;
+  color: #A50133;
+  padding-top: 0.5em;
+}
+@media print, screen and (min-width: 768px) {
+  .contact {
+    padding-top: 8rem;
+    padding-bottom: 0;
+  }
+  .contact .inner {
+    padding: 5rem 0 0;
+    width: 64rem;
+  }
+  .contact .btn {
+    width: 60rem;
+    font-size: 2.4rem;
+    height: 6rem;
+    margin: auto;
+  }
+  .contact .formError {
+    font-size: 1.6rem;
+    margin-top: 0.5em;
+  }
+}
+
+.contact .heading {
+  padding: 2rem 0;
+}
+.contact .heading:after {
+  bottom: -1.2rem;
+  border-width: 1.3rem 1.6rem 0 1.6rem;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .heading {
+    padding: 2rem 0 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 64rem;
+    margin: auto;
+  }
+  .contact .heading:after {
+    bottom: -1.1rem;
+    border: none;
+    background: #242B46;
+    width: 2rem;
+    height: 1.3rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+}
+
+.contact .roma {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .roma {
+    font-size: 3.6rem;
+  }
+}
+
+.contact .emphasis.large {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .emphasis.large {
+    font-size: 6rem;
+  }
+}
+
+.contact .form {
+  padding: 5rem 0 8rem;
+}
+
+.contact .item:nth-child(n+2) {
+  margin-top: 2rem;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .item:nth-child(n+2) {
+    margin-top: 3rem;
+  }
+}
+
+.contact .city {
+  font-size: 1.4rem;
+}
+
+.contact .badge {
+  margin-left: 1rem;
+  padding: 0.2rem 0.7rem;
+  transform: translateY(-0.1rem);
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.contact .itemData {
+  margin-top: 1rem;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .itemData {
+    margin-top: 2rem;
+  }
+}
+
+.contact .input {
+  height: 5.3rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+.contact .input.short {
+  width: 21rem;
+  margin-left: 0.8rem;
+}
+.contact .input.medium {
+  width: 100%;
+  margin: 0.8rem 0 0 2.4rem;
+}
+@media print, screen and (min-width: 768px) {
+  .contact .input {
+    font-size: 1.6rem;
+  }
+  .contact .input.short {
+    width: 54rem;
+    margin-left: 0.8rem;
+  }
+}
+
+.contact .radioGroup {
+  border-radius: 0.4rem;
+}
+
+.contact .label {
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.contact .textarea {
+  height: 18rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact .btnWrap {
+    margin: 48px auto 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .contact .btnWrap {
+    max-width: 270px;
+    margin: 24px auto 0;
+  }
+}
+.contact .btn {
+  height: 5.4rem;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+@media only screen and (min-width: 768px) {
+  .contact .btn {
+    width: 33rem;
+    height: 7rem;
+  }
+} */
+
+/* .office {
+  padding-bottom: 3rem;
+}
+.office .heading {
+  text-align: center;
+  color: #fff;
+  background-color: #242B46;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.office .name {
+  text-align: center;
+  background: url("../../images/akewatashi/top/line3.svg") repeat-x left top/100%;
+  font-weight: bold;
+  display: block;
+}
+.office .todoke {
+  text-align: center;
+  font-size: 75%;
+  font-weight: normal;
+}
+.office .item {
+  text-align: center;
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  .office .item {
+    width: 28rem;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  .office .item:not(:last-child) {
+    border-bottom: 1px dotted #A7A7A7;
+  }
+}
+.office .itemTitle {
+  font-weight: bold;
+}
+.office .representative {
+  line-height: 1.35;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.office .address {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 400 !important;
+}
+@media print, screen and (min-width: 768px) {
+  .office {
+    padding-top: 0;
+    padding-bottom: 7.5rem;
+  }
+  .office .heading {
+    width: 100rem;
+    font-size: 1.8rem;
+    margin: auto auto 5rem;
+  }
+  .office .top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 2.5rem;
+    gap: 8rem;
+    background-image: linear-gradient(to right, #A7A7A7 1px, transparent 3px);
+    background-size: 6px 2px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+  }
+  .office .name {
+    background: none;
+    line-height: 1.5;
+  }
+  .office .item {
+    text-align: center;
+  }
+  .office .itemTitle {
+    font-weight: bold;
+  }
+  .office .representative {
+    line-height: 1.35;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .office .address {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 400 !important;
+  }
+}
+
+.office .heading {
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  .office .logoWrap {
+    max-width: 240px;
+    margin: 24px auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .office .logoWrap {
+    width: 30rem;
+    max-width: 30rem;
+    margin: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  .office .name {
+    text-align: left;
+    max-width: unset;
+    margin: unset;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .office .name {
+    max-width: 320px;
+    margin: 24px auto 0;
+    padding-top: 30px;
+    font-size: 18px;
+  }
+  .office .list {
+    margin-top: 25px;
+  }
+  .office .item:nth-child(n+2) {
+    margin-top: 32px;
+  }
+  .office .itemTitle {
+    font-size: 18px;
+  }
+  .office .representative {
+    margin-top: 14px;
+  }
+  .office .address {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .office .list {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 0;
+    text-align: left;
+  }
+  .office .list .item {
+    width: 50%;
+  }
+  .office .list .itemTitle {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .office .list .representative {
+    text-align: left;
+    margin-top: 1.6rem;
+  }
+  .office .list .address {
+    text-align: left;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+  }
+} */
+.pop {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: opacity 0.4s, visibility 0.4s;
+  background-color: #646464;
+  text-align: center;
+}
+.pop.is-show {
+  visibility: visible;
+  opacity: 1;
+}
+.pop .overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop .box {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: #fff;
+  max-height: 90vh;
+}
+.pop .box::-webkit-scrollbar {
+  display: none;
+}
+.pop .question {
+  text-align: center;
+  display: inline-block;
+  margin: 2.5rem auto auto;
+  background: #242B46;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  padding: 0 1.6rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  position: relative;
+}
+.pop .question::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 0.8rem;
+  background: #242B46;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(50%, calc(100% - 1px));
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.pop .comment {
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-family: "Shippori Mincho";
+  color: #D9AA4F;
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.pop .comment strong {
+  display: inline-block;
+  border-bottom: 1px solid #D9AA4F;
+  padding-top: 0.1rem;
+  font-weight: inherit;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.pop .text {
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+.pop .emphasis {
+  color: #A50133;
+}
+.pop .btnGroup {
+  position: relative;
+  z-index: 2;
+}
+.pop .btn {
+  font-weight: 700;
+  font-family: NotoSansJp_700, sans-serif;
+}
+.pop .btn.navy2, .pop .btn.green {
+  justify-content: flex-start;
+}
+.pop .btn.navy3 {
+  position: relative;
+  border-radius: 100px;
+}
+.pop .btn.navy3:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../img/common/icon_arrow.svg") no-repeat center/contain;
+}
+.pop .iconWrap {
+  display: inline-block;
+}
+.pop .number {
+  line-height: 1;
+  display: block;
+  text-align: center;
+  font-family: oswald_700, sans-serif;
+}
+.pop .action {
+  display: block;
+  font-family: NotoSansJp_700, sans-serif;
+}
+.pop .action:before {
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+.pop ul {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem 0.8rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop ul li a {
+  color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 0 #845E13;
+  background: #D9AA4F;
+  height: 5rem;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4285714286;
+  text-align: left;
+  gap: 1rem;
+}
+.pop ul li a .icon {
+  width: 2.4rem;
+}
+.pop ul li a .txt {
+  width: 11em;
+}
+.pop ul li.line a {
+  box-shadow: 0 0.4rem 0 #01A344;
+  background: #06C755;
+}
+.pop ul li.line a .icon {
+  width: 2.6rem;
+}
+.pop ul li.tel {
+  width: 100%;
+}
+.pop ul li.tel a {
+  background: #A50133 url(../../images/akewatashi/top/arrow_line_right.svg) calc(100% - 1rem) center/0.7rem auto no-repeat;
+  box-shadow: 0 0.6rem 0 #6A122C;
+  width: 100%;
+  height: 8rem;
+  font-size: 2.2rem;
+  gap: 2rem;
+  padding-right: 0;
+}
+.pop ul li.tel a .small {
+  font-size: 1.4rem;
+}
+.pop ul li.tel a .icon {
+  width: 2.8rem;
+}
+.pop ul li.tel .casual {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #242B46;
+}
+.pop .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #242B46;
+}
+.pop .bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  background-color: #fff;
+}
+.pop .bar:first-child, .pop .bar:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.pop .box {
+  max-width: 34rem;
+  padding: 1.6rem 1.6rem 3.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .pop .logoWrap {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .logoWrap {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .marker.red {
+    padding-bottom: 28px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .marker.yellow {
+    letter-spacing: -0.08em;
+  }
+  .pop .marker.red {
+    padding-bottom: 14px;
+    letter-spacing: -0.02em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .btnGroup {
+    margin-top: 68px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .btnGroup {
+    margin-top: 34px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .btnWrap.mail {
+    width: 480px;
+    margin: 24px auto 0;
+  }
+  .pop .btnWrap.line {
+    width: 480px;
+    margin: 28px auto 0;
+  }
+  .pop .btnWrap.exclusive {
+    width: 480px;
+    margin: 20px auto 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .btnWrap.mail {
+    width: 240px;
+    margin: 12px auto 0;
+  }
+  .pop .btnWrap.line {
+    width: 240px;
+    margin: 14px auto 0;
+  }
+  .pop .btnWrap.exclusive {
+    width: 240px;
+    margin: 10px auto 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .btn {
+    border-radius: 8px;
+  }
+  .pop .btn.red {
+    height: 140px;
+    font-size: 50px;
+    box-shadow: 0 8px 0 #8E0E0E;
+  }
+  .pop .btn.navy2 {
+    height: 100px;
+    padding: 0 24px;
+    box-shadow: 0 8px 0 #1A316C;
+  }
+  .pop .btn.green {
+    height: 100px;
+    padding: 0 24px;
+    box-shadow: 0 8px 0 #01A243;
+  }
+  .pop .btn.navy3 {
+    height: 80px;
+    border: 2px solid #242B46;
+  }
+  .pop .btn.navy3:after {
+    width: 14px;
+    height: 18px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .btn {
+    border-radius: 4px;
+  }
+  .pop .btn.red {
+    height: 70px;
+    font-size: 25px;
+    box-shadow: 0 4px 0 #8E0E0E;
+  }
+  .pop .btn.navy2 {
+    height: 50px;
+    padding: 0 12px;
+    box-shadow: 0 4px 0 #1A316C;
+  }
+  .pop .btn.green {
+    height: 50px;
+    padding: 0 12px;
+    box-shadow: 0 4px 0 #01A243;
+  }
+  .pop .btn.navy3 {
+    height: 40px;
+    border: 1px solid #242B46;
+  }
+  .pop .btn.navy3:after {
+    width: 7px;
+    height: 9px;
+    right: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .iconWrap.tel {
+    width: 84px;
+    margin-right: 56px;
+  }
+  .pop .iconWrap.mail {
+    width: 60px;
+    margin-right: 70px;
+  }
+  .pop .iconWrap.line {
+    width: 60px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .iconWrap.tel {
+    width: 42px;
+    margin-right: 28px;
+  }
+  .pop .iconWrap.mail {
+    width: 30px;
+    margin-right: 35px;
+  }
+  .pop .iconWrap.line {
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .number {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .number {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .action {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .pop .action:before {
+    margin-right: 16px;
+    border-width: 10px 0 10px 17.4px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .action {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .pop .action:before {
+    margin-right: 8px;
+    border-width: 5px 0 5px 8.7px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .info {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .close {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .close {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pop .bar:first-child {
+    width: 4px;
+    height: 39px;
+  }
+  .pop .bar:nth-child(2) {
+    width: 39px;
+    height: 4px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pop .bar:first-child {
+    width: 2px;
+    height: 20px;
+  }
+  .pop .bar:nth-child(2) {
+    width: 20px;
+    height: 2px;
+  }
+}
+:root {
+  --bai2: 1;
+}
+@media (width < 1024px) {
+  :root {
+    --bai2: 1.5;
+  }
+}
+
+.fixed {
+  max-width: 767px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: #242B46;
+  color: #fff;
+  padding: min(1em, 14px) 0 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+.fixed .catchcopy {
+  text-align: center;
+  font-weight: 500;
+  font-size: min(1.4rem, 19.6px);
+}
+.fixed ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: min(1rem, 14px);
+  gap: 0;
+}
+.fixed ul li {
+  height: min(6.4rem, 89.6px);
+  height: 7.5rem;
+  background: #D9AA4F;
+}
+.fixed ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.fixed ul .mail {
+  width: 7.5rem;
+}
+.fixed ul .mail img {
+  width: 3.1rem;
+}
+.fixed ul .tel {
+  background: #A50133;
+  width: calc(100% - 7.5rem);
+}
+.fixed ul .tel a {
+  height: 100%;
+  gap: 1rem;
+  font-weight: bold;
+}
+.fixed ul .tel a img {
+  width: min(2.6rem, 36.4px);
+  width: 3.1rem;
+}
+.fixed ul .tel a .large {
+  font-size: min(2.2rem, 30.8px);
+}
+.fixed ul .tel a .small {
+  font-size: min(1.4rem, 19.6px);
+  margin-top: min(0.4rem, 5.6px);
+  font-weight: normal;
+}
+.fixed .fixed_inner._pc .catchcopy {
+  font-size: calc(var(--bai2) * 1rem);
+  font-size: 2.6rem;
+  padding-top: calc(var(--bai2) * 0.3rem);
+}
+.fixed .fixed_inner._pc .catchcopy .small {
+  font-size: 85%;
+  text-align: left;
+}
+.fixed .fixed_inner._pc ul li {
+  height: calc(var(--bai2) * 2.75rem);
+}
+.fixed .fixed_inner._pc ul .mail {
+  width: calc(var(--bai2) * 2.75rem);
+}
+.fixed .fixed_inner._pc ul .mail a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.fixed .fixed_inner._pc ul .mail a figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.fixed .fixed_inner._pc ul .mail a img {
+  width: calc(var(--bai2) * 1.5rem);
+}
+.fixed .fixed_inner._pc ul .tel {
+  width: calc(var(--bai2) * 32rem);
+}
+.fixed .fixed_inner._pc ul .tel a figure img {
+  width: calc(var(--bai2) * 1.5rem);
+}
+.fixed .fixed_inner._pc ul .tel a .txt {
+  display: flex;
+  gap: calc(var(--bai2) * 1rem);
+}
+.fixed .fixed_inner._pc ul .tel a .txt .large {
+  font-size: calc(var(--bai2) * 1.4rem);
+}
+.fixed .fixed_inner._pc ul .tel a .txt .num {
+  font-size: calc(var(--bai2) * 1.4rem);
+}
+@media print, screen and (min-width: 768px) {
+  .fixed {
+    max-width: unset;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    background: #242B46;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  }
+  .fixed .fixed_inner._pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fixed .fixed_inner._pc .catchcopy {
+    font-size: 2.6rem;
+    padding-top: unset;
+    padding-right: 3rem;
+    text-align: left;
+  }
+  .fixed .fixed_inner._pc .catchcopy .small {
+    font-size: 2rem;
+  }
+  .fixed .fixed_inner._pc ul {
+    gap: 2rem;
+  }
+  .fixed .fixed_inner._pc ul li {
+    height: 7.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  .fixed .fixed_inner._pc ul li:hover {
+    opacity: 0.7;
+  }
+  .fixed .fixed_inner._pc ul .tel {
+    width: unset;
+  }
+  .fixed .fixed_inner._pc ul .tel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .fixed .fixed_inner._pc ul .tel a figure img {
+    width: 3.1rem;
+  }
+  .fixed .fixed_inner._pc ul .tel a .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .fixed .fixed_inner._pc ul .tel a .txt .large {
+    font-size: 1.8rem;
+    position: relative;
+    top: -0.1em;
+  }
+  .fixed .fixed_inner._pc ul .tel a .txt .num {
+    position: relative;
+    top: -0.09em;
+    font-size: 4rem;
+  }
+  .fixed .fixed_inner._pc ul .mail {
+    width: unset;
+    background: #A8A58F;
+  }
+  .fixed .fixed_inner._pc ul .mail a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0 4rem 0 2rem;
+    gap: 2rem;
+    background: url(../../images/akewatashi/top/arrow_right_white.svg) calc(100% - 2rem) center no-repeat;
+  }
+  .fixed .fixed_inner._pc ul .mail a figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+  .fixed .fixed_inner._pc ul .mail a img {
+    width: 2.8rem;
+  }
+  .fixed .fixed_inner._pc ul .mail a p {
+    font-size: 1.8rem;
+  }
+}
+
+.thanks {
+  padding: 9rem 0;
+}
+
+.thanks .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Shippori Mincho";
+  font-weight: 600;
+}
+
+.thanks .text {
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+
+.thanks .btnWrap {
+  max-width: 27rem;
+  margin: 4rem auto 0;
+}
+
+.thanks .btn {
+  width: 100%;
+}
+
+.thanks .btn {
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  background: #D9AA4F;
+  color: #fff;
+  box-shadow: 0 4px 0 #845E13;
+  font-weight: 500;
+}
+/*# sourceMappingURL=page.css.map */
+
+
+/* 2025_12_18 add */
+.large {
+  font-size: 100%;
+}
+header {
+  position: fixed;
+  z-index: 9999;
+}
+.t-page-h1 {
+  margin-top: 115px;
+}
+@media screen and (max-width: 768px) {
+  .t-page-h1 {
+    margin-top: 62px;
+  }
+}

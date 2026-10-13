@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+@media print, screen and (min-width: 768px) {
+  ._sp:not(._pc) {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  ._pc:not(._sp) {
+    display: none !important;
+  }
+}
+.tachinoki-price .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: min(6.9230769231vw, 51.9230769231px);
+  width: 100%;
+  margin-top: 35px;
+}
+.tachinoki-price .feature li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.26rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-align: center;
+  width: min(26.6666666667vw, 200px);
+  height: auto;
+  aspect-ratio: 1/1;
+  background: #B28F4A;
+  padding-top: 0;
+  border-radius: 50%;
+}
+.tachinoki-price .feature li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.97);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .tachinoki-price .feature {
+    width: unset;
+    gap: 9rem;
+    padding-top: 0;
+    margin-top: 6.7rem;
+  }
+  .tachinoki-price .feature li {
+    font-size: 3.2rem;
+    width: 24rem;
+  }
+}
+.tachinoki-price .t_reason {
+  padding: 0;
+  margin-top: 7rem;
+  background: #fff;
+}
+.tachinoki-price .t_reason .main {
+  margin: 0;
+}
+.tachinoki-price .t_reason .main .block {
+  margin-top: 0;
+}
+.tachinoki-price .t_reason .main .block:first-child {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .tachinoki-price .t_reason {
+    margin-top: 3.6rem;
+  }
+  .tachinoki-price .t_reason .main .block + .block {
+    margin-top: 4rem;
+  }
+}
+
+.akewatashi-price .regular {
+  padding: 0 0 40px;
+}
+.akewatashi-price .regular .text_block {
+  font-size: 15px;
+}
+.akewatashi-price .regular .text_block p {
+  line-height: 1.6666;
+}
+@media screen and (max-width: 767px) {
+  .akewatashi-price .regular {
+    padding: 25px 0 60px;
+  }
+  .akewatashi-price .regular .cost_tbl tr {
+    display: block;
+    width: 100%;
+  }
+  .akewatashi-price .regular .cost_tbl th, .akewatashi-price .regular .cost_tbl td {
+    display: block;
+    width: 100%;
+  }
+}
+.akewatashi-price .top-price {
+  background: #EDEDED;
+  padding: 8rem 1rem 4rem;
+}
+.akewatashi-price .top-price .inner {
+  background: #fff;
+  padding: 0 2.5rem 3rem;
+}
+.akewatashi-price .top-price .inner .heading {
+  background: #242B46;
+  color: #fff;
+  width: 20rem;
+  height: 7rem;
+  font-size: 2.2rem;
+  display: block;
+  margin: auto auto -1rem;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  padding-top: 1.5rem;
+  transform: translateY(-2rem);
+}
+.akewatashi-price .top-price .inner .list .unit {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #242B46;
+}
+.akewatashi-price .top-price .inner .list .unit + .unit {
+  margin-top: 3rem;
+}
+.akewatashi-price .top-price .inner .list .unit .h_unit {
+  width: 12rem;
+  height: 3.4rem;
+  background: #242B46;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: grid;
+  place-content: center;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+.akewatashi-price .top-price .inner .list .unit p {
+  width: 16.6rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 0.7;
+  white-space: nowrap;
+}
+.akewatashi-price .top-price .inner .list .unit p .num {
+  font-size: 4.8rem;
+}
+.akewatashi-price .top-price .inner .list .unit p .yen {
+  font-size: 2.8rem;
+}
+.akewatashi-price .top-price .inner .list .unit p .tax {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.akewatashi-price .top-price .inner .list .unit p.gold {
+  color: #D9AA4F;
+}
+.akewatashi-price .top-price .inner .list .unit p.gold .num {
+  font-size: 12rem;
+  font-family: "Shippori Mincho";
+}
+.akewatashi-price .top-price .inner .list .unit p.gold .yen {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.akewatashi-price .top-price .inner .note {
+  margin-top: 1rem;
+}
+.akewatashi-price .top-price .inner .note li {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+  line-height: 1.3333333333;
+}
+@media only screen and (min-width: 768px) {
+  .akewatashi-price .top-price {
+    padding: 8rem 0 8rem;
+  }
+  .akewatashi-price .top-price .inner {
+    padding: 3rem 10rem 4rem;
+  }
+  .akewatashi-price .top-price .inner .heading {
+    width: 66rem;
+    height: 5.4rem;
+    font-size: 2.4rem;
+    margin: auto auto 5rem;
+    clip-path: none;
+    padding-top: 0rem;
+    transform: none;
+    display: grid;
+    place-content: center;
+    border-radius: 3rem;
+  }
+  .akewatashi-price .top-price .inner .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .akewatashi-price .top-price .inner .list .unit {
+    width: 100%;
+    padding-bottom: 4.5rem;
+    gap: 1rem;
+  }
+  .akewatashi-price .top-price .inner .list .unit + .unit {
+    padding-bottom: 0;
+    padding-top: 3rem;
+    width: 50%;
+    margin-top: 0;
+    border-bottom: none;
+  }
+  .akewatashi-price .top-price .inner .list .unit + .unit + .unit {
+    border-left: 1px solid #242B46;
+  }
+  .akewatashi-price .top-price .inner .list .unit p {
+    width: auto;
+    text-align: center;
+  }
+  .akewatashi-price .top-price .inner .list .unit p .num {
+    font-size: 5rem;
+  }
+  .akewatashi-price .top-price .inner .list .unit p .yen {
+    font-size: 2.4rem;
+  }
+  .akewatashi-price .top-price .inner .list .unit p .tax {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  .akewatashi-price .top-price .inner .list .unit p.gold .num {
+    font-size: 18rem;
+  }
+  .akewatashi-price .top-price .inner .note {
+    margin-top: 5rem;
+  }
+  .akewatashi-price .top-price .inner .note li {
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+    text-indent: -1.4rem;
+    line-height: 1.5714285714;
+  }
+}
+.akewatashi-price .top-reason .inner {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.akewatashi-price .top-reason .contents {
+  margin-top: 5rem;
+}
+.akewatashi-price .top-reason .contents ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.akewatashi-price .top-reason .contents ul li {
+  background: #242B46;
+  padding: 2.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner {
+  border-radius: 0.4rem;
+  background: #fff;
+  position: relative;
+  padding: 3rem 1.2rem 1.2rem;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner .number {
+  display: grid;
+  place-content: center;
+  background: #D9AA4F;
+  width: 4.9rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.akewatashi-price .top-reason .contents ul li .block_inner .main h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 600;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner .main h3 strong {
+  color: #A50133;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner .main .body {
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure {
+  margin-top: 1.2rem;
+  position: relative;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure.yen0 {
+  margin: auto 1.5rem;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption {
+  position: absolute;
+  top: -0.5rem;
+  left: -2rem;
+  width: 11rem;
+  aspect-ratio: 1/1;
+  background: #D9AA4F;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong {
+  display: block;
+  font-size: 3.6rem;
+  font-family: "Noto Serif JP", serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong.small {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong .num {
+  font-size: 5.5rem;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong .over {
+  font-size: 1rem;
+  line-height: 1.1;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 0.1em;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption .cases {
+  font-size: 1.6rem;
+}
+.akewatashi-price .top-reason .contents ul li .block_inner figure figcaption .cases .num {
+  font-size: 2.4rem;
+}
+@media only screen and (min-width: 768px) {
+  .akewatashi-price .top-reason .contents {
+    margin-top: 6rem;
+  }
+  .akewatashi-price .top-reason .contents ul {
+    gap: 3rem;
+  }
+  .akewatashi-price .top-reason .contents ul li {
+    padding: 4.4rem 3.2rem;
+    border-radius: 0.8rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner {
+    border-radius: 0.8rem;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner .number {
+    margin-top: 0;
+    width: 8rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 3.4rem;
+    position: relative;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    transform: none;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner .main {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 44.3rem;
+    padding: 2rem 1rem 0 5rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner .main h3 {
+    font-size: 2.6rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner .main h3 strong {
+    color: #A50133;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner .main .body {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure {
+    margin-top: 1.2rem;
+    position: static;
+    width: 33.2rem;
+    margin: 0;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure.yen0 {
+    margin: auto;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption {
+    position: absolute;
+    top: -6rem;
+    right: -2.5rem;
+    left: unset;
+    width: 13rem;
+    font-size: 1.6rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong {
+    font-size: 4rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong.small {
+    font-size: 2.8rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong .num {
+    font-size: 6.6rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption strong .over {
+    font-size: 1.2rem;
+    bottom: 0.1em;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption .cases {
+    font-size: 1.6rem;
+  }
+  .akewatashi-price .top-reason .contents ul li .block_inner figure figcaption .cases .num {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=t_price.css.map */

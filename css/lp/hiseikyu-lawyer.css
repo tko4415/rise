@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+
+.lp-hiseikyu-lawyer {
+  color: #292929;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.lp-hiseikyu-lawyer__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.lp-hiseikyu-lawyer__office {
+  background: #f1f1f1;
+  padding: 80px 0 40px;
+}
+
+.lp-hiseikyu-lawyer__list {
+  margin: 0;
+  padding: 50px;
+  list-style: none;
+  background: #fff;
+}
+
+.lp-hiseikyu-lawyer__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lp-hiseikyu-lawyer__item + .lp-hiseikyu-lawyer__item {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f1f1;
+}
+
+.lp-hiseikyu-lawyer__profile {
+  flex: 0 0 350px;
+  padding-right: 50px;
+}
+
+.lp-hiseikyu-lawyer__name {
+  display: flex;
+  align-items: center;
+  margin: 0 0 22px;
+  min-height: 40px;
+}
+
+.lp-hiseikyu-lawyer__name .pos {
+  flex: 0 0 105px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.lp-hiseikyu-lawyer__name .nm {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.lp-hiseikyu-lawyer__bar {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 25px;
+}
+
+.lp-hiseikyu-lawyer__profile figure {
+  margin: 22px 0 0;
+}
+
+.lp-hiseikyu-lawyer__profile img {
+  display: block;
+  width: 196px;
+  height: auto;
+}
+
+.lp-hiseikyu-lawyer__career {
+  flex: 1 1 550px;
+  padding-top: 4px;
+}
+
+.lp-hiseikyu-lawyer__career h3 {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23.33px;
+  color: #9d2a31;
+}
+
+.lp-hiseikyu-lawyer__career dl {
+  margin: 0;
+}
+
+.lp-hiseikyu-lawyer__career .row {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+.lp-hiseikyu-lawyer__career dt {
+  flex: 0 0 80px;
+  padding-top: 3px;
+  font-size: 13px;
+  font-weight: 350;
+  line-height: 21.67px;
+  color: #292929;
+}
+
+.lp-hiseikyu-lawyer__career dd {
+  flex: 1 1 auto;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 25px;
+  color: #292929;
+}
+
+.lp-hiseikyu-lawyer__career .row:last-child dd {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .lp-hiseikyu-lawyer__inner {
+    padding: 0 25px;
+  }
+
+  .lp-hiseikyu-lawyer__office {
+    padding: 60px 0 40px;
+  }
+
+  .lp-hiseikyu-lawyer__list {
+    padding: 25px;
+  }
+
+  .lp-hiseikyu-lawyer__item {
+    display: block;
+  }
+
+  .lp-hiseikyu-lawyer__item + .lp-hiseikyu-lawyer__item {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+  }
+
+  .lp-hiseikyu-lawyer__profile {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .lp-hiseikyu-lawyer__name {
+    margin-bottom: 20px;
+  }
+
+  .lp-hiseikyu-lawyer__name .pos {
+    flex: 0 0 98px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .lp-hiseikyu-lawyer__name .nm {
+    font-size: 21px;
+    line-height: 35px;
+  }
+
+  .lp-hiseikyu-lawyer__bar {
+    font-size: 14px;
+    line-height: 23.5px;
+  }
+
+  .lp-hiseikyu-lawyer__profile figure {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+  }
+
+  .lp-hiseikyu-lawyer__profile img {
+    width: 156px;
+    margin: 0 auto;
+  }
+
+  .lp-hiseikyu-lawyer__career {
+    flex: none;
+    width: 100%;
+    padding-top: 29px;
+  }
+
+  .lp-hiseikyu-lawyer__career h3 {
+    margin-bottom: 15px;
+  }
+
+  .lp-hiseikyu-lawyer__career .row {
+    display: block;
+  }
+
+  .lp-hiseikyu-lawyer__career dt {
+    display: block;
+    width: 100%;
+    padding-top: 14px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .lp-hiseikyu-lawyer__career .row:first-child dt {
+    padding-top: 0;
+  }
+
+  .lp-hiseikyu-lawyer__career .row:first-child dt:empty {
+    display: none;
+  }
+
+  .lp-hiseikyu-lawyer__career dd {
+    display: block;
+    padding: 4px 0 0;
+    font-size: 14px;
+    line-height: 23.5px;
+  }
+}

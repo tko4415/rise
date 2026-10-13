@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_45231" data-name="長方形 45231" width="81.761" height="77" fill="none" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="service_3" transform="translate(531 -5514)">
+    <rect id="長方形_45235" data-name="長方形 45235" width="82" height="82" transform="translate(-531 5514)" fill="#fff" opacity="0"/>
+    <g id="グループ_80329" data-name="グループ 80329" transform="translate(-531 5517)" clip-path="url(#clip-path)">
+      <path id="パス_42838" data-name="パス 42838" d="M164.038,91.575c-4.358,5.075-9.345,8.749-18.549,14.145a.176.176,0,0,0-.083.195c3.012,12.75-.985,25.113-3.294,37.569a.178.178,0,0,0,.329.122L159.8,113.531a.175.175,0,0,0-.006-.188,3.441,3.441,0,1,1,2.636,1.522.175.175,0,0,0-.166.089l-17.051,29.533a.178.178,0,0,0,.277.218c8.877-8.449,16.229-18.552,30.547-21.1a.177.177,0,0,0,.147-.177c-.1-11.117.579-17.344,2.678-23.29a.177.177,0,0,0-.079-.214l-14.525-8.386a.177.177,0,0,0-.224.038" transform="translate(-113.115 -72.841)" fill="#d9a94f" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+      <path id="パス_42839" data-name="パス 42839" d="M270.31,46.334l-2.938-1.7h0l-12.695-7.329h0l-2.709-1.564-.009,0-.075-.04a.777.777,0,0,0-1.047.283l-3.754,6.5h0a.79.79,0,0,0,.23,1.017l.016.01.039.021,0,0,2.225,1.284h0l13.68,7.9h0l2.508,1.448a.777.777,0,0,0,1.046-.282l3.754-6.5h0a.771.771,0,0,0,.069-.582.76.76,0,0,0-.349-.467" transform="translate(-196.593 -28.337)" fill="#252b46" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+      <path id="パス_42840" data-name="パス 42840" d="M1.427,366.281a1.426,1.426,0,0,1,0-2.852H80.336a1.426,1.426,0,0,1,0,2.852Z" transform="translate(-0.001 -289.281)" fill="#252b46" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+      <path id="パス_42841" data-name="パス 42841" d="M294.681,1.409c-1.069,1.767-2.057,3.4-2.989,4.91a.179.179,0,0,0,.063.248l12.562,7.253a.178.178,0,0,0,.244-.067c.864-1.534,1.8-3.181,2.815-4.978a2.925,2.925,0,0,0-1.083-3.964L298.639.391a2.923,2.923,0,0,0-3.958,1.017" transform="translate(-232.158 -0.001)" fill="#252b46" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

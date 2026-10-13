@@ -1,0 +1,2997 @@
+@charset "UTF-8";
+/* @import "reset.css"; */
+@media screen and (min-width:750px) {
+  .pc {
+    display: inherit !important;
+  }
+}
+@media screen and (max-width:749px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width:750px) {
+  .sp {
+    display: none !important;
+  }
+}
+@media screen and (max-width:749px) {
+  .sp {
+    display: inherit !important;
+  }
+}
+
+.scrollin {
+  transition: opacity 0.8s ease-in-out, transform 0.9s ease-in-out;
+}
+.scrollin:not(.on) {
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+/*基*/
+/*薄い*/
+/*基*/
+/*固定メールボタン*/
+/*中間*/
+/*薄い*/
+.en {
+  font-family: "Jost", sans-serif;
+}
+
+.gothic {
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+  font-weight: 500;
+}
+
+.or {
+  color: #F29B11;
+  font-weight: 700;
+}
+
+.lts {
+  letter-spacing: normal;
+}
+
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+  font-size: 62.5%;
+  line-break: strict;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background: #fff;
+  color: #25242E;
+  overflow-x: hidden;
+  vertical-align: baseline;
+}
+@media screen and (max-width:749px) {
+  html,
+  body {
+    font-size: 31.25%;
+  }
+}
+@media screen and (min-width: 750px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+
+h2.b-or {
+  position: relative;
+  text-align: center;
+  padding-bottom: 2.8rem;
+}
+h2.b-or:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 6rem;
+  height: 0.6rem;
+  background: #F29B11;
+}
+
+.container .btn {
+  margin: 0 auto;
+  width: calc(100% - 6rem);
+}
+.container .btn a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+.container .btn a .icon {
+  width: 12rem;
+}
+.container .btn a .txt {
+  width: calc(100% - 16rem);
+  max-width: 50rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.4rem;
+  line-height: 1;
+  gap: 1.6rem;
+  font-weight: 600;
+}
+.container .btn a .txt .l1 {
+  font-size: 2.8rem;
+}
+.container .btn a .txt .l2 {
+  font-size: 5.2rem;
+}
+.container .btn a .tap {
+  position: absolute;
+  width: 60rem;
+  height: 6rem;
+  border: 1px solid #F09B37;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -4rem;
+  font-size: 2.8rem;
+  font-family: "Shippori Mincho", serif;
+  color: #25242E;
+  font-weight: bold;
+}
+.container .btn a .tap::after {
+  width: 2.68rem;
+  height: 1.5rem;
+  content: "";
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 1px));
+}
+.container .btn a:nth-child(1) {
+  background-color: #F09B37;
+}
+.container .btn a:nth-child(1) .icon {
+  transform: scale(0.8);
+}
+.container .btn a:nth-child(1) .txt {
+  position: relative;
+  bottom: -0.05em;
+  font-weight: 600;
+}
+.container .btn a:nth-child(2) {
+  background: #717391;
+}
+.container .btn a:nth-child(2) .icon {
+  transform: scale(0.8);
+}
+.container .btn a:nth-child(3) {
+  background: #4CC764;
+}
+.container .btn a + a {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 750px) {
+  .container .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
+    width: auto;
+    gap: 12px;
+  }
+  .container .btn a {
+    height: 86px;
+    width: 244px;
+    margin: 0 !important;
+    gap: 10px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .container .btn a:hover {
+    opacity: 0.7;
+  }
+  .container .btn a:first-of-type {
+    width: 486px;
+  }
+  .container .btn a .icon {
+    width: 52px;
+  }
+  .container .btn a .icon.tel {
+    width: 60px;
+  }
+  .container .btn a .txt {
+    width: unset;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    gap: 0 10px;
+    font-weight: 400;
+  }
+  .container .btn a .txt .l1 {
+    font-size: 13px;
+  }
+  .container .btn a .txt .l2 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .container .btn a .txt.tel {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .container .btn a .txt.tel .num {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
+  .container .btn a .tap {
+    position: absolute;
+    width: 300px;
+    height: 36px;
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    left: 0;
+  }
+  .container .btn a .tap::before {
+    width: 13px;
+    height: 9px;
+    content: "";
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    background: #F09B37;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, calc(100% - 0px));
+  }
+  .container .btn a .tap::after {
+    width: 13px;
+    height: 9px;
+    content: "";
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, calc(100% - 1.5px));
+  }
+  .container .btn a:nth-child(1) {
+    background-color: #F09B37;
+  }
+  .container .btn a:nth-child(1) .icon {
+    transform: scale(0.8);
+  }
+  .container .btn a:nth-child(1) .txt {
+    position: relative;
+    bottom: -0.05em;
+    font-weight: 600;
+  }
+  .container .btn a:nth-child(2) {
+    background: #717391;
+  }
+  .container .btn a:nth-child(2) .icon {
+    transform: scale(0.8);
+  }
+  .container .btn a:nth-child(3) {
+    background: #4CC764;
+  }
+  .container .btn a + a {
+    margin-top: 2rem;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  line-height: 1.8;
+  /* actual end */
+}
+@media screen and (min-width: 750px) {
+  .container .inside {
+    width: 1040px;
+    padding: 0 20px;
+    margin: auto;
+  }
+}
+/* .container header {
+  position: absolute;
+  top: 3.6rem;
+  left: 2rem;
+  z-index: 1;
+  width: 48rem;
+}
+.container header h1 {
+  margin: 0 auto;
+}
+.container header h1 a {
+  display: block;
+}
+.container header h1 a img {
+  width: 100%;
+  width: 48.6rem;
+}
+@media screen and (min-width: 750px) {
+  .container header {
+    position: absolute;
+    top: 35px;
+    left: 36px;
+    width: 338px;
+  }
+  .container header h1 a img {
+    width: 100%;
+  }
+} */
+
+.container h2 {
+  font-weight: 700;
+}
+.container #top-visual {
+  background-color: #CDD0DE;
+}
+.container #top-visual .mv {
+  background: url(../../../images/saimu/mv.jpg) right top no-repeat;
+  background-size: 58rem auto;
+}
+.container #top-visual .mv hgroup {
+  padding: 19.6rem 0 0 4rem;
+}
+.container #top-visual .mv hgroup .balloon img {
+  width: 18.8rem;
+}
+.container #top-visual .mv hgroup h2 {
+  line-height: 1.2;
+  margin-top: 1.6rem;
+  font-weight: 700;
+}
+.container #top-visual .mv hgroup h2 > span {
+  display: block;
+}
+.container #top-visual .mv hgroup h2 .l1 {
+  font-size: 4.8rem;
+  font-family: "Shippori Mincho", serif;
+  letter-spacing: -0.1em;
+}
+.container #top-visual .mv hgroup h2 .l4 {
+  margin-top: 2rem;
+  font-family: "Shippori Mincho", serif;
+  font-size: 4.4rem;
+  letter-spacing: -0.1em;
+}
+.container #top-visual .mv hgroup h2 .l2, .container #top-visual .mv hgroup h2 .l3 {
+  display: inline-block;
+  font-size: 7.2rem;
+  font-weight: 600;
+  background: url(../../../images/saimu/border_diagonal.png) left bottom repeat-x;
+}
+.container #top-visual .mv .feature {
+  margin-top: 14.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+.container #top-visual .mv .feature li {
+  min-width: 32rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(34, 36, 65, 0.5) url(../../../images/saimu/icon_check.svg) 3rem center no-repeat;
+  background-size: 3.4rem auto;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 5.2rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem 0.6rem 8rem;
+  position: relative;
+}
+.container #top-visual .mv .feature li:nth-child(1) {
+  padding: 0.8rem 1rem 1rem 8rem;
+}
+.container #top-visual .mv .feature li .txt {
+  font-size: 3.6rem;
+}
+.container #top-visual .mv .feature li .txt .small {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+.container #top-visual .mv .feature li .yen {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  bottom: -0.7em;
+}
+.container #top-visual .mv .feature li .number {
+  font-family: "Jost", sans-serif;
+  font-size: 12.4rem;
+  color: #EFCA87;
+  font-weight: 500;
+  line-height: 0.9;
+}
+@media screen and (min-width: 751px) {
+  .container #top-visual .mv {
+    height: 780px;
+    background: url(../../../images/saimu/mv_pc.jpg) calc(50% + 305px) top/contain no-repeat;
+  }
+  .container #top-visual .mv .mv_inner {
+    width: 1146px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  .container #top-visual .mv hgroup {
+    padding: 140px 0 0 0;
+  }
+  .container #top-visual .mv hgroup .balloon img {
+    width: 153px;
+  }
+  .container #top-visual .mv hgroup h2 {
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+  .container #top-visual .mv hgroup h2 > span {
+    display: block;
+  }
+  .container #top-visual .mv hgroup h2 .l1 {
+    font-size: 65px;
+    font-family: "Shippori Mincho", serif;
+    letter-spacing: -0.1em;
+  }
+  .container #top-visual .mv hgroup h2 .l4 {
+    margin-top: 0px;
+    font-size: 65px;
+    letter-spacing: -0.05em;
+  }
+  .container #top-visual .mv hgroup h2 .l2, .container #top-visual .mv hgroup h2 .l3 {
+    letter-spacing: -0.05em;
+    font-size: 77px;
+    background: url(../../../images/saimu/border_diagonal_pc.png) left bottom repeat-x;
+  }
+  .container #top-visual .mv .feature {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 13px;
+  }
+  .container #top-visual .mv .feature li {
+    min-width: unset;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.2;
+    font-size: 43px;
+    padding: 0.6rem 1rem 0.6rem 77px;
+    position: relative;
+    gap: 10px;
+  }
+  .container #top-visual .mv .feature li:nth-child(1) {
+    padding: 0.8rem 1rem 1rem 8rem;
+    width: 278px;
+  }
+  .container #top-visual .mv .feature li:nth-child(2) {
+    width: 315px;
+  }
+  .container #top-visual .mv .feature li:nth-child(3) {
+    width: 484px;
+  }
+  .container #top-visual .mv .feature li .txt {
+    font-size: 32px;
+    white-space: nowrap;
+  }
+  .container #top-visual .mv .feature li .txt.txt2 {
+    font-size: 24px;
+  }
+  .container #top-visual .mv .feature li .txt .small {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    font-size: 12px;
+  }
+  .container #top-visual .mv .feature li .yen {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    bottom: 0.3em;
+    font-size: 35px;
+  }
+  .container #top-visual .mv .feature li .number {
+    font-size: 115px;
+    letter-spacing: -0.03em;
+  }
+}
+.container #top-visual .reception {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10rem 6.4rem 10rem;
+}
+.container #top-visual .reception .frame {
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 1rem 1rem 0 #8D8DA8;
+}
+.container #top-visual .reception h2 {
+  position: relative;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size: 4.4rem;
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+}
+.container #top-visual .reception h2 span {
+  font-size: 7.4rem;
+  font-weight: bold;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+  color: #717391;
+}
+.container #top-visual .reception p {
+  margin-top: 5.6rem;
+  text-align: justify;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+@media screen and (min-width: 750px) {
+  .container #top-visual .reception {
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+    width: 800px;
+  }
+  .container #top-visual .reception .frame {
+    margin: auto;
+    height: auto;
+    display: flex;
+    height: 115px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 5px 5px 0 #8D8DA8;
+  }
+  .container #top-visual .reception h2 {
+    position: relative;
+    font-size: 30px;
+    letter-spacing: -0.05em;
+    line-height: 1.4;
+  }
+  .container #top-visual .reception h2 span {
+    font-size: 51px;
+  }
+  .container #top-visual .reception p {
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 16px;
+  }
+}
+.container .consultation {
+  position: relative;
+  padding-bottom: 8rem;
+}
+.container .consultation.first::before {
+  content: "";
+  display: block;
+  width: 16rem;
+  height: 5.2rem;
+  background: #CED0DE;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  margin: -1px auto auto;
+}
+.container .consultation.bottom {
+  background: #CDD0DE;
+  padding-top: 13rem;
+}
+.container .consultation.bottom .container .btn {
+  margin-top: 0;
+}
+.container .consultation .heading {
+  margin-top: 6rem;
+  text-align: center;
+}
+.container .consultation .heading .nw {
+  margin-left: 4.4rem;
+  width: 20.4rem;
+  line-height: 4.8rem;
+  background: #F09B37;
+  color: #fff;
+  font-size: 3.4rem;
+  transform: rotate(-7deg);
+}
+.container .consultation .heading h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 5.4rem;
+  font-weight: bold;
+  font-size: 5.4rem;
+  line-height: 1.2;
+}
+.container .consultation .heading h2 .big {
+  font-size: 8.6rem;
+  position: relative;
+}
+.container .consultation .heading h2 .big::before {
+  width: 1.8rem;
+  height: 1.8rem;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -30%);
+  background: #F09B37;
+  border-radius: 50%;
+}
+.container .consultation .heading h2::before {
+  content: "";
+  width: 0.4rem;
+  height: 6.4rem;
+  background: #25242E;
+  display: inline-block;
+  transform: translate(-2rem, 1.2rem) rotate(-25deg);
+}
+.container .consultation .heading h2::after {
+  content: "";
+  width: 0.4rem;
+  height: 6.4rem;
+  background: #25242E;
+  display: inline-block;
+  transform: translate(2rem, 1.2rem) rotate(25deg);
+}
+/* .container .consultation .container .btn { */
+.container .consultation .btn {
+  margin-top: 8rem;
+}
+@media screen and (min-width: 750px) {
+  .container .consultation {
+    margin: auto;
+    padding-bottom: 80px;
+  }
+  .container .consultation.first::before {
+    width: 160px;
+    height: 50px;
+  }
+  .container .consultation.bottom {
+    padding-top: 120px;
+  }
+  .container .consultation.bottom .container .btn {
+    margin-top: 0;
+  }
+  .container .consultation .heading {
+    margin-top: 40px;
+    position: relative;
+  }
+  .container .consultation .heading .nw {
+    position: relative;
+    left: -120px;
+    margin: auto;
+    width: 100px;
+    line-height: 25px;
+    font-size: 17px;
+    transform: rotate(-7deg);
+    padding-top: 0;
+    padding-bottom: 2px;
+  }
+  .container .consultation .heading h2 {
+    font-size: 27px;
+  }
+  .container .consultation .heading h2 .big {
+    font-size: 43px;
+  }
+  .container .consultation .heading h2 .big::before {
+    width: 9px;
+    height: 9px;
+  }
+  .container .consultation .heading h2::before {
+    content: "";
+    width: 2px;
+    height: 32px;
+    transform: translate(-10px, 6px) rotate(-25deg);
+  }
+  .container .consultation .heading h2::after {
+    content: "";
+    width: 2px;
+    height: 32px;
+    transform: translate(10px, 6px) rotate(25deg);
+  }
+  /* .container .consultation .container .btn { */
+  .container .consultation .btn {
+    display: flex;
+    margin-top: 57px;
+  }
+}
+.container #contents {
+  background: linear-gradient(#D7D7D8 0, #F0F1F1 140px, #fff 210px);
+  padding: 6rem 4rem 0;
+  position: relative;
+}
+.container #contents .photo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 34rem;
+}
+.container #contents .photo img {
+  width: 100%;
+}
+.container #contents h2 {
+  position: relative;
+  z-index: 2;
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.container #contents h2 .big {
+  font-size: 8.6rem;
+  position: relative;
+  font-size: 7.4rem;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+.container #contents h2 .big::before {
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -30%);
+  background: #717391;
+  border-radius: 50%;
+}
+.container #contents .inner {
+  width: auto;
+  margin: 6rem auto 0;
+}
+.container #contents .inner ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container #contents .inner ul li {
+  background: #DCDEED url(../../../images/saimu/icon_check_2.svg) 3rem 4.6rem no-repeat;
+  background-size: 3.4rem auto;
+  padding: 3.2rem 3rem 3.2rem 8.4rem;
+  font-size: 3.2rem;
+  line-height: 1.75;
+}
+.container #contents::after {
+  content: "";
+  display: block;
+  width: 7.2rem;
+  height: 9.6rem;
+  background: url(../../../images/saimu/feature_arrow.svg) no-repeat;
+  background-size: 7.2rem auto;
+  margin: 2.4rem auto 3.2rem;
+}
+@media screen and (min-width: 750px) {
+  .container #contents {
+    padding: 60px 0 0;
+  }
+  .container #contents .upper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  .container #contents .photo {
+    position: static;
+    width: 251px;
+  }
+  .container #contents .photo img {
+    width: 100%;
+  }
+  .container #contents h2 {
+    padding-top: 20px;
+    font-size: 42px;
+    line-height: 1.4523809524;
+  }
+  .container #contents h2 .big {
+    font-size: 71px;
+  }
+  .container #contents h2 .big::before {
+    width: 11px;
+    height: 11px;
+  }
+  .container #contents .inner {
+    width: auto;
+    margin: 40px auto 0;
+  }
+  .container #contents .inner ul {
+    gap: 10px;
+  }
+  .container #contents .inner ul li {
+    background: #DCDEED url(../../../images/saimu/icon_check_2.svg) 30px 36px no-repeat;
+    background-size: 22px auto;
+    padding: 27px 30px 27px 72px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+  .container #contents::after {
+    width: 116px;
+    height: 166px;
+    background: url(../../../images/saimu/feature_arrow.svg) no-repeat;
+    background-size: 116px auto;
+    margin: 60px auto 32px;
+  }
+}
+.container #feature .feature-set {
+  position: relative;
+  text-align: center;
+}
+.container #feature .feature-set h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.6;
+}
+.container #feature .feature-set h2 strong {
+  display: inline-block;
+  background: url(../../../images/saimu/border_diagonal.png) left bottom repeat-x;
+  font-size: 6.6rem;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+.container #feature .feature-set h2 .solution {
+  display: block;
+  font-size: 5.2rem;
+  font-weight: bold;
+}
+.container #feature .feature-set .photo {
+  margin-top: 2rem;
+}
+.container #feature .feature-set .soudan {
+  position: relative;
+  z-index: 2;
+  background: #717391;
+  margin: -4rem 3rem -4rem;
+  font-size: 3rem;
+  line-height: 8rem;
+  color: #fff;
+}
+.container #feature .feature-set .soudan::after {
+  width: 5.6rem;
+  height: 2.2rem;
+  content: "";
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  background: #717391;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 1px));
+}
+.container #feature .feature-set .frame {
+  background: #DCDEED;
+  padding: 4rem 3rem 9.2rem;
+}
+.container #feature .feature-set .frame .inner {
+  background: #fff;
+  padding: 4rem 3rem 8rem;
+}
+.container #feature .feature-set .frame .inner .kainyu {
+  font-size: 3.8rem;
+  line-height: 1.5263157895;
+  font-weight: bold;
+}
+.container #feature .feature-set .frame .inner .kainyu strong {
+  font-size: 7rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+.container #feature .feature-set .frame .inner .kainyu strong .big {
+  position: relative;
+}
+.container #feature .feature-set .frame .inner .kainyu strong .big:not(.nodot)::before {
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -30%);
+  background: #F09B37;
+  border-radius: 50%;
+}
+.container #feature .feature-set .frame .inner p.text {
+  text-align: justify;
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  margin: 3.4rem auto 0;
+}
+@media screen and (min-width: 750px) {
+  .container #feature {
+    background: #DCDEED;
+    padding-bottom: 80px;
+  }
+  .container #feature .feature-set {
+    position: relative;
+    z-index: 2;
+  }
+  .container #feature .feature-set::before {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 286px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .container #feature .feature-set h2 {
+    font-size: 40px;
+    line-height: 1.6;
+    background: #fff;
+  }
+  .container #feature .feature-set h2 strong {
+    background: url(../../../images/saimu/border_diagonal_pc.png) left bottom repeat-x;
+    font-size: 67px;
+  }
+  .container #feature .feature-set h2 .solution {
+    margin-top: 10px;
+    font-size: 53px;
+  }
+  .container #feature .feature-set .photo {
+    margin-top: 0;
+    padding-top: 20px;
+    background: #fff;
+  }
+  .container #feature .feature-set .inside {
+    width: 800px;
+  }
+  .container #feature .feature-set .soudan {
+    margin: -45px auto -40px;
+    font-size: 28px;
+    line-height: 90px;
+    color: #fff;
+  }
+  .container #feature .feature-set .soudan::after {
+    width: 74px;
+    height: 30px;
+  }
+  .container #feature .feature-set .frame {
+    padding: 0;
+  }
+  .container #feature .feature-set .frame .inner {
+    background: #fff;
+    padding: 100px 50px 50px;
+  }
+  .container #feature .feature-set .frame .inner .kainyu {
+    font-size: 26px;
+    line-height: 1.5263157895;
+  }
+  .container #feature .feature-set .frame .inner .kainyu strong {
+    font-size: 79px;
+    margin-top: 20px;
+  }
+  .container #feature .feature-set .frame .inner .kainyu strong .big:not(.nodot)::before {
+    width: 14px;
+    height: 14px;
+    top: 0;
+    transform: translate(-50%, -70%);
+  }
+  .container #feature .feature-set .frame .inner p.text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 40px auto 0;
+  }
+}
+.container #actual-results {
+  background-color: #717391;
+  padding-bottom: 9rem;
+}
+.container #actual-results .actual-set {
+  padding: 6rem 2rem 4rem;
+}
+.container #actual-results .actual-set h2 {
+  text-align: center;
+  position: relative;
+  font-family: "Shippori Mincho", serif;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 6.6rem;
+}
+.container #actual-results .actual-set h2 span.big {
+  font-size: 6.4rem;
+  color: #FEEB89;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+.container #actual-results .actual {
+  width: 100%;
+  padding: 0 3rem;
+}
+.container #actual-results .actual .case-box {
+  background: #fff;
+  padding: 4.2rem 2.4rem 0rem;
+}
+.container #actual-results .actual .case-box + .case-box {
+  margin-top: 4rem;
+}
+.container #actual-results .actual .case-box .case {
+  text-align: center;
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Jost", sans-serif;
+  margin-left: 4.2rem;
+  display: block;
+  color: #8D8DA8;
+}
+.container #actual-results .actual .case-box .case span {
+  margin-left: 1rem;
+  font-size: 6rem;
+  color: #F09B37;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+}
+.container #actual-results .actual .case-box .case span::after {
+  border-bottom: 2px solid #F09B37;
+  line-height: 0.5;
+  display: block;
+  content: "";
+  transform: scaleX(0.7);
+}
+.container #actual-results .actual .case-box .heading {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 3.6rem;
+}
+.container #actual-results .actual .case-box .heading h3 {
+  font-size: 4.4rem;
+  line-height: 6.4rem;
+  width: calc(100% - 20rem);
+  font-weight: bold;
+}
+.container #actual-results .actual .case-box .heading .case--img {
+  width: 16.4rem;
+}
+.container #actual-results .actual .case-box .area--case {
+  font-size: 2.8rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  margin-top: 2.8rem;
+}
+.container #actual-results .actual .case-box .area--case li {
+  position: relative;
+  padding: 0;
+}
+.container #actual-results .actual .case-box .area--case li + li::before {
+  content: "・";
+}
+.container #actual-results .actual .case-box .box {
+  margin: 3rem auto auto;
+  padding: 2rem 0rem 0;
+  background-color: #F7EBD6;
+}
+.container #actual-results .actual .case-box .box + .box {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 360px) {
+  .container #actual-results .actual .case-box .box {
+    padding: 2rem 3rem 0;
+  }
+}
+.container #actual-results .actual .case-box .box p.top {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.container #actual-results .actual .case-box .box .amount {
+  padding: 0 0 3.6rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.container #actual-results .actual .case-box .box .amount .before, .container #actual-results .actual .case-box .box .amount .after {
+  display: flex;
+  align-items: flex-end;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.container #actual-results .actual .case-box .box .amount .before .bg, .container #actual-results .actual .case-box .box .amount .after .bg {
+  padding: 0.6rem 1rem 0;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  top: -0.6rem;
+}
+.container #actual-results .actual .case-box .box .amount .before .bg .numeral, .container #actual-results .actual .case-box .box .amount .after .bg .numeral {
+  line-height: 1;
+  font-size: 3.6rem;
+  font-family: "Jost", sans-serif;
+}
+.container #actual-results .actual .case-box .box .amount .before .money, .container #actual-results .actual .case-box .box .amount .after .money {
+  line-height: 0.9;
+  font-family: "Jost", sans-serif;
+}
+.container #actual-results .actual .case-box .box .amount .before .yen, .container #actual-results .actual .case-box .box .amount .after .yen {
+  line-height: 1;
+}
+.container #actual-results .actual .case-box .box .amount .before .bg {
+  background-color: #717391;
+}
+.container #actual-results .actual .case-box .box .amount .before .money {
+  font-size: 6.4rem;
+  margin-left: 1.2rem;
+}
+.container #actual-results .actual .case-box .box .amount .after .bg {
+  background-color: #F29B11;
+}
+.container #actual-results .actual .case-box .box .amount .after .money {
+  font-size: 10rem;
+  position: relative;
+  bottom: -1.2rem;
+}
+.container #actual-results .actual .case-box .box .amount .after .yen {
+  font-size: 2.8rem;
+  white-space: nowrap;
+}
+.container #actual-results .actual .case-box .box .amount .after .henkan {
+  margin-left: 3rem;
+  font-size: 5.2rem;
+  line-height: 1;
+}
+.container #actual-results .actual .case-box .box .arrow {
+  position: relative;
+  top: -1.2rem;
+  margin: 0 1.5rem 0 2rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.8rem 0 1.8rem 2.5rem;
+  border-color: transparent transparent transparent #989595;
+}
+.container #actual-results .actual .case-box .box .line {
+  width: 100%;
+  margin: 0 auto 2.4rem;
+  border-top: 0.4rem dotted #C1C1C1;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+.container #actual-results .actual .text {
+  margin: 0 auto;
+  display: none;
+}
+.container #actual-results .actual .text p {
+  text-align: justify;
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  margin-top: 4.8rem;
+}
+.container #actual-results .actual .answer-btn {
+  padding: 4.4rem 0 2.6rem;
+  color: #717391;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.02em;
+}
+.container #actual-results .actual .answer-btn span {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: right;
+}
+.container #actual-results .actual .answer-btn span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-image: url(../../../images/toggle.svg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 3.8rem;
+  height: 2rem;
+}
+.container #actual-results .actual .answer-btn span.open {
+  width: 23.6rem;
+}
+.container #actual-results .actual .answer-btn span.close {
+  display: none;
+}
+.container #actual-results .actual .answer-btn span.close:before {
+  transform: rotate(180deg);
+}
+.container #actual-results .actual .answer-btn span:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .container #actual-results {
+    background-color: #717391;
+    padding-bottom: 80px;
+  }
+  .container #actual-results .achievement {
+    background: url(../../../images/saimu/achievement_ph_pc.jpg) center top/cover no-repeat;
+    height: 460px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FEEB89;
+    font-size: 14px;
+    gap: 30px;
+  }
+  .container #actual-results .achievement img {
+    width: 425px;
+    text-align: center;
+  }
+  .container #actual-results .actual-set {
+    padding: 60px 0 60px;
+  }
+  .container #actual-results .actual-set h2 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  .container #actual-results .actual-set h2 span.big {
+    font-size: 42px;
+  }
+  .container #actual-results .actual {
+    width: 800px;
+    margin: auto;
+    padding: 0;
+  }
+  .container #actual-results .actual .case-box {
+    padding: 30px 60px 50px;
+  }
+  .container #actual-results .actual .case-box + .case-box {
+    margin-top: 30px;
+  }
+  .container #actual-results .actual .case-box .case {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-left: 0;
+  }
+  .container #actual-results .actual .case-box .case span {
+    font-size: 41px;
+  }
+  .container #actual-results .actual .case-box .case span::after {
+    padding-top: 5px;
+    border-bottom: 2px solid #F09B37;
+    line-height: 0.5;
+    display: block;
+    content: "";
+    transform: scaleX(0.7);
+  }
+  .container #actual-results .actual .case-box .heading {
+    margin-top: 30px;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .container #actual-results .actual .case-box .heading h3 {
+    font-size: 24px;
+    line-height: 1.5833333333;
+    width: auto;
+  }
+  .container #actual-results .actual .case-box .heading .case--img {
+    width: 118px;
+  }
+  .container #actual-results .actual .case-box .area--case {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: -20px 0 0 150px;
+  }
+  .container #actual-results .actual .case-box .box {
+    margin: 30px auto auto;
+    padding: 2rem 0rem 0;
+    background-color: #F7EBD6;
+  }
+  .container #actual-results .actual .case-box .box + .box {
+    margin-top: 1rem;
+  }
+  .container #actual-results .actual .case-box .box p.top {
+    font-size: 16px;
+  }
+  .container #actual-results .actual .case-box .box .amount {
+    margin-top: 10px;
+    padding: 0 0 36px;
+    padding: 0 0 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .container #actual-results .actual .case-box .box .amount .before, .container #actual-results .actual .case-box .box .amount .after {
+    font-size: 12px;
+  }
+  .container #actual-results .actual .case-box .box .amount .before .bg, .container #actual-results .actual .case-box .box .amount .after .bg {
+    padding: 3px 10px 0;
+    top: 0;
+  }
+  .container #actual-results .actual .case-box .box .amount .before .bg .numeral, .container #actual-results .actual .case-box .box .amount .after .bg .numeral {
+    line-height: 1;
+    font-size: 18px;
+  }
+  .container #actual-results .actual .case-box .box .amount .before .money, .container #actual-results .actual .case-box .box .amount .after .money {
+    line-height: 0.9;
+    position: relative;
+  }
+  .container #actual-results .actual .case-box .box .amount .before .yen, .container #actual-results .actual .case-box .box .amount .after .yen {
+    line-height: 1;
+  }
+  .container #actual-results .actual .case-box .box .amount .before .money {
+    font-size: 32px;
+    margin-left: 12px;
+    bottom: -4px;
+    margin-right: 3px;
+  }
+  .container #actual-results .actual .case-box .box .amount .after .money {
+    font-size: 50px;
+    bottom: -5px;
+    margin-right: 4px;
+  }
+  .container #actual-results .actual .case-box .box .amount .after .yen {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .container #actual-results .actual .case-box .box .amount .after .henkan {
+    margin-left: 15px;
+    font-size: 26px;
+    line-height: 1;
+  }
+  .container #actual-results .actual .case-box .box .arrow {
+    top: -6px;
+    margin: 0 7px 0 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 12.5px;
+  }
+  .container #actual-results .actual .case-box .box .line {
+    width: 100%;
+    margin: 0 auto 2.4rem;
+    border-top: 0.4rem dotted #C1C1C1;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+  .container #actual-results .actual .text {
+    margin: 0 auto;
+    display: block;
+  }
+  .container #actual-results .actual .text p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 24px;
+  }
+  .container #actual-results .actual .answer-btn {
+    display: none;
+  }
+}
+.container #solution {
+  background: #DCDEED;
+  position: relative;
+  padding: 8rem 3rem;
+  text-align: center;
+}
+.container #solution h2 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+.container #solution h2 span {
+  line-height: 1.3;
+  font-size: 7.6rem;
+}
+.container #solution h2 .l2 {
+  font-size: 6.4rem;
+}
+.container #solution h2::before {
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background: #25242E;
+  display: inline-block;
+  transform: rotate(-25deg);
+}
+.container #solution h2::after {
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background: #25242E;
+  display: inline-block;
+  transform: rotate(25deg);
+}
+.container #solution .inner {
+  background: #fff;
+}
+.container #solution .inner ul {
+  position: relative;
+  padding: 1.6rem 3.6rem 0.8rem;
+  z-index: 0;
+  counter-reset: li;
+}
+.container #solution .inner ul li {
+  text-align: justify;
+  line-height: 4.8rem;
+  padding: 3.2rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container #solution .inner ul li:before {
+  counter-increment: li;
+  content: "0" counter(li);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 5.6rem;
+  height: 5.6rem;
+  color: #fff;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 1.7;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  background-color: #8D8DA8;
+  z-index: 0;
+}
+.container #solution .inner ul li span.text {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4.8rem;
+  font-feature-settings: "palt";
+  margin-left: 7.6rem;
+}
+.container #solution .inner ul li span.text strong {
+  font-size: 4rem;
+}
+.container #solution .inner ul li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  border-top: 1px solid #CDD0DE;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+@media screen and (min-width: 750px) {
+  .container #solution {
+    padding: 80px 0;
+  }
+  .container #solution h2 {
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    margin-bottom: 52px;
+  }
+  .container #solution h2 span {
+    line-height: 1.3;
+    font-size: 86px;
+  }
+  .container #solution h2 .l2 {
+    font-size: 67px;
+  }
+  .container #solution h2::before {
+    left: -70px;
+    width: 2px;
+  }
+  .container #solution h2::after {
+    right: -60px;
+    width: 2px;
+  }
+  .container #solution .inner ul {
+    position: relative;
+    padding: 50px 60px;
+  }
+  .container #solution .inner ul li {
+    line-height: 48px;
+    padding: 32px 0;
+  }
+  .container #solution .inner ul li:before {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    line-height: 1.9;
+  }
+  .container #solution .inner ul li span.text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 80px;
+  }
+  .container #solution .inner ul li span.text strong {
+    font-size: 24px;
+  }
+}
+.container #evacuation {
+  position: relative;
+  text-align: center;
+  padding: 8.8rem 3rem 7.2rem;
+}
+.container #evacuation .heading {
+  position: relative;
+  background: #717391;
+  top: unset;
+  height: 32rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3rem;
+}
+.container #evacuation .heading::after {
+  width: 10.2rem;
+  height: 3.8rem;
+  content: "";
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  background: #717391;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 1px));
+}
+.container #evacuation .heading figure {
+  width: 32rem;
+  position: absolute;
+  right: -3rem;
+  top: -8.6rem;
+}
+.container #evacuation .heading h2 {
+  position: relative;
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  line-height: 8rem;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.container #evacuation .heading h2 strong {
+  font-size: 6.2rem;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+  color: #EFCA87;
+}
+.container #evacuation .inner {
+  margin: 6.4rem auto auto;
+}
+.container #evacuation .inner p {
+  text-align: justify;
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+}
+.container #evacuation .inner p span {
+  font-weight: 700;
+}
+.container #evacuation .inner .box {
+  margin: 8rem 0 0;
+}
+.container #evacuation .inner .box .question {
+  margin-top: 13.2rem;
+  position: relative;
+  background: #717391;
+  padding: 4rem 0 3.4rem;
+  z-index: 2;
+}
+.container #evacuation .inner .box .question:nth-of-type(n+2) {
+  margin-top: 15.2rem;
+}
+.container #evacuation .inner .box .question.st {
+  position: relative;
+}
+.container #evacuation .inner .box .question .number {
+  color: #EFCA87;
+  font-size: 4.8rem;
+  line-height: 1;
+  font-family: "Jost", sans-serif;
+  position: relative;
+  font-weight: bold;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #717391;
+  border-radius: 50%;
+  width: 17.4rem;
+  height: 17.4rem;
+  padding-top: 4.8rem;
+  z-index: -1;
+}
+.container #evacuation .inner .box .question p {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+}
+.container #evacuation .inner .box .question p span {
+  font-weight: 700;
+  font-size: 6rem;
+}
+.container #evacuation .inner .box .answer {
+  position: relative;
+  background: #DCDEED;
+  width: 100%;
+  margin: 0rem auto 8rem;
+  padding: 4rem 3rem 0;
+}
+.container #evacuation .inner .box .answer:last-child {
+  margin-bottom: 0;
+}
+.container #evacuation .inner .box .answer .t-st {
+  text-align: justify;
+  font-size: 3.8rem;
+  line-height: 5.7rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.container #evacuation .inner .box .answer .text {
+  text-align: justify;
+  margin: 4.8rem auto 0;
+  display: none;
+  animation-name: fadeInAnime;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container #evacuation .inner .box .answer .text p {
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.02em;
+}
+.container #evacuation .inner .box .answer .text h3 {
+  margin-top: 4.8rem;
+  position: relative;
+  font-size: 3.6rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+.container #evacuation .inner .box .answer .text h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1.2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: #717391;
+  z-index: 0;
+}
+.container #evacuation .inner .box .answer .text ul {
+  margin-top: 2.4rem;
+}
+.container #evacuation .inner .box .answer .text ul li {
+  font-size: 3.2rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.02em;
+  text-align: justify;
+}
+.container #evacuation .inner .box .answer .answer-btn {
+  padding: 7.4rem 0 2.6rem;
+  color: #717391;
+  font-weight: 700;
+  text-align: center;
+}
+.container #evacuation .inner .box .answer .answer-btn span {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-align: right;
+}
+.container #evacuation .inner .box .answer .answer-btn span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-image: url(../../../images/toggle.svg);
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 3.8rem;
+  height: 2rem;
+}
+.container #evacuation .inner .box .answer .answer-btn span.open {
+  width: 23.6rem;
+}
+.container #evacuation .inner .box .answer .answer-btn span.close {
+  display: none;
+}
+.container #evacuation .inner .box .answer .answer-btn span.close:before {
+  transform: rotate(180deg);
+}
+.container #evacuation .inner .box .answer .answer-btn span:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .container #evacuation {
+    padding: 80px 0;
+  }
+  .container #evacuation .heading {
+    margin: 0 100px;
+    height: 210px;
+    align-items: center;
+    padding-left: 60px;
+  }
+  .container #evacuation .heading::after {
+    width: 77px;
+    height: 28px;
+  }
+  .container #evacuation .heading figure {
+    width: 234px;
+    right: -70px;
+    top: -60px;
+  }
+  .container #evacuation .heading h2 {
+    font-size: 30px;
+    line-height: 8rem;
+    line-height: 1.5;
+  }
+  .container #evacuation .heading h2 strong {
+    font-size: 46px;
+  }
+  .container #evacuation .inner {
+    margin: 6.4rem auto auto;
+  }
+  .container #evacuation .inner > p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin: auto 100px;
+  }
+  .container #evacuation .inner .box {
+    margin: 80px 0 0;
+  }
+  .container #evacuation .inner .box:nth-of-type(1) {
+    margin-top: 110px;
+  }
+  .container #evacuation .inner .box .question {
+    margin-top: 80px;
+    position: relative;
+    padding: 10px 0 7px;
+  }
+  .container #evacuation .inner .box .question.st {
+    position: relative;
+  }
+  .container #evacuation .inner .box .question .number {
+    font-size: 28px;
+    width: 87px;
+    height: 87px;
+    padding-top: 24px;
+  }
+  .container #evacuation .inner .box .question p {
+    font-size: 20px;
+  }
+  .container #evacuation .inner .box .question p span {
+    font-size: 30px;
+  }
+  .container #evacuation .inner .box .answer {
+    width: 100%;
+    margin: 0rem auto 80px;
+    padding: 40px 60px 60px;
+  }
+  .container #evacuation .inner .box .answer:last-child {
+    margin-bottom: 0;
+  }
+  .container #evacuation .inner .box .answer .t-st {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  .container #evacuation .inner .box .answer .text {
+    margin: 24px auto 0;
+    display: block;
+    opacity: 0;
+  }
+  .container #evacuation .inner .box .answer .text p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .container #evacuation .inner .box .answer .text h3 {
+    margin-top: 24px;
+    font-size: 19px;
+    padding-left: 26px;
+  }
+  .container #evacuation .inner .box .answer .text h3:nth-of-type(1) {
+    margin-top: 36px;
+  }
+  .container #evacuation .inner .box .answer .text h3:before {
+    left: 0;
+    bottom: 10px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+  .container #evacuation .inner .box .answer .text ul {
+    margin-top: 8px;
+  }
+  .container #evacuation .inner .box .answer .text ul li {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .container #evacuation .inner .box .answer .answer-btn {
+    display: none;
+  }
+}
+.container #flow {
+  position: relative;
+  padding: 10rem 0 10rem;
+  background: #DCDEED;
+  /*box*/
+}
+.container #flow .heading {
+  text-align: center;
+}
+.container #flow h2 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+.container #flow h2 span {
+  line-height: 1.3;
+  font-size: 7.6rem;
+}
+.container #flow h2 .l2 {
+  font-size: 6.4rem;
+}
+.container #flow h2 .l2 .en {
+  font-size: 10rem;
+  color: #F29B11;
+}
+.container #flow h2::before {
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background: #25242E;
+  display: inline-block;
+  transform: rotate(-25deg);
+}
+.container #flow h2::after {
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  content: "";
+  width: 0.4rem;
+  height: 100%;
+  background: #25242E;
+  display: inline-block;
+  transform: rotate(25deg);
+}
+.container #flow .wrap {
+  padding: 0 7.2rem;
+}
+.container #flow .box {
+  position: relative;
+  background: #fff;
+  padding: 10rem 3rem 4.8rem;
+  margin-top: 14rem;
+}
+.container #flow .box:first-child {
+  margin-top: 10rem;
+}
+.container #flow .box:not(:last-of-type):after {
+  width: 13.4rem;
+  height: 4.2rem;
+  content: "";
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 1px));
+}
+.container #flow .box .step {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #8D8DA8;
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1;
+}
+.container #flow .box .step span {
+  font-size: 5.6rem;
+  display: block;
+  font-weight: 700;
+}
+.container #flow .box img {
+  width: 12rem;
+  display: block;
+  margin: 0 auto 3.2rem;
+}
+.container #flow .box .set {
+  width: 100%;
+}
+.container #flow .box .set .top {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  padding-bottom: 3.2rem;
+}
+.container #flow .box .set .under {
+  text-align: justify;
+  font-size: 3rem;
+  line-height: 5.25rem;
+}
+.container #flow .box .st {
+  position: relative;
+}
+@media screen and (min-width: 750px) {
+  .container #flow {
+    padding: 80px 0;
+    /*box*/
+  }
+  .container #flow h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 3.2rem;
+  }
+  .container #flow h2 .l2 {
+    font-size: 63px;
+  }
+  .container #flow h2 .l2 .en {
+    font-size: 97px;
+  }
+  .container #flow h2::before {
+    left: -70px;
+    width: 2px;
+  }
+  .container #flow h2::after {
+    right: -60px;
+    width: 2px;
+  }
+  .container #flow .wrap {
+    padding: 0;
+  }
+  .container #flow .box {
+    padding: 60px 60px 60px 0;
+    margin-top: 90px;
+  }
+  .container #flow .box:first-child {
+    margin-top: 50px;
+  }
+  .container #flow .box:not(:last-of-type):after {
+    width: 67px;
+    height: 29px;
+  }
+  .container #flow .box .step {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+  }
+  .container #flow .box .step span {
+    font-size: 30px;
+  }
+  .container #flow .box img {
+    width: 12rem;
+    display: block;
+    margin: 0 auto 3.2rem;
+  }
+  .container #flow .box .set {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container #flow .box .set .top {
+    width: 390px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+  .container #flow .box .set .under {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .container #flow .box .st {
+    position: relative;
+  }
+}
+.container #bottom {
+  height: 77.2rem;
+  background: url(../../../images/saimu/flow_ph.jpg) right top no-repeat;
+  background-size: auto 100%;
+}
+.container #bottom hgroup {
+  padding: 5.2rem 0 0 3rem;
+}
+.container #bottom hgroup p {
+  font-size: 3.6rem;
+  font-family: "Shippori Mincho", serif;
+  font-weight: bold;
+}
+.container #bottom hgroup p strong {
+  font-size: 4.4rem;
+}
+.container #bottom hgroup h2 {
+  line-height: 1.2;
+  margin-top: 1.6rem;
+}
+.container #bottom hgroup h2 > span {
+  display: block;
+}
+.container #bottom hgroup h2 .l1 {
+  font-size: 4.8rem;
+  display: inline-block;
+  font-size: 6.6rem;
+  font-weight: 600;
+  background: url(../../../images/saimu/border_diagonal.png) left bottom repeat-x;
+}
+.container #bottom hgroup h2 .l4 {
+  margin-top: 2rem;
+  font-size: 4.4rem;
+  letter-spacing: -0.05em;
+}
+.container #bottom .feature {
+  margin-top: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+.container #bottom .feature li {
+  position: relative;
+  z-index: 2;
+  background: rgba(34, 36, 65, 0.5) url(../../../images/saimu/icon_check.svg) 3rem center no-repeat;
+  background-size: 3.4rem auto;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1.2;
+  color: #fff;
+  font-size: 5.2rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem 0.6rem 8rem;
+  min-width: 34rem;
+  position: relative;
+}
+.container #bottom .feature li:nth-child(1) {
+  padding: 0.8rem 1rem 1rem 8rem;
+}
+.container #bottom .feature li .txt {
+  font-size: 3.6rem;
+}
+.container #bottom .feature li .txt .small {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+.container #bottom .feature li .yen {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  bottom: -0.3em;
+}
+.container #bottom .feature li .number {
+  font-family: "Jost", sans-serif;
+  font-size: 12.4rem;
+  color: #EFCA87;
+  font-weight: 500;
+  line-height: 0.9;
+}
+@media screen and (min-width: 750px) {
+  .container #bottom {
+    height: auto;
+    min-height: 800px;
+    background: url(../../../images/saimu/flow_ph_pc.jpg) right top no-repeat;
+    background-size: auto 100%;
+    padding: 70px 0 60px 0;
+  }
+  .container #bottom hgroup {
+    padding: 0 0 40px 0;
+  }
+  .container #bottom hgroup p {
+    font-size: 42px;
+  }
+  .container #bottom hgroup p strong {
+    font-size: 61px;
+  }
+  .container #bottom hgroup h2 {
+    line-height: 1.3;
+    margin-top: -10px;
+  }
+  .container #bottom hgroup h2 > span {
+    display: block;
+  }
+  .container #bottom hgroup h2 .l1 {
+    font-size: 71px;
+    background: url(../../../images/saimu/border_diagonal_pc.png) left bottom repeat-x;
+  }
+  .container #bottom hgroup h2 .l4 {
+    margin-top: 2rem;
+    font-size: 44px;
+  }
+  .container #bottom .feature {
+    gap: 10px;
+  }
+  .container #bottom .feature li {
+    background: rgba(34, 36, 65, 0.5) url(../../../images/saimu/icon_check.svg) 25px center no-repeat;
+    background-size: 32px auto;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 43px;
+    padding: 0.6rem 1rem 0.6rem 8rem;
+    min-width: 34rem;
+    position: relative;
+    height: 113px;
+  }
+  .container #bottom .feature li:nth-child(1) {
+    padding: 0.8rem 1rem 1rem 8rem;
+  }
+  .container #bottom .feature li .txt {
+    font-size: 32px;
+  }
+  .container #bottom .feature li .txt.man {
+    font-size: 24px;
+    margin: 0 20px 0 5px;
+  }
+  .container #bottom .feature li .txt .small {
+    right: 30px;
+    bottom: 15px;
+    font-size: 12px;
+  }
+  .container #bottom .feature li .yen {
+    height: 100%;
+    bottom: 0.3em;
+    font-size: 35px;
+  }
+  .container #bottom .feature li .number {
+    font-family: "Jost", sans-serif;
+    font-size: 12.4rem;
+    color: #EFCA87;
+    font-weight: 500;
+    line-height: 0.9;
+  }
+}
+.container #contact {
+  background: #CDD0DE;
+  padding: 8rem 0;
+}
+.container #contact h2 {
+  font-size: 4.4rem;
+  text-align: center;
+}
+.container #contact form {
+  margin: 6rem auto 0;
+  width: calc(100% - 6rem);
+}
+.container #contact form p {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+.container #contact form p.ft {
+  font-weight: 700;
+}
+.container #contact form p.ft span {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0;
+  margin-left: 2rem;
+  padding: 0 1.4rem 0.2rem;
+}
+.container #contact form p.ft span.required {
+  background-color: #DB2229;
+}
+.container #contact form p.ft span.any {
+  background-color: #00A99D;
+}
+.container #contact form p.situation {
+  font-size: 3rem;
+}
+.container #contact form .input,
+.container #contact form .select,
+.container #contact form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.4rem 2.2rem;
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+  font-family: inherit;
+  resize: none;
+}
+.container #contact form .input::-moz-placeholder, .container #contact form .select::-moz-placeholder, .container #contact form textarea::-moz-placeholder {
+  color: #919191;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "sans-serif";
+}
+.container #contact form .input::placeholder,
+.container #contact form .select::placeholder,
+.container #contact form textarea::placeholder {
+  color: #919191;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "sans-serif";
+}
+.container #contact form .amount p {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.container #contact form .amount input {
+  margin-right: 1rem;
+}
+.container #contact form .amount input.company {
+  width: 15.6rem;
+}
+.container #contact form .amount input.yen {
+  margin-left: 3rem;
+  width: 19.6rem;
+}
+.container #contact form .custom-select {
+  position: relative;
+  width: 38.3rem;
+}
+.container #contact form .custom-select select {
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.container #contact form button {
+  background: #F29B11;
+  border: none;
+  width: calc(100% - 14.8rem);
+  height: 12rem;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Noto Sans JP", "sans-serif";
+}
+.container #contact form button:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 750px) {
+  .container #contact {
+    padding: 20px 0 90px;
+  }
+  .container #contact h2 {
+    font-size: 28px;
+  }
+  .container #contact form {
+    margin: 50px auto 0;
+    width: 570px;
+  }
+  .container #contact form p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .container #contact form p.ft span {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0 7px 1px;
+  }
+  .container #contact form p.situation {
+    font-size: 15px;
+  }
+  .container #contact form .input,
+  .container #contact form .select,
+  .container #contact form textarea {
+    border-radius: 4px;
+    padding: 7px 11px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .container #contact form .input::-moz-placeholder, .container #contact form .select::-moz-placeholder, .container #contact form textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .container #contact form .input::placeholder,
+  .container #contact form .select::placeholder,
+  .container #contact form textarea::placeholder {
+    font-size: 14px;
+  }
+  .container #contact form .amount p {
+    font-size: 16px;
+  }
+  .container #contact form .amount input {
+    margin-right: 0;
+  }
+  .container #contact form .amount input.company {
+    width: 130px;
+    margin-right: 10px;
+  }
+  .container #contact form .amount input.yen {
+    width: 130px;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .container #contact form .custom-select {
+    position: relative;
+    width: 38.3rem;
+  }
+  .container #contact form .custom-select select {
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .container #contact form button {
+    width: 270px;
+    height: 60px;
+    margin: 20px auto 0;
+    padding: 20px 0 20px;
+    line-height: 1;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .container #contact form button:hover {
+    opacity: 0.7;
+  }
+}
+/* .container footer {
+  text-align: center;
+}
+.container footer .info {
+  font-size: 4.4rem;
+  color: #fff;
+  background-color: #8D8DA8;
+  font-weight: 700;
+  padding: 2.4rem 0 3.2rem;
+}
+.container footer .info.st {
+  position: relative;
+}
+.container footer .info.st:after {
+  content: "";
+  position: absolute;
+  bottom: calc(-2.8rem + 1px);
+  left: calc(50% - 4.5rem);
+  width: 0;
+  height: 0;
+  z-index: 5;
+  border-style: solid;
+  border-width: 2.8rem 4.5rem 0 4.5rem;
+  border-color: #8D8DA8 transparent transparent transparent;
+}
+.container footer .inner {
+  width: calc(100% - 12.5rem);
+  margin: 8rem auto 6rem;
+}
+.container footer .inner p {
+  font-weight: 400;
+  font-size: 3rem;
+}
+.container footer .inner p.f-logo {
+  display: block;
+  border-top: none;
+  border-bottom: 1px solid #8D8DA8;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+.container footer .inner p.f-logo img {
+  width: 48rem;
+}
+.container footer .inner p.top {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+  line-height: 1.5;
+}
+.container footer .inner p.top span {
+  font-size: 90%;
+  font-weight: normal;
+}
+.container footer .inner p.representative {
+  line-height: 1.5;
+  font-weight: 700;
+}
+.container footer .inner p.branch {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+.container footer .inner p.branch span {
+  color: #8D8DA8;
+  display: block;
+  font-size: 3.6rem;
+  line-height: 1;
+  margin-bottom: 1.6rem;
+}
+.container footer .inner p.address {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 6.4rem;
+}
+.container footer .inner p.address:last-child {
+  margin-bottom: 0;
+}
+.container footer .gray {
+  background: #505050;
+  line-height: 1.5;
+  padding-top: 8rem;
+  padding-bottom: 20rem;
+}
+.container footer .gray a {
+  font-size: 2.8rem;
+  margin-bottom: 5.2rem;
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+}
+.container footer .gray p {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+@media screen and (min-width: 750px) {
+  .container footer .info {
+    font-size: 34px;
+    padding: 20px 0 20px;
+  }
+  .container footer .info.st {
+    position: relative;
+  }
+  .container footer .info.st::after {
+    border: none;
+    width: 66px;
+    height: 27px;
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    background: #8D8DA8;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, calc(100% - 1px));
+  }
+  .container footer .inner {
+    width: 1000px;
+    margin: 8rem auto 6rem;
+  }
+  .container footer .inner p {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  .container footer .inner p.f-logo {
+    border-bottom: 1px solid #8D8DA8;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+  .container footer .inner p.f-logo img {
+    width: 340px;
+  }
+  .container footer .inner p.top {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .container footer .inner p.representative {
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .container footer .inner p.branch {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
+  .container footer .inner p.branch span {
+    color: unset;
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+  }
+  .container footer .inner p.address {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .container footer .inner p.address:last-child {
+    margin-bottom: 0;
+  }
+  .container footer .inner .office {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  .container footer .inner .office .block {
+    width: 50%;
+  }
+  .container footer .inner .office .block:nth-of-type(even) {
+    padding-left: 50px;
+  }
+  .container footer .gray {
+    line-height: 1.5;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .container footer .gray a {
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .container footer .gray p {
+    font-size: 12px;
+  }
+} */
+
+/* .container #fixed {
+  position: fixed;
+  z-index: 20000;
+  bottom: 0;
+  width: 100%;
+  max-width: 750px;
+}
+.container #fixed .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container #fixed .link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  width: 50%;
+  height: 16rem;
+  background: #F09B37;
+}
+.container #fixed .link a + a {
+  background: #717391;
+}
+.container #fixed .link a + a p span {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 4.4rem;
+}
+.container #fixed .link a .icon {
+  width: 8rem;
+}
+.container #fixed .link a p {
+  text-align: left;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.container #fixed .link a p strong {
+  font-weight: bold;
+  font-size: 114.2857142857%;
+}
+@media screen and (min-width: 750px) {
+  .container #fixed {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 1400px) {
+  .container #fixed {
+    left: calc(50% - 700px);
+  }
+}
+@media screen and (min-width: 750px) {
+  .container #fixed .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .container #fixed .link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 95px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .container #fixed .link a:hover {
+    opacity: 0.7;
+  }
+  .container #fixed .link a + a p span {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 4.4rem;
+  }
+  .container #fixed .link a .icon {
+    width: 48px;
+  }
+  .container #fixed .link a p {
+    font-size: 20px;
+  }
+  .container #fixed .link a p strong {
+    font-size: 24px;
+  }
+  .container #fixed .link a .txt.tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .container #fixed .link a .txt.tel .small {
+    font-size: 16px;
+    line-height: 1.25;
+    white-space: nowrap;
+  }
+  .container #fixed .link a .txt.tel .small strong {
+    font-size: unset;
+    font-weight: unset;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .container #fixed .link a .txt.tel .small {
+    font-size: 20px;
+  }
+  .container #fixed .link a .txt.tel .small strong {
+    font-weight: bold;
+    font-size: 114.2857142857%;
+  }
+  .container #fixed .link a .txt.tel .small br {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container #fixed .link a .txt.tel .num {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .container #fixed .link a .txt.tel .num {
+    display: none !important;
+  }
+} */
+
+.container #popup {
+  position: fixed;
+  z-index: 20001;
+  left: 0;
+  top: 0;
+  background: rgba(88, 88, 88, 0.5);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  width: 100vw;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: none;
+}
+.container #popup .popup-in {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 8rem 0 20rem;
+}
+.container #popup .popup-in .inner {
+  position: relative;
+  padding: 5.8rem 2.4rem 5.2rem;
+  margin: 0 auto;
+  width: calc(100% - 5.2rem);
+  max-width: 750px;
+  background: #fff;
+}
+.container #popup .popup-in .inner .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8.6rem;
+  z-index: 100;
+}
+.container #popup .popup-in .inner .close-btn:hover {
+  cursor: pointer;
+}
+.container #popup .popup-in .inner p {
+  text-align: left;
+}
+.container #popup .popup-in .inner p img {
+  width: 49.6rem;
+  margin: 0 0 6.4rem;
+  display: block;
+}
+.container #popup .popup-in .inner .box {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container #popup .popup-in .inner .box p {
+  position: relative;
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: "Shippori Mincho", serif;
+  display: inline;
+}
+.container #popup .popup-in .inner .box p.t3 {
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 4rem;
+  line-height: 8.4rem;
+}
+.container #popup .popup-in .inner .box p.t3 span {
+  font-size: 6.6rem;
+  background: url(../../../images/saimu/border_diagonal.png) left bottom repeat-x;
+  font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "Yu Gothic", "ヒラギノ角ゴシック", "Hiragino Sans", "Meiryo", "sans-serif";
+}
+.container #popup .popup-in .inner .box p.t5 {
+  background: none;
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 5.25rem;
+  margin-top: 4.2rem;
+  display: inline-block;
+}
+.container #popup .popup-in .inner .container .btn {
+  width: 100%;
+  margin-top: 10rem;
+}
+.container #popup .popup-in .inner .container .btn a + a {
+  margin-top: 2.5rem;
+}
+@supports (-webkit-touch-callout: none) {
+  .container #popup {
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+}
+.container #thanks {
+  padding: 20rem 0 15rem;
+  width: 84%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container #thanks p {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+.container #thanks p span {
+  font-size: 4.2rem;
+  line-height: 1;
+  padding: 2rem 0;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+.container #thanks p a {
+  display: block;
+  margin-top: 3rem;
+  color: #186CCE;
+  text-decoration: underline;
+}
+
+.container.thanks {
+  padding-top: 16rem;
+  background: #CDD0DD;
+}
+.container.thanks #complete {
+  padding-top: 1px;
+  margin: auto 2rem 6rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+.container.thanks #complete h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 8rem auto;
+}
+.container.thanks #complete p {
+  padding: 3rem 3rem;
+  font-size: 2.6rem;
+}
+.container.thanks footer {
+  background: #fff;
+}
+.container.thanks .tel {
+  margin: 0 auto;
+  width: calc(100% - 6rem);
+}
+.container.thanks .tel a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+  background-color: #F09B37;
+  background: #717390;
+  border-radius: 1rem;
+}
+.container.thanks .tel a .icon {
+  width: 6.6rem;
+  opacity: 0.7;
+}
+.container.thanks .tel a .txt {
+  width: calc(100% - 20rem);
+  max-width: 50rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  line-height: 1;
+  gap: 1.6rem;
+  font-weight: 600;
+}
+.container.thanks .tel a .txt .l1 {
+  font-size: 2.8rem;
+}
+.container.thanks .tel a .txt .l2 {
+  font-size: 5.2rem;
+}
+.container.thanks .tel a .icon {
+  transform: scale(0.8);
+}
+.container.thanks .tel a .txt {
+  position: relative;
+  bottom: -0.05em;
+  font-weight: 600;
+}
+.container.thanks .tel a + a {
+  margin-top: 3rem;
+}
+
+#contact .g-recaptcha {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
+
+
+
+/* 20260202 add */
+
+
+.tachinoki-lawyer,
+.tachinoki-column {
+  font-size: 10px;
+}
+.tachinoki-lawyer .inner,
+.tachinoki-column .inner {
+  margin: auto 1.2em;
+}
+.tachinoki-lawyer .t-page-h2,
+.tachinoki-column .t-page-h2 {
+  font-size: 2.1em;
+  padding: 5px 0;
+}
+.tachinoki-lawyer .box{
+  line-height: 1.15;
+}
+.tachinoki-lawyer .itemTitle {
+  font-size: 2.2em;
+}
+.tachinoki-lawyer .itemText {
+  font-size: 1.6em;
+}
+
+@media (max-width: 767px) {
+  header .logo .copy {
+    font-size: 10px;
+    padding-left: 49px;
+  }
+  .t-page-h1, .t_breadcrumb {
+    font-size: 10.55px;
+    padding: 2.5px 13px;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .tachinoki-lawyer .inner,
+  .tachinoki-column .inner {
+    margin: auto;
+    /* width: 104rem;
+    padding: 0 2rem; */
+    width: 104em;
+    padding: 0 2em;
+  }
+  /* すみ */
+  .tachinoki-lawyer .t-page-h2,
+  .tachinoki-column .t-page-h2 {
+    font-size: 3.6em;
+    padding: 19px 0;
+  }
+  .tachinoki-lawyer .itemTitle {
+    font-size: 3.2em;
+  }
+  .tachinoki-lawyer .itemText {
+    font-size: 2em;
+  }
+}

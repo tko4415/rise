@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_10048" data-name="長方形 10048" width="32.585" height="23.86" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon_mail" transform="translate(-207 -609)">
+    <g id="パス_44042" data-name="パス 44042" transform="translate(207 609)" fill="#fff" opacity="0">
+      <path d="M 39.5 39.5 L 0.5 39.5 L 0.5 0.5 L 39.5 0.5 L 39.5 39.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 39 L 39 39 L 39 1 L 1 1 M 0 0 L 40 0 L 40 40 L 0 40 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="グループ_25387" data-name="グループ 25387" transform="translate(211 617.07)" clip-path="url(#clip-path)">
+      <path id="パス_44038" data-name="パス 44038" d="M20.822,23.787l-.494-.331a9.1,9.1,0,0,1-8.07,0C6.4,27.382,1.992,30.333,0,31.66v2.121H32.585V31.66c-2.015-1.341-6.425-4.3-11.763-7.872" transform="translate(0 -9.921)" fill="#fff"/>
+      <path id="パス_44039" data-name="パス 44039" d="M49.348,9.4c-2.1,1.4-5.4,3.613-9.718,6.5,3.153,2.114,7.144,4.787,9.718,6.507Z" transform="translate(-16.762 -3.976)" fill="#fff"/>
+      <path id="パス_44040" data-name="パス 44040" d="M12.8,10.687a6.337,6.337,0,0,0,6.988,0c6.6-4.421,10.878-7.286,12.8-8.565V0H0V2.122C1.922,3.4,6.2,6.267,12.8,10.687" transform="translate(0 0)" fill="#fff"/>
+      <path id="パス_44041" data-name="パス 44041" d="M9.72,15.906C5.4,13.014,2.1,10.8,0,9.4V22.412c2.655-1.773,6.78-4.536,9.72-6.506" transform="translate(0 -3.976)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

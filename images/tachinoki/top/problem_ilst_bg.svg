@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="180" viewBox="0 0 1400 180">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_44971" data-name="長方形 44971" width="1400" height="180" transform="translate(10191 2755)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="problem_ilst_bg" transform="translate(-10191 -2755)">
+    <rect id="長方形_44972" data-name="長方形 44972" width="1400" height="180" transform="translate(10191 2755)" fill="#fff"/>
+    <g id="マスクグループ_29" data-name="マスクグループ 29" clip-path="url(#clip-path)">
+      <path id="パス_93313" data-name="パス 93313" d="M7972.221,2273.11c285.692,6.292,298.571-88.062,476.175-80.082s232.05,123.051,476.961,119.35,616.386-237.949,640.776-369.92c19.88-107.556-1390.122-130.277-1703.466-18.134C7792.46,1949.45,7780.257,2269.3,7972.221,2273.11Z" transform="translate(2238.719 622.246)" fill="#254160"/>
+    </g>
+  </g>
+</svg>

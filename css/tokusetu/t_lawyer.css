@@ -1,0 +1,94 @@
+/*--------------------------------------
+.tachinoki-lawyer
+--------------------------------------*/
+.akewatashi-lawyer .lawyer p, .akewatashi-lawyer .lawyer dl, .akewatashi-lawyer .lawyer li, .akewatashi-lawyer .lawyer table,
+.tachinoki-lawyer .lawyer p,
+.tachinoki-lawyer .lawyer dl,
+.tachinoki-lawyer .lawyer li,
+.tachinoki-lawyer .lawyer table {
+  font-size: 15px;
+  line-height: 1.6666666667;
+  letter-spacing: normal;
+}
+@media (max-width: 767px) {
+  .akewatashi-lawyer .lawyer p, .akewatashi-lawyer .lawyer dl, .akewatashi-lawyer .lawyer li, .akewatashi-lawyer .lawyer table,
+  .tachinoki-lawyer .lawyer p,
+  .tachinoki-lawyer .lawyer dl,
+  .tachinoki-lawyer .lawyer li,
+  .tachinoki-lawyer .lawyer table {
+    font-size: 15px;
+  }
+}
+
+.akewatashi-lawyer main,
+.tachinoki-lawyer main {
+  padding-top: 0;
+}
+
+.akewatashi-lawyer .topicpath,
+.tachinoki-lawyer .topicpath {
+  display: none;
+}
+
+.akewatashi-lawyer main.lawyer .introduction .block .history dl dt,
+.tachinoki-lawyer main.lawyer .introduction .block .history dl dt {
+  font-weight: normal;
+}
+
+.akewatashi-lawyer figure img,
+.tachinoki-lawyer figure img {
+  width: auto;
+}
+
+.page-template-page-tachinoki-lawyer.page-child footer,
+.page-template-page-akewatashi-lawyer.page-child footer,
+.page-template-page-saimu-lawyer.page-child footer {
+  margin-top: 0;
+}
+
+.tachinoki-lawyer .hgroup_regular .h_en_ul {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .tachinoki-lawyer .hgroup_regular .h_en_ul {
+    font-size: 16px;
+  }
+}
+main.lawyer .introduction .block h3.name {
+  margin-top: 0 !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main.lawyer .introduction .block h3.name .position {
+  display: inline-block;
+  width: 7em;
+  font-size: 15px;
+}
+
+main.lawyer .introduction .block .history p {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #9D2A31;
+}
+
+@media screen and (max-width: 767px) {
+  main.lawyer .introduction .block h3.name {
+    font-size: 21px;
+  }
+  main.lawyer .introduction .block h3.name .position {
+    width: 7em;
+    font-size: 14px;
+  }
+  main.lawyer .introduction .block .portrait img {
+    max-width: 40vw;
+  }
+  main.lawyer .introduction .block .history p {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #9D2A31;
+  }
+}/*# sourceMappingURL=t_lawyer.css.map */

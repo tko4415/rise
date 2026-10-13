@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.inner {
+  position: relative;
+  width: 1024px;
+  padding: 0 12px;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .inner {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+main.column #mv {
+  background-image: url(/assets_prev/images/column/mv.jpg);
+}

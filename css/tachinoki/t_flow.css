@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+@media print, screen and (min-width: 768px) {
+  ._sp:not(._pc) {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  ._pc:not(._sp) {
+    display: none !important;
+  }
+}
+.t-flow_inner {
+  width: 630px;
+  padding: 67px 25px;
+  margin: auto;
+}
+.t-flow_sec:first-of-type .t-flow_inner {
+  padding-top: 50px;
+}
+.t-flow_block {
+  margin-top: 30px;
+}
+.t-flow_h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.t-flow_point {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.875;
+}
+.t-flow_point + .t-page_txt {
+  margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .t-flow_inner {
+    width: auto;
+    padding: 30px 45px;
+    margin: auto;
+  }
+  .t-flow_sec:first-of-type .t-flow_inner {
+    padding-top: 25px;
+  }
+  .t-flow_block {
+    margin-top: 37px;
+  }
+  .t-flow_point {
+    margin-top: 1em;
+  }
+}
+
+main.akewatashi-flow #title .t_inner {
+  min-width: calc(50% + 70px);
+}
+main.akewatashi-flow #title .t_inner_inner {
+  padding-right: 110px;
+}
+
+.page-child main.akewatashi-flow .inner {
+  margin: 67px auto 25px;
+  max-width: calc(100vw - 50px);
+}
+
+@media screen and (max-width: 767px) {
+  main.akewatashi-flow #title .t_inner_inner {
+    padding: 0;
+  }
+  .page-child main.akewatashi-flow .inner {
+    margin: 30px auto;
+  }
+}/*# sourceMappingURL=t_flow.css.map */

@@ -1,0 +1,1129 @@
+/* LP TOP */
+
+html:not(.lp-hiseikyu-lower) {
+  font-size: 16px;
+}
+
+body.lp-isyaryo {
+  overflow-x: hidden;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .t-page-h1 {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  color: #292929;
+  line-height: 1.5;
+  padding: 3px 36px;
+  font-weight: 400;
+  background: #f7f7f7;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+}
+
+body.lp-isyaryo main.lp-hiseikyu[class*="lp-hiseikyu-"] .t-page-h1 {
+  white-space: nowrap;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb {
+  background: #fff;
+  padding: 5px 36px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #292929;
+  line-height: 1.5;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #292929;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb li + li::before {
+  content: ">";
+  margin: 0 8px;
+  font-weight: 400;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb a {
+  color: #292929;
+  text-decoration: none;
+}
+
+/* /isharyo/ 下層 #title と同じページタイトル帯 */
+body.lp-isyaryo main.lp-hiseikyu #mv {
+  height: 300px;
+  background: #2a3f9d url("../../images/lp/isyaryo/hiseikyu/lawyer_hero.jpg") center 68% / cover no-repeat;
+}
+
+body.lp-isyaryo main.lp-hiseikyu #title {
+  position: relative;
+  z-index: 2;
+  min-width: calc(50% - 160px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.lp-isyaryo main.lp-hiseikyu #mv + #title {
+  margin-top: -50px;
+}
+
+body.lp-isyaryo main.lp-hiseikyu #title .t_inner {
+  display: inline-block;
+  background: url("/assets_prev/images/common/texture.jpg") no-repeat center top / cover;
+  min-width: calc(50% - 160px);
+  height: 100px;
+  text-align: right;
+  position: relative;
+}
+
+body.lp-isyaryo main.lp-hiseikyu #title .t_inner_inner {
+  display: inline-flex;
+  height: 100%;
+  min-width: 340px;
+  padding-right: 20px;
+  color: #fff;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+body.lp-isyaryo main.lp-hiseikyu #title .pagettl {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0.2em 0 0;
+  line-height: 1.3;
+  display: flex;
+  color: #fff;
+  letter-spacing: 0;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+body.lp-isyaryo main.lp-hiseikyu[class*="lp-hiseikyu-"] {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* /isharyo/ .hgroup_regular と同じ英語＋日本語見出し */
+body.lp-isyaryo main.lp-hiseikyu .hgroup_regular {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .hgroup_regular .h_en_ul {
+  display: inline-block;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  padding-bottom: 8px;
+  color: #9d2a31;
+  border-bottom: 1px solid #9d2a31;
+  font-weight: 400;
+  margin: 0 0 20px;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+body.lp-isyaryo main.lp-hiseikyu .hgroup_regular .h_ja {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  margin: 0 0 30px;
+  color: #292929;
+}
+
+@media screen and (max-width: 767px) {
+  body.lp-isyaryo main.lp-hiseikyu .hgroup_regular {
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu .hgroup_regular .h_ja {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 767px) {
+  body.lp-isyaryo main.lp-hiseikyu .t-page-h1,
+  body.lp-isyaryo main.lp-hiseikyu[class*="lp-hiseikyu-"] .t-page-h1 {
+    font-size: 10.55px;
+    line-height: 1.5;
+    height: auto;
+    min-height: 0;
+    padding: 2.5px 13px;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb {
+    padding: 2.5px 13px;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu .t_breadcrumb ul {
+    font-size: 10.55px;
+    line-height: 1.5;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu #mv {
+    height: 145px;
+    background-image: url("../../images/lp/isyaryo/hiseikyu/lawyer_hero_sp.jpg");
+    background-position: center 38%;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu #title .t_inner {
+    width: 100%;
+    height: 62px;
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu #title .t_inner_inner {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  body.lp-isyaryo main.lp-hiseikyu #title .pagettl {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0.2em;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+main.lp-hiseikyu {
+  overflow-x: hidden;
+  padding-top: 115px;
+}
+
+.lp-hiseikyu-mv {
+  position: relative;
+  overflow: hidden;
+  background: #f3f1ee;
+  height: auto!important;
+  width: 100%;
+}
+
+.lp-hiseikyu-mv__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  z-index: 0;
+}
+
+.lp-hiseikyu-mv__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.lp-hiseikyu-mv__name {
+  position: absolute;
+  z-index: 3;
+  margin: 0;
+  color: #254160;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.lp-hiseikyu-mv__lead {
+  margin: 0;
+  color: #254160;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.lp-hiseikyu-mv__lead-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 6px;
+  background: #254160;
+}
+
+.lp-hiseikyu-mv__ttl {
+  margin: 8px 0 0;
+  color: #254160;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+.lp-hiseikyu-mv__ttl-small {
+  display: block;
+  color: #bd4230;
+}
+
+.lp-hiseikyu-mv__ttl-no {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: #254160;
+}
+
+.lp-hiseikyu-mv__ttl-large {
+  display: inline-block;
+  position: relative;
+  color: #254160;
+}
+
+.lp-hiseikyu-mv__ttl-large::after {
+  content: "";
+  position: absolute;
+  left: 2%;
+  right: 0;
+  bottom: 0.08em;
+  height: 0.18em;
+  background: rgba(191, 65, 45, 0.4);
+  z-index: -1;
+}
+
+.lp-hiseikyu-mv__catch {
+  margin: 0;
+  color: #254160;
+  font-weight: 500;
+}
+
+.lp-hiseikyu-mv__catch p {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.lp-hiseikyu-mv__catch .mark {
+  background: #fff;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.lp-hiseikyu-mv__catch .mark.nobg {
+  background: transparent;
+  padding: 0 .2em;
+}
+
+.lp-hiseikyu-mv__catch .accent {
+  display: inline;
+  background: #bf412d;
+  color: #fff;
+  font-weight: 700;
+  font-size: 29px;
+  padding: 0 .2em;
+}
+
+.lp-hiseikyu-mv__circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lp-hiseikyu-mv__circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.lp-hiseikyu-mv__circle-label {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.lp-hiseikyu-mv__circle-num {
+  margin: 0;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 800;
+  line-height: 0.85;
+}
+
+.lp-hiseikyu-mv__circle-unit {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.lp-hiseikyu-mv__circle-note {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12%;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+/* SP */
+@media screen and (max-width: 768px) {
+  main.lp-hiseikyu {
+    padding-top: 60px;
+  }
+
+  .lp-hiseikyu-mv {
+    height: 584px;
+    background: #f7f7f7;
+    overflow: hidden;
+  }
+
+  .lp-hiseikyu-mv__inner {
+    position: relative;
+    padding: 0;
+  }
+
+  .lp-hiseikyu-mv__bg {
+    top: 0;
+    bottom: auto;
+    height: 300px;
+    object-position: 8% 18%;
+  }
+
+  .lp-hiseikyu-mv__lead,
+  .lp-hiseikyu-mv__ttl,
+  .lp-hiseikyu-mv__catch,
+  .lp-hiseikyu-mv__circles {
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .lp-hiseikyu-mv__lead {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    z-index: 2;
+    width: 314px;
+    max-width: calc(100% - 36px);
+    padding: 0;
+    font-size: 21px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .lp-hiseikyu-mv__lead-line {
+    max-width: 314px;
+    margin-top: 7px;
+  }
+
+  .lp-hiseikyu-mv__ttl {
+    position: absolute;
+    left: 15px;
+    top: 48px;
+    z-index: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    column-gap: 0;
+    margin: 0;
+    padding: 0;
+    max-width: calc(100% - 18px);
+    box-sizing: border-box;
+  }
+
+  .lp-hiseikyu-mv__ttl-small {
+    font-size: 34px;
+    line-height: 1.25;
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .lp-hiseikyu-mv__ttl-no {
+    font-size: 20px;
+  }
+
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 58px;
+    line-height: 1.08;
+    margin-left: 0;
+    margin-top: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    isolation: isolate;
+    z-index: 2;
+  }
+
+  .lp-hiseikyu-mv__name {
+    left: 14px;
+    top: 242px;
+    font-size: 7px;
+  }
+
+  .lp-hiseikyu-mv__catch {
+    position: absolute;
+    left: 46%;
+    top: 263px;
+    z-index: 2;
+    margin: 0;
+    width: 195px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .lp-hiseikyu-mv__catch p {
+    display: block;
+  }
+
+  .lp-hiseikyu-mv__catch p + p {
+    margin-top: 0;
+  }
+
+  .lp-hiseikyu-mv__catch .accent {
+    font-size: 18px;
+    padding: 0 2px;
+    line-height: 1.4;
+  }
+
+  .lp-hiseikyu-mv__circles {
+    position: absolute;
+    left: 0;
+    top: 405px;
+    z-index: 2;
+    background: #254160;
+    padding: 0 15px;
+    margin: 0;
+    gap: 8px;
+    width: 100%;
+    height: 179px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lp-hiseikyu-mv__circle {
+    flex: 0 0 114px;
+    min-width: 114px;
+    width: 114px;
+    max-width: 114px;
+    height: 114px;
+    aspect-ratio: auto;
+    overflow: visible;
+    border: 1.2px solid #fff;
+    color: #254160;
+    background: transparent;
+  }
+
+  .lp-hiseikyu-mv__circle::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #fff;
+    z-index: -1;
+  }
+
+  .lp-hiseikyu-mv__circle-label {
+    font-size: 11px;
+    color: #254160;
+  }
+
+  .lp-hiseikyu-mv__circle-num {
+    background: linear-gradient(180deg, #254160 0%, #4c86c6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    font-size: 59px;
+  }
+
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-unit {
+    position: absolute;
+    right: 16px;
+    bottom: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #254160;
+  }
+
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    font-size: 46px;
+  }
+
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-unit {
+    position: absolute;
+    right: 16px;
+    top: 52%;
+    font-size: 10px;
+    text-align: left;
+    color: #254160;
+  }
+
+  .lp-hiseikyu-mv__circle--speed .lp-hiseikyu-mv__circle-num {
+    font-size: 31px;
+    line-height: 1.03;
+  }
+
+  .lp-hiseikyu-mv__circle-note {
+    color: #254160;
+    font-size: 6px;
+    bottom: 10px;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 769px) {
+  .lp-hiseikyu-mv {
+    aspect-ratio: 1438 / 898;
+    overflow: hidden;
+  }
+
+  .lp-hiseikyu-mv__bg {
+    object-position: 10% 35%;
+  }
+
+  .lp-hiseikyu-mv__inner {
+    /* max-width: 1440px; */
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .lp-hiseikyu-mv__lead {
+    position: absolute;
+    left: 40%;
+    top: 12vw;
+    font-size: 37px;
+    width: 560px;
+  }
+
+  .lp-hiseikyu-mv__lead-line {
+    margin-top: 8px;
+  }
+
+  .lp-hiseikyu-mv__ttl {
+    position: absolute;
+    left: 40%;
+    top: 15vw;
+    width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .lp-hiseikyu-mv__ttl-small {
+    font-size: 52px;
+    line-height: 1.12;
+    width: 200px;
+  }
+
+  .lp-hiseikyu-mv__ttl-no {
+    font-size: 40px;
+  }
+
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 108px;
+    line-height: 1;
+    margin-left: 4px;
+    margin-top: -20px;
+  }
+
+  .lp-hiseikyu-mv__name {
+    left: 8vw;
+    top: 33vw;
+    font-size: 18px;
+  }
+
+  .lp-hiseikyu-mv__catch {
+    position: absolute;
+    left: 41%;
+    top: 36vw;
+    font-size: 21px;
+    line-height: 2;
+    /* width: 520px; */
+  }
+
+  .lp-hiseikyu-mv__catch p {
+    display: block;
+  }
+
+  .lp-hiseikyu-mv__circles {
+    position: absolute;
+    left: 43%;
+    top: 45vw;
+    width: 660px;
+  }
+
+  .lp-hiseikyu-mv__circle {
+    width: 208px;
+    height: 208px;
+    border: 2px solid #fff;
+    color: #254160;
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .lp-hiseikyu-mv__circle::after {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #fff;
+    z-index: -1;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    top: 8px;
+  }
+
+  .lp-hiseikyu-mv__circle-label {
+    font-size: 19px;
+    color: #254160;
+  }
+  .lp-hiseikyu-mv__circle-label._first {
+    transform: translateY(-20px);
+    margin-bottom: -25px;
+  }
+
+  .lp-hiseikyu-mv__circle-num {
+    background: linear-gradient(180deg, #254160 0%, #4c86c6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+  }
+
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    font-size: 100px;
+  }
+
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-unit {
+    position: absolute;
+    right: 38px;
+    bottom: 44px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #254160;
+  }
+
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    font-size: 84px;
+    transform: translateX(-20px);
+  }
+
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-unit {
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    font-size: 16px;
+    text-align: left;
+    color: #254160;
+  }
+
+  .lp-hiseikyu-mv__circle--speed .lp-hiseikyu-mv__circle-num {
+    font-size: 52px;
+    line-height: 1.02;
+  }
+
+  .lp-hiseikyu-mv__circle-note {
+    color: #254160;
+    font-size: 10px;
+    bottom: 40px;
+  }
+}
+
+.lp-hiseikyu .sec_01 .btnArea {
+  display: none;
+}
+
+.lp-hiseikyu .sec_03 > .inner > h2 b {
+  font-weight: 900;
+}
+
+@media screen and (min-width: 769px) {
+  .lp-hiseikyu .sec_03 > .inner > h2 b {
+    font-size: 24px;
+  }
+
+  .lp-hiseikyu .sec_03 > .inner > h2 strong,
+  .lp-hiseikyu .sec_03 > .inner > h2 .serif-tail {
+    font-size: 40px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1635px) {
+  .lp-hiseikyu-mv__ttl,
+  .lp-hiseikyu-mv__lead  {
+    left: 39%;
+  }
+}
+
+/* /isharyo/ と同じ追従CTA（見た目・アニメーションは style-tokusetu.css に任せる） */
+body.lp-isyaryo .c-fixed-cta__btn {
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 768px) {
+  .sp-small {
+    font-size: 15px;
+  }
+  .lp-hiseikyu-mv__catch .mark {
+    line-height: 2;
+  }
+  .lp-hiseikyu-mv__catch p:nth-of-type(2) {
+    margin: 3px 0 0;
+  }
+  .lp-hiseikyu-mv__circles {
+    top: initial;
+    bottom: 0;
+  }
+  .sp-wrap {
+    aspect-ratio: 390 / 405;
+  }
+  .lp-hiseikyu-mv__circles {
+    position: initial;
+    left: initial;
+    top: initial;
+    bottom: initial; 
+  }
+  .lp-hiseikyu-mv__circles {
+    justify-content: center;
+    gap:10px;
+  }
+  .lp-hiseikyu-mv__circle-label {
+    margin: -8px 0 0;
+  }
+  .lp-hiseikyu-mv__circle-label._first {
+    margin: -25px 0 0;
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    transform: translate(-10px,9px);
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    line-height: 1;
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-unit {
+    right: 20px;
+    bottom: 34px;
+  }
+  .lp-hiseikyu-mv__circle-note {
+    transform: translate(-50%,-9px);
+  }
+  .lp-hiseikyu .sec_03 h2 .chonchon {
+    margin: 0 18px;
+  }
+  .lp-hiseikyu .sec_03 .merit_headline {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .lp-hiseikyu .sec_04 .reason_list li {
+    padding-bottom: 20px;
+  }
+  .row.justify-content-center.align-items-center img {
+    width: 80px;
+    height: 80px;
+  }
+  .graph_area {
+    margin-top: 15px;
+  }
+  .sec_05.bg01 {
+    padding-bottom: 20px;
+  }
+  .ng_list.text_fff {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lp-hiseikyu-mv__name {
+    left: 3px;
+    top: 242px;
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .lp-hiseikyu-mv__name {
+    top: 40%;
+  }
+  .lp-hiseikyu-mv__catch {
+    left: initial;
+    right: 2%;
+    bottom: 36%;
+    top: initial;
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 768px) {
+  .lp-hiseikyu-mv__catch {
+    right: 10%;
+    bottom: 32%;
+    
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .lp-hiseikyu-mv__catch {
+    right: 15%;
+    bottom: 36%; 
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .lp-hiseikyu-mv__catch {
+    right: 22%;
+    bottom: 36%; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1660px) {
+  .lp-hiseikyu-mv__circles {
+    top: 47vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1360px) {
+  .lp-hiseikyu-mv__circles {
+    width: 580px;
+  }
+  .lp-hiseikyu-mv__circle {
+    width: 180px;
+    height: 180px;
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    font-size: 90px;
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    font-size: 74px;
+    transform: translate(-20px,9px);
+  }
+  .lp-hiseikyu-mv__circle-note {
+    font-size: 8px;
+  }
+
+  .lp-hiseikyu-mv__circle-note {
+    bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1310px) {
+  .lp-hiseikyu-mv__circles {
+    top: 48vw;
+  }
+  .lp-hiseikyu-mv__circles {
+    width: 490px;
+  }
+  .lp-hiseikyu-mv__circle {
+    width: 150px;
+    height: 150px;
+  }
+  .lp-hiseikyu-mv__circle-label {
+    font-size: 16px;
+  }
+
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    font-size: 60px;
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-unit {
+    font-size: 16px;
+    right: 32px;
+    bottom: 36px;
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    font-size: 44px;
+    transform: translate(-20px,9px);
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-unit {
+    right: 36px;
+    top: 49%;
+    font-size: 12px;
+  }
+  .lp-hiseikyu-mv__circle--speed .lp-hiseikyu-mv__circle-num {
+    font-size: 32px;
+  }
+  .lp-hiseikyu-mv__circle-note {
+    font-size: 7px;
+  }
+
+  .lp-hiseikyu-mv__circle-note {
+    bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1210px) {
+  .lp-hiseikyu-mv__circles {
+    top: 49vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1110px) {
+  .lp-hiseikyu-mv__circles {
+    width: 400px;
+    top: 50vw;
+  }
+  .lp-hiseikyu-mv__circle {
+    width: 120px;
+    height: 120px;
+  }
+  .lp-hiseikyu-mv__circle::after {
+    inset: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: 4px;
+  }
+  .lp-hiseikyu-mv__circle-label {
+    font-size: 12px;
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-num {
+    font-size: 50px;
+  }
+  .lp-hiseikyu-mv__circle--fee .lp-hiseikyu-mv__circle-unit {
+    font-size: 14px;
+    right: 24px;
+    bottom: 28px;
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-num {
+    font-size: 44px;
+    transform: translate(-10px, 12px);
+  }
+  .lp-hiseikyu-mv__circle--count .lp-hiseikyu-mv__circle-unit {
+    right: 16px;
+    top: 50%;
+    font-size: 10px;
+  }
+  .lp-hiseikyu-mv__circle-label._first {
+    margin-bottom: -31px;
+  }
+  .lp-hiseikyu-mv__circle-note {
+    bottom: 18px;
+  }
+  .lp-hiseikyu-mv__circle-note {
+    font-size: 5px;
+  }
+  .lp-hiseikyu-mv__circle--speed .lp-hiseikyu-mv__circle-num {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .lp-hiseikyu-mv__lead {
+    top: 11vw;
+    width: auto;
+  }
+  .lp-hiseikyu-mv__ttl .lp-hiseikyu-mv__ttl-small {
+    font-size: 45px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .lp-hiseikyu-mv__lead {
+    top: 9vw;
+  }
+  .lp-hiseikyu-mv__ttl {
+    top: 14vw;
+  }
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .lp-hiseikyu-mv__lead {
+    font-size: 30px;
+  }
+  .lp-hiseikyu-mv__ttl .lp-hiseikyu-mv__ttl-small {
+    font-size: 35px;
+  }
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 84px;
+  }
+  .lp-hiseikyu-mv__catch {
+    left: 41%;
+    top: 38vw;
+    font-size: 17px;
+  }
+  .lp-hiseikyu-mv__catch .accent {
+    font-size: 23px;
+  }
+  .lp-hiseikyu-mv__circles {
+    top: 51vw;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .lp-hiseikyu-mv__lead {
+    font-size: 25px;
+  }
+  .lp-hiseikyu-mv__ttl {
+    top: 16vw;
+  }
+  .lp-hiseikyu-mv__ttl .lp-hiseikyu-mv__ttl-small {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 75px;
+  }
+  .lp-hiseikyu-mv__catch {
+    top: 40vw;
+  }
+  .lp-hiseikyu-mv__circles {
+    top: 54vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 880px) {
+  .lp-hiseikyu-mv__catch {
+    top: 42vw;
+  }
+  .lp-hiseikyu-mv__circles {
+    top: 57vw;
+  }
+  .lp-hiseikyu-mv__circles {
+    width: 370px;
+    gap: 0 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .lp-hiseikyu-mv__ttl .lp-hiseikyu-mv__ttl-small {
+    font-size: 22px;
+  }
+
+  .lp-hiseikyu-mv__ttl-large {
+    font-size: 65px;
+  }
+  .lp-hiseikyu-mv__catch .accent {
+    font-size: 19px;
+  }
+}
+
+body.lp-isyaryo.post-type-archive-hiseikyu-column footer#footer.footer-isharyo,
+body.lp-isyaryo.single-hiseikyu-column footer#footer.footer-isharyo {
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  body.lp-isyaryo.post-type-archive-hiseikyu-column footer#footer.footer-isharyo,
+  body.lp-isyaryo.single-hiseikyu-column footer#footer.footer-isharyo {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,121 @@
+#spnav span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  background: #9D2A31;
+}
+
+#spnav .spnav2 {
+  top: calc(50% - 9px);
+}
+
+#spnav .spnav3 {
+  top: calc(50% + 9px);
+}
+
+#spnav.on span {
+  top: 50%;
+}
+
+.price li {
+  font-size: 15px;
+  line-height: 1.6666666667;
+  letter-spacing: normal;
+}
+
+main.price section.debt {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  main.price section.regular + section.regular {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  main.price .text_block .cost_tbl.sp_side tr {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: -moz-max-content;
+    height: max-content;
+    align-items: center;
+  }
+  main.price .text_block .cost_tbl.sp_side th, main.price .text_block .cost_tbl.sp_side td {
+    height: 100%;
+  }
+  main.price .text_block .cost_tbl.sp_side td {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  main.price .text_block .cost_tbl.sp_side span {
+    display: block;
+    width: 100%;
+  }
+}
+.page-child footer.footer-saimu .lower,
+footer.footer-saimu .lower {
+  color: #fff;
+  background: #22263D;
+  padding-bottom: 75px;
+}
+.page-child footer.footer-saimu .logo .copy,
+footer.footer-saimu .logo .copy {
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+.page-child footer.footer-saimu .copyright,
+footer.footer-saimu .copyright {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-child footer.footer-saimu,
+  footer.footer-saimu {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-child footer.footer-saimu .lower,
+  footer.footer-saimu .lower {
+    padding-bottom: 30px;
+  }
+  .page-child footer.footer-saimu .copyright,
+  footer.footer-saimu .copyright {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style-saimu.css.map */
+
+
+main.price .text_block .cost_tbl.thtd_center tr th,
+main.price .text_block .cost_tbl.thtd_center tr td {
+  text-align: center;
+}
+
+/* @media screen and (min-width: 768px) { */
+  main.price .text_block .cost_tbl.thtd_center tr {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+/* } */
+
+main.price .text_block .cost_tbl.cost_tbl-col2 tbody {
+  display: block;
+}
+main.price .text_block .cost_tbl.cost_tbl-col2 tr *:first-child {
+  width: 100%;
+}
+main.price .text_block .cost_tbl.cost_tbl-col2 tr th {
+  width: 100%;
+}
+.page-child .cost_tbl-col2 td:not(:last-child),
+.page-child .cost_tbl.cost_tbl-col2 td:not(:last-child) {
+  border-right: none;
+}

@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+
+.lp-hiseikyu-contact {
+  color: #292929;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background: #f1f1f1;
+}
+
+.lp-hiseikyu-contact__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.lp-hiseikyu-contact__lead {
+  padding: 60px 0 30px;
+  background: #f1f1f1;
+}
+
+.lp-hiseikyu-contact__lead .en {
+  margin: 0;
+  color: #9d2a31;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.lp-hiseikyu-contact__lead-body {
+  margin-top: 24px;
+}
+
+.lp-hiseikyu-contact__lead p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 31px;
+  color: #292929;
+}
+
+.lp-hiseikyu-contact__lead p + p {
+  margin-top: 0;
+}
+
+.lp-hiseikyu-contact__lead a {
+  color: #292929;
+  font-weight: 350;
+  text-decoration: none;
+}
+
+.lp-hiseikyu-contact.is-confirm .lp-hiseikyu-contact__lead-body {
+  display: none;
+}
+
+.lp-hiseikyu-contact__lead h3 {
+  margin: 24px 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.lp-hiseikyu-contact__back {
+  margin-top: 40px !important;
+  text-align: center;
+}
+
+.lp-hiseikyu-contact__back a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  height: 48px;
+  background: #9d2a31;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lp-hiseikyu-contact__form {
+  padding: 40px 0 100px;
+  background: #f1f1f1;
+}
+
+.lp-hiseikyu-contact__form-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px 80px 122px;
+  background: #fff;
+}
+
+.lp-hiseikyu-contact table.inputform {
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.lp-hiseikyu-contact table.inputform tr {
+  border: 0;
+}
+
+.lp-hiseikyu-contact table.inputform th,
+.lp-hiseikyu-contact table.inputform td {
+  padding: 25px 0;
+  border: 0;
+  background: none;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.lp-hiseikyu-contact table.inputform tr:has(textarea) th,
+.lp-hiseikyu-contact table.inputform tr:has(textarea) td {
+  vertical-align: middle;
+}
+
+.lp-hiseikyu-contact table.inputform th {
+  width: 250px;
+  color: #292929;
+}
+
+.lp-hiseikyu-contact table.inputform td {
+  width: calc(100% - 250px);
+}
+
+.lp-hiseikyu-contact table.inputform .txt {
+  display: inline-block;
+  min-width: 130px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  vertical-align: middle;
+}
+
+.lp-hiseikyu-contact table.inputform .essential {
+  display: inline-block;
+  padding: 3px 6px;
+  background: #9d2a31;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+.lp-hiseikyu-contact table.inputform input[type="text"],
+.lp-hiseikyu-contact table.inputform input[type="tel"],
+.lp-hiseikyu-contact table.inputform input[type="email"],
+.lp-hiseikyu-contact table.inputform textarea {
+  width: 100%;
+  padding: 21px 26px 21px 21px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 350;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.lp-hiseikyu-contact table.inputform textarea {
+  height: 185px;
+  min-height: 185px;
+  line-height: 2.125;
+  resize: vertical;
+}
+
+.lp-hiseikyu-contact table.inputform input::placeholder,
+.lp-hiseikyu-contact table.inputform textarea::placeholder {
+  color: #a3a3a3;
+  font-weight: 350;
+}
+
+.lp-hiseikyu-contact table.inputform input:focus,
+.lp-hiseikyu-contact table.inputform textarea:focus {
+  border-color: #9d2a31;
+}
+
+.lp-hiseikyu-contact table.inputform .is-invalid input,
+.lp-hiseikyu-contact table.inputform .is-invalid textarea,
+.lp-hiseikyu-contact table.inputform input.is-invalid,
+.lp-hiseikyu-contact table.inputform textarea.is-invalid {
+  border-color: #d93516;
+}
+
+.lp-hiseikyu-contact__error,
+.lp-hiseikyu-contact .wpcf7-not-valid-tip {
+  display: block;
+  margin-top: 6px;
+  color: #d93516;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.lp-hiseikyu-contact .wpcf7-spinner,
+.lp-hiseikyu-contact .ajax-loader {
+  display: none;
+}
+
+.lp-hiseikyu-contact .confirm-note {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  background: #f7f7f7;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.lp-hiseikyu-contact .check_wrap {
+  margin-top: 30px;
+  padding-left: 250px;
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 0.8px;
+  line-height: 16px;
+  color: #292929;
+}
+
+.lp-hiseikyu-contact .check_wrap a {
+  color: #9d2a31;
+  text-decoration: none;
+}
+
+.lp-hiseikyu-contact .check_wrap .wpcf7-list-item {
+  margin: 0;
+}
+
+.lp-hiseikyu-contact .check_wrap label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-weight: 350;
+}
+
+.lp-hiseikyu-contact .check_wrap input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  flex: 0 0 13px;
+  accent-color: #9d2a31;
+}
+
+.lp-hiseikyu-contact .check_wrap .lp-hiseikyu-contact__error {
+  text-align: left;
+}
+
+.lp-hiseikyu-contact .sbmt_btn {
+  margin-top: 78px;
+}
+
+.lp-hiseikyu-contact .btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.lp-hiseikyu-contact .form_submit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 520px;
+  max-width: 100%;
+  height: 88px;
+  margin: 0 auto;
+  background: #b9b9b9;
+}
+
+.lp-hiseikyu-contact .form_submit::before {
+  content: "入力内容確認";
+  color: #999;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 13px;
+  pointer-events: none;
+}
+
+.lp-hiseikyu-contact .form_submit::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  margin-left: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: url("../../images/lp/isyaryo/hiseikyu/icon_arrow_r_w.svg") center / 6px 9px no-repeat;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.lp-hiseikyu-contact .form_submit input[type="submit"],
+.lp-hiseikyu-contact .form_submit input[type="button"] {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.lp-hiseikyu-contact .form_submit.is-ready {
+  background: #9d2a31;
+}
+
+.lp-hiseikyu-contact .form_submit.is-ready::before {
+  color: #fff;
+}
+
+.lp-hiseikyu-contact .form_submit:has(.wpcf7-submit)::before {
+  content: "送信";
+}
+
+.lp-hiseikyu-contact .form_submit:has(.wpcf7-back),
+.lp-hiseikyu-contact .form_submit:has(input.wpcf7c-btn-back) {
+  background: #555;
+}
+
+.lp-hiseikyu-contact .form_submit:has(.wpcf7-back)::before,
+.lp-hiseikyu-contact .form_submit:has(input.wpcf7c-btn-back)::before {
+  content: "入力画面に戻る";
+  color: #fff;
+}
+
+.lp-hiseikyu-contact .form_submit:has(.wpcf7-back)::after,
+.lp-hiseikyu-contact .form_submit:has(input.wpcf7c-btn-back)::after {
+  display: none;
+}
+
+.lp-hiseikyu-contact .form_submit input.is-sending,
+.lp-hiseikyu-contact form.is-sending .form_submit {
+  opacity: 0.65;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.lp-hiseikyu-contact .wpcf7-response-output {
+  margin-top: 20px;
+  border: 0 !important;
+  text-align: center;
+  color: #d93516;
+}
+
+.lp-hiseikyu-contact form.custom-wpcf7c-confirmed table.inputform input,
+.lp-hiseikyu-contact form.custom-wpcf7c-confirmed table.inputform textarea,
+.lp-hiseikyu-contact table.inputform input.wpcf7c-conf,
+.lp-hiseikyu-contact table.inputform textarea.wpcf7c-conf {
+  border: 0;
+  padding-left: 0;
+  background: transparent !important;
+  box-shadow: none;
+  pointer-events: none;
+  color: #292929 !important;
+}
+
+.lp-hiseikyu-contact form.custom-wpcf7c-confirmed table.inputform input::placeholder,
+.lp-hiseikyu-contact form.custom-wpcf7c-confirmed table.inputform textarea::placeholder {
+  color: transparent;
+}
+
+body.page-template-page-hiseikyu-contact .c-fixed-cta,
+body.page-template-page-lp-isyaryo-hiseikyu-contact .c-fixed-cta {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .lp-hiseikyu-contact {
+    background: #fff;
+  }
+
+  .lp-hiseikyu-contact__inner {
+    padding: 0 25px;
+  }
+
+  .lp-hiseikyu-contact__lead {
+    padding: 35px 0 30px;
+  }
+
+  .lp-hiseikyu-contact__lead .en {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .lp-hiseikyu-contact__lead-body {
+    margin-top: 35px;
+  }
+
+  .lp-hiseikyu-contact__lead p.sp + p.sp {
+    margin-top: 31px;
+  }
+
+  .lp-hiseikyu-contact__lead a {
+    color: #9d2a31;
+  }
+
+  .lp-hiseikyu-contact__form {
+    padding: 0 0 80px;
+    background: #fff;
+  }
+
+  .lp-hiseikyu-contact__form-inner {
+    max-width: none;
+    padding: 0 24px;
+    background: transparent;
+  }
+
+  .lp-hiseikyu-contact table.inputform,
+  .lp-hiseikyu-contact table.inputform tbody,
+  .lp-hiseikyu-contact table.inputform tr,
+  .lp-hiseikyu-contact table.inputform th,
+  .lp-hiseikyu-contact table.inputform td {
+    display: block;
+    width: 100%;
+  }
+
+  .lp-hiseikyu-contact table.inputform th {
+    padding: 31px 0 3px;
+  }
+
+  .lp-hiseikyu-contact table.inputform td {
+    padding: 10px 0 25px;
+  }
+
+  .lp-hiseikyu-contact table.inputform .txt {
+    min-width: 0;
+  }
+
+  .lp-hiseikyu-contact table.inputform input[type="text"],
+  .lp-hiseikyu-contact table.inputform input[type="tel"],
+  .lp-hiseikyu-contact table.inputform input[type="email"],
+  .lp-hiseikyu-contact table.inputform textarea {
+    padding: 16px 21px 16px 16px;
+  }
+
+  .lp-hiseikyu-contact .check_wrap {
+    margin-top: 8px;
+    padding: 0 0 28px;
+    text-align: center;
+  }
+
+  .lp-hiseikyu-contact .check_wrap .lp-hiseikyu-contact__error {
+    text-align: center;
+  }
+
+  .lp-hiseikyu-contact .sbmt_btn {
+    margin-top: 0;
+  }
+
+  .lp-hiseikyu-contact .btns {
+    display: block;
+  }
+
+  .lp-hiseikyu-contact .form_submit {
+    width: 100%;
+    height: 64px;
+  }
+
+  .lp-hiseikyu-contact .form_submit::after {
+    width: 22px;
+    height: 22px;
+    background-size: 5px 7px;
+  }
+
+  .lp-hiseikyu-contact .form_submit input[type="submit"],
+  .lp-hiseikyu-contact .form_submit input[type="button"],
+  .lp-hiseikyu-contact__back a {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .lp-hiseikyu-contact .form_submit + .form_submit {
+    margin-top: 12px;
+  }
+}
+
+.lp-hiseikyu.lp-hiseikyu-contact.is-thanks .lp-hiseikyu-contact__inner p {
+  text-align: center;
+}

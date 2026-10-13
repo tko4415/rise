@@ -1,0 +1,265 @@
+/* ===== Header（全 /hiseikyu/ ページ共通） ===== */
+body.lp-isyaryo header.lp-isyaryo-header {
+  height: 115px;
+  background: #fff;
+  box-shadow: none;
+  align-items: stretch;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  overflow: visible;
+  display: flex;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.15);
+}
+
+body.lp-isyaryo header.lp-isyaryo-header p {
+  margin: 0;
+  font-family: inherit;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header .logo {
+  margin: 23px 0 0 23px;
+  flex-shrink: 0;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header .logo a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header .logo .copy,
+body.lp-isyaryo header .logo .copy {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #616161;
+  padding-left: 91px;
+  margin: 0;
+  letter-spacing: 0;
+  white-space: nowrap;
+  line-height: 1.15;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header .logo img {
+  display: block;
+  max-width: 341px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav {
+  margin-left: auto;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial {
+  min-width: 290px;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block .bg-red {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 12px;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .tel {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #292929;
+  margin-right: 10px;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .tel a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .small {
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 15px;
+  color: #292929;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li {
+  position: relative;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 0%;
+  height: 6px;
+  background: #9d2a31;
+  transition: width 0.2s ease-in-out;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li:hover::after,
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li.current::after {
+  left: 0;
+  width: 100%;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav .contact {
+  width: 115px;
+  background: #292929;
+  color: #fff;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav .contact .icon {
+  display: flex;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav .contact .icon img {
+  object-fit: initial;
+  filter: brightness(0) invert(1);
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav .contact .txt {
+  margin-top: 10px;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, "Noto Sans JP", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav .contact:hover {
+  background: #7b7b7b;
+}
+
+body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li > a:hover {
+  color: inherit;
+}
+
+
+
+@media (max-width: 767px) {
+  body.lp-isyaryo header.lp-isyaryo-header {
+    height: 62px;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header .logo {
+    margin: 0;
+    padding: 13px 0 0 16px;
+    height: auto;
+    width: auto;
+    max-width: calc(100% - 72px);
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header .logo .copy,
+  body.lp-isyaryo header .logo .copy {
+    font-size: 10px;
+    line-height: 11.5px;
+    padding-left: 49px;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header .logo img {
+    height: auto;
+    max-width: 186px;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav {
+    top: 60px;
+    height: calc(100vh - 60px);
+    background: #fff;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.main {
+    padding-right: 0;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial {
+    min-width: 0;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block .bg-red {
+    height: auto;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    line-height: 1;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .tel {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: 10px;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .tel a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.upper .block.freedial .body .small {
+    margin-top: 2px;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li::after {
+    display: none;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li > a {
+    overflow: visible;
+    isolation: auto;
+    position: relative;
+  }
+
+  body.lp-isyaryo header.lp-isyaryo-header #gnav div.lower ul.lv_1 > li > a:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-bottom: 2px solid #9d2a31;
+    border-right: 2px solid #9d2a31;
+    transform: rotate(-45deg);
+    transform-origin: center center;
+    position: absolute;
+    top: 47%;
+    right: 38px;
+  }
+
+  body.lp-isyaryo #spnav {
+    display: block;
+    width: 64px;
+    height: 62px;
+    background: transparent;
+  }
+
+  body.lp-isyaryo #spnav span {
+    left: calc(50% - 18px);
+    width: 36px;
+    height: 2px;
+    background: #9D2A31;
+    opacity: 1;
+    top: calc(50% - 9px);
+  }
+
+  body.lp-isyaryo #spnav .spnav2 {
+    top: 50%;
+  }
+
+  body.lp-isyaryo #spnav .spnav3 {
+    top: calc(50% + 9px);
+  }
+
+  body.lp-isyaryo #spnav.on span {
+    top: 50%;
+  }
+}
